@@ -64,9 +64,9 @@
 	return
 
 /obj/item/clothing/suit/space/void/merc
-	icon_state = "syndievoidsuit"
 	name = "blood-red voidsuit"
 	desc = "An advanced suit that protects against injuries during special operations. This version is additionally reinforced against melee attacks."
+	icon_state = "syndievoidsuit"
 	item_state = "syndie_voidsuit"
 	armor = list(
 		melee = 50,

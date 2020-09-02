@@ -169,7 +169,7 @@
 	tank = /obj/item/weapon/tank/jetpack/oxygen
 
 /obj/item/clothing/head/helmet/space/void/odst
-	name = "Sol Federation voidsuit helmet"
+	name = "sol federation voidsuit helmet"
 	desc = "A helmet designed for military EVA operations, though not direct combat."
 	icon_state = "odst"
 	item_state = "odst"
@@ -190,7 +190,7 @@
 	light_overlay = "helmet_light_ihs"
 
 /obj/item/clothing/suit/space/void/odst
-	name = "Sol Federation voidsuit"
+	name = "sol federation voidsuit"
 	desc = "Do you wanna be a hero in the sky? High adventure, higher pay, join the Space Marines today."
 	icon_state = "odst"
 	item_state = "odst"
@@ -357,7 +357,7 @@
 
 //Science
 /obj/item/clothing/head/space/void/medarmor
-	name = "Squire Helm"
+	name = "squire helm"
 	desc = "A special helmet designed for work in a hazardous, low pressure environment. Has an additional layer of armor."
 	icon_state = "armor_medical"
 	item_state = "armor_medical"
@@ -381,7 +381,7 @@
 	matter = list(MATERIAL_STEEL = 10, MATERIAL_BIOMATTER = 5, MATERIAL_PLASTIC = 5, MATERIAL_GLASS = 5)
 
 /obj/item/clothing/suit/space/void/medarmor
-	name = "Squire Armor"
+	name = "squire armor"
 	icon_state = "armor_medical"
 	desc = "Spaceworthy search-and-rescue armor of the Orden Hospitaller. Used for operations where protection is needed."
 	item_state = "armor_medical"
@@ -399,7 +399,7 @@
 	matter = list(MATERIAL_STEEL = 40, MATERIAL_BIOMATTER = 10, MATERIAL_PLASTIC = 30, MATERIAL_GLASS = 10)
 
 /obj/item/clothing/head/space/void/medarmor/sarge
-	name = "Brother-Sergeant Helm"
+	name = "brother-sergeant helm"
 	desc = "A special helmet designed for work in a hazardous, low pressure environment. Has an additional layer of armor."
 	icon_state = "armor_medical_sarge"
 	item_state = "armor_medical_sarge"
@@ -422,7 +422,7 @@
 	matter = list(MATERIAL_STEEL = 10, MATERIAL_BIOMATTER = 5, MATERIAL_PLASTIC = 5, MATERIAL_GLASS = 5)
 
 /obj/item/clothing/suit/space/void/medarmor/sarge
-	name = "Brother-Sergeant Armor"
+	name = "brother-sergeant armor"
 	icon_state = "armor_medical_sarge"
 	desc = "Spaceworthy search-and-rescue armor of the Orden Hospitaller. This upgraded version is worn by Brother-Sergeants leading a team of Squires."
 	item_state = "armor_medical_sarge"
@@ -439,7 +439,7 @@
 	matter = list(MATERIAL_STEEL = 40, MATERIAL_BIOMATTER = 10, MATERIAL_PLASTIC = 30, MATERIAL_GLASS = 10)
 
 /obj/item/clothing/head/helmet/space/void/knight
-	name = "Brother-Knight Helm"
+	name = "brother-knight helm"
 	desc = "A visored helmet with a cloth hood covering it."
 	icon_state = "prime"
 	armor = list(
@@ -452,7 +452,7 @@
 	)
 
 /obj/item/clothing/suit/space/void/knight
-	name = "Brother-Knight Armor"
+	name = "brother-knight armor"
 	desc = "Armor of the Orden Hospitaller's chamber militant"
 	icon_state = "prime"
 	slowdown = 0.15

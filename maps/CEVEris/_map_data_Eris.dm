@@ -5,9 +5,7 @@
 #include "_Nadezhda_Colony_Transition.dmm"
 #include "_Nadezhda_Colony_Surface.dmm"
 #include "../encounters/deepforest/deepforest.dm"
-#include "../encounters/spacefortress/spacefortress.dm"
 #include "centcomm.dmm"
-#include "Nadezhda_Colony_Rec.dmm"
 
 /obj/map_data/eris
 	name = "Eris"

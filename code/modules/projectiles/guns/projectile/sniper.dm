@@ -151,7 +151,7 @@
 	damage_multiplier = 1.1 //because pistol round
 	penetration_multiplier = 20
 	pierce_multiplier =  5
-	recoil_buildup = 50
+	recoil_buildup = 20
 	gun_tags = list(GUN_PROJECTILE, GUN_CALIBRE_35, GUN_INTERNAL_MAG, GUN_REVOLVER, GUN_SILENCABLE)
 
 /obj/item/weapon/gun/projectile/revolver/little_comet/update_icon()

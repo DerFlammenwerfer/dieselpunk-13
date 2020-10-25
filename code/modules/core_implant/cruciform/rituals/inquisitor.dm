@@ -335,8 +335,8 @@
 
 
 /datum/ritual/targeted/cruciform/inquisitor/spawn_item/perform(mob/living/carbon/human/user, obj/item/weapon/implant/core_implant/C,list/targets)
-	new /obj/item/weapon/tool/sword/crusader(usr.loc)
-	new /obj/item/clothing/accessory/holster/saber/greatsword/nt_sword/knight(usr.loc)
+	new /obj/item/weapon/tool/sword/crusader/nt_sword/knight(usr.loc)
+	new /obj/item/clothing/accessory/holster/saber/greatsword(usr.loc)
 	new /obj/item/weapon/shield/riot/crusader(usr.loc)
 	new /obj/item/weapon/storage/belt/security/neotheology(usr.loc)
 	new /obj/item/clothing/suit/space/void/crusader(usr.loc)

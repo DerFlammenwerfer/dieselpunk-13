@@ -284,6 +284,8 @@
 	new /obj/item/clothing/accessory/holster/saber/greatsword/occupied(usr.loc)
 	new /obj/item/weapon/cell/medium/moebius/omega(usr.loc)
 	set_personal_cooldown(user)
+	log_and_message_admins("performed an Canticle of Defense litany")
+
 
 /datum/ritual/cruciform/divisor/div_flash
 	name = "Ire"

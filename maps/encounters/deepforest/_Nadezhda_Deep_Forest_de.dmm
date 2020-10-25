@@ -227,7 +227,6 @@
 "eE" = (/obj/structure/table/standard,/obj/item/weapon/secbot_assembly,/turf/simulated/floor/tiled/white/bluecorner,/area/nadezhda/dungeon/outside/smuggler_zone_u)
 "eF" = (/obj/structure/sign/departmentold/science/variant1{pixel_x = -30},/turf/simulated/floor/tiled/white/bluecorner,/area/nadezhda/dungeon/outside/smuggler_zone_u)
 "eG" = (/obj/structure/table/steel_reinforced,/obj/random/dungeon_gun_mods/low_chance,/obj/random/dungeon_gun_mods/low_chance,/obj/random/dungeon_gun_mods/low_chance,/turf/simulated/floor/carpet/bcarpet,/area/nadezhda/dungeon/outside/smuggler_zone_u)
-"eH" = (/obj/effect/floor_decal/industrial/stand_clear{dir = 8},/turf/simulated/floor/tiled/dark/gray_platform,/area/nadezhda/outside/meadow)
 "eI" = (/obj/structure/table/rack/shelf,/obj/random/knife/low_chance,/obj/random/knife/low_chance,/obj/random/knife/low_chance,/obj/random/knife/low_chance,/turf/simulated/floor/wood/wild5,/area/nadezhda/dungeon/outside/smuggler_zone_u)
 "eJ" = (/obj/machinery/light/small{dir = 8},/turf/simulated/floor/tiled/techmaint_perforated,/area/nadezhda/dungeon/outside/smuggler_zone_u)
 "eK" = (/obj/structure/table/rack/shelf,/obj/random/common_oddities/low_chance,/obj/random/common_oddities/low_chance,/obj/random/common_oddities/low_chance,/turf/simulated/floor/wood/wild5,/area/nadezhda/dungeon/outside/smuggler_zone_u)
@@ -317,7 +316,6 @@
 "gu" = (/turf/simulated/mineral/planet,/area/asteroid/rogue)
 "gv" = (/obj/machinery/door/airlock{name = "Toilet"},/obj/effect/floor_decal/corner_kafel/blue/diagonal{dir = 4},/obj/effect/floor_decal/corner_kafel/white/diagonal,/turf/simulated/floor/tiled/white,/area/nadezhda/absolutism/monistary)
 "gw" = (/obj/structure/bed/chair/wood,/turf/simulated/floor/wood,/area/nadezhda/dungeon/outside/prepper)
-"gx" = (/obj/structure/disposalpipe/segment{dir = 4},/turf/simulated/floor/wood/wild3,/area/nadezhda/outside/meadow)
 "gy" = (/obj/structure/cable/heavyduty{icon_state = "1-2"},/turf/simulated/floor/asteroid/grass,/area/nadezhda/outside/forest)
 "gz" = (/obj/machinery/door/airlock/highsecurity{locked = 1},/turf/simulated/floor/tiled/dark/monofloor,/area/nadezhda/dungeon/outside/prepper)
 "gA" = (/obj/structure/table/rack/shelf,/obj/random/gun_shotgun,/obj/random/gun_shotgun,/obj/machinery/light{dir = 1},/obj/random/dungeon_gun_mods/low_chance,/turf/simulated/floor/tiled/dark/gray_platform,/area/nadezhda/dungeon/outside/prepper)
@@ -626,6 +624,7 @@
 "mJ" = (/obj/structure/closet/secure_closet/injection,/turf/simulated/floor/tiled/white/panels,/area/nadezhda/dungeon/outside/zoo)
 "mL" = (/obj/effect/window_lwall_spawn/reinforced,/turf/simulated/floor/rock/manmade/dungeons,/area/nadezhda/absolutism/monistary)
 "mM" = (/obj/structure/reagent_dispensers/cahorsbarrel,/obj/machinery/light{dir = 1},/obj/structure/table/woodentable,/turf/simulated/floor/wood/wild1,/area/nadezhda/absolutism/monistary)
+"mN" = (/obj/structure/disposalpipe/segment,/turf/simulated/floor/tiled/dark/gray_platform,/area/nadezhda/absolutism/monistary)
 "mO" = (/obj/structure/table/onestar,/obj/random/medical,/obj/machinery/atmospherics/unary/vent_pump/on{dir = 1},/turf/simulated/floor/tiled/dark/gray_platform,/area/nadezhda/absolutism/monistary)
 "mP" = (/obj/structure/table/rack/shelf,/obj/item/device/scanner/plant,/obj/item/device/scanner/gas,/turf/simulated/floor/tiled/white/gray_platform,/area/nadezhda/dungeon/outside/zoo)
 "mQ" = (/obj/effect/decal/cleanable/dirt,/obj/structure/table/reinforced,/obj/machinery/electrolyzer,/turf/simulated/floor/tiled/white/gray_platform,/area/nadezhda/dungeon/outside/zoo)
@@ -633,6 +632,7 @@
 "mS" = (/turf/simulated/floor/tiled/dark/danger,/area/nadezhda/dungeon/outside/zoo)
 "mT" = (/obj/structure/closet/secure_closet/anesthetics,/turf/simulated/floor/tiled/white/panels,/area/nadezhda/dungeon/outside/zoo)
 "mU" = (/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled/dark/danger,/area/nadezhda/dungeon/outside/zoo)
+"mV" = (/obj/machinery/conveyor/south{id = "churchgardenCon2"},/turf/simulated/floor/tiled/dark/gray_platform,/area/nadezhda/absolutism/monistary)
 "mW" = (/obj/machinery/door/blast/regular,/turf/simulated/floor/tiled/white,/area/nadezhda/dungeon/outside/zoo)
 "mX" = (/obj/machinery/door/airlock/multi_tile/metal{dir = 2},/obj/effect/decal/cleanable/dirt,/turf/simulated/floor/tiled/techmaint_cargo,/area/nadezhda/dungeon/outside/zoo)
 "mZ" = (/obj/structure/closet/secure_closet/freezer/meat,/turf/simulated/floor/tiled/white/panels,/area/nadezhda/dungeon/outside/zoo)
@@ -762,6 +762,7 @@
 "pP" = (/obj/structure/flora/ausbushes/fullgrass,/obj/structure/cable/heavyduty{icon_state = "1-2"},/obj/structure/catwalk,/turf/simulated/floor/asteroid/grass,/area/nadezhda/outside/forest)
 "pT" = (/turf/simulated/wall,/area/nadezhda/absolutism/monistary)
 "pU" = (/obj/machinery/door/airlock{name = "Monistary"},/obj/structure/disposalpipe/segment{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/floor/wood/wild2,/area/nadezhda/absolutism/monistary)
+"pX" = (/obj/structure/disposalpipe/segment{dir = 4},/obj/machinery/light,/turf/simulated/floor/wood/wild3,/area/nadezhda/outside/meadow)
 "pZ" = (/obj/structure/flora/ausbushes/sparsegrass,/obj/structure/flora/ausbushes/ppflowers,/turf/simulated/floor/asteroid/grass,/area/nadezhda/outside/meadow)
 "qa" = (/obj/structure/fence/door,/turf/simulated/floor/asteroid/dirt/dark,/area/nadezhda/outside/meadow)
 "qb" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/structure/disposalpipe/segment,/turf/simulated/floor/wood/wild2,/area/nadezhda/absolutism/monistary)
@@ -773,6 +774,7 @@
 "qh" = (/obj/effect/window_lwall_spawn/plasma,/turf/simulated/floor/plating,/area/nadezhda/absolutism/monistary)
 "qj" = (/obj/structure/invislight,/obj/structure/disposalpipe/segment{dir = 1; icon_state = "pipe-c"},/turf/simulated/floor/rock/manmade/pavement3,/area/nadezhda/outside/meadow)
 "ql" = (/obj/structure/table/onestar,/obj/machinery/microwave,/turf/simulated/floor/tiled/cafe,/area/nadezhda/absolutism/monistary)
+"qp" = (/obj/machinery/conveyor_switch/oneway{convdir = -1; id = "churchgardenCon2"},/obj/structure/disposalpipe/segment,/turf/simulated/floor/tiled/dark/gray_platform,/area/nadezhda/absolutism/monistary)
 "qq" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 1},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 1},/turf/simulated/floor/rock/manmade/pavement3,/area/nadezhda/outside/meadow)
 "qv" = (/obj/structure/window/reinforced{dir = 4},/turf/simulated/floor/tiled/dark/golden,/area/nadezhda/absolutism/monistary)
 "qw" = (/obj/machinery/light{dir = 1},/turf/simulated/floor/wood/wild2,/area/nadezhda/absolutism/monistary)
@@ -793,6 +795,7 @@
 "qR" = (/obj/structure/railing/grey{dir = 4},/turf/simulated/open,/area/nadezhda/absolutism/monistary)
 "qY" = (/obj/machinery/vending/dinnerware,/turf/simulated/floor/tiled/cafe,/area/nadezhda/absolutism/monistary)
 "qZ" = (/obj/structure/disposalpipe/segment{dir = 4},/obj/structure/disposalpipe/segment,/turf/simulated/floor/tiled/white/golden,/area/nadezhda/absolutism/monistary)
+"ra" = (/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 8},/obj/machinery/disposal/deliveryChute{dir = 1; name = "biomatter chute"},/obj/structure/window/reinforced{dir = 4},/obj/structure/disposalpipe/trunk{dir = 4},/turf/simulated/floor/tiled/dark/gray_platform,/area/nadezhda/absolutism/monistary)
 "rd" = (/obj/structure/table/bench/padded,/turf/simulated/floor/tiled/cafe,/area/nadezhda/absolutism/monistary)
 "rg" = (/obj/structure/invislight,/turf/simulated/floor/asteroid/dirt/dark,/area/nadezhda/outside/meadow)
 "rh" = (/obj/structure/flora/small/busha1,/obj/structure/cable/heavyduty{icon_state = "1-2"},/obj/structure/catwalk,/turf/simulated/floor/asteroid/grass,/area/nadezhda/outside/forest)
@@ -960,7 +963,6 @@
 "uU" = (/obj/structure/table/woodentable,/obj/item/weapon/deck/cards,/obj/item/weapon/deck/tarot,/obj/item/weapon/storage/pill_bottle/dice_nerd,/turf/simulated/floor/wood/wild5,/area/nadezhda/dungeon/outside/smuggler_zone)
 "uV" = (/obj/machinery/light/small,/turf/simulated/floor/carpet/turcarpet,/area/nadezhda/dungeon/outside/smuggler_zone)
 "uW" = (/obj/random/structures,/turf/simulated/floor/wood/wild5,/area/nadezhda/dungeon/outside/smuggler_zone)
-"uX" = (/turf/simulated/floor/rock/manmade/pavement1,/area/nadezhda/outside/meadow)
 "uY" = (/obj/structure/table/rack/shelf,/obj/random/junkfood,/obj/random/junkfood,/obj/random/junkfood,/obj/random/junkfood,/obj/random/junkfood,/obj/random/junkfood,/turf/simulated/floor/wood/wild5,/area/nadezhda/dungeon/outside/smuggler_zone)
 "uZ" = (/obj/structure/table/rack/shelf,/obj/random/junkfood,/obj/random/junkfood,/obj/random/junkfood,/obj/random/junkfood,/obj/random/junkfood,/turf/simulated/floor/wood/wild5,/area/nadezhda/dungeon/outside/smuggler_zone)
 "va" = (/obj/structure/flora/big/rocks2,/turf/simulated/floor/asteroid/dirt,/area/nadezhda/dungeon/outside/cave_monster)
@@ -994,6 +996,7 @@
 "vC" = (/obj/structure/flora/ausbushes/grassybush,/turf/simulated/floor/asteroid/grass,/area/nadezhda/dungeon/outside/smuggler_zone)
 "vD" = (/obj/structure/flora/small/bushb2,/turf/simulated/floor/asteroid/grass,/area/nadezhda/dungeon/outside/smuggler_zone)
 "vE" = (/obj/structure/flora/small/busha3,/obj/structure/flora/small/bushb1,/turf/simulated/floor/asteroid/grass,/area/nadezhda/outside/forest)
+"vF" = (/obj/machinery/vending/hydronutrients,/turf/simulated/floor/tiled/dark/gray_platform,/area/nadezhda/absolutism/monistary)
 "vH" = (/turf/simulated/floor/plating/under,/area/nadezhda/outside/forest)
 "vI" = (/obj/structure/flora/small/bushc2,/turf/simulated/floor/asteroid/grass,/area/nadezhda/outside/forest)
 "vJ" = (/obj/structure/flora/ausbushes/grassybush,/turf/simulated/floor/asteroid/grass,/area/nadezhda/outside/meadow)
@@ -1477,6 +1480,7 @@
 "FS" = (/obj/structure/flora/tree/jungle/variant3,/obj/structure/flora/big/bush2,/turf/simulated/floor/asteroid/dirt/mud,/area/nadezhda/outside/forest)
 "FT" = (/obj/structure/flora/tree/jungle_small/variant4,/turf/simulated/floor/asteroid/grass,/area/nadezhda/outside/meadow)
 "FU" = (/obj/structure/flora/small/rock4,/turf/simulated/floor/asteroid/grass,/area/nadezhda/outside/forest)
+"FV" = (/obj/structure/disposalpipe/segment{dir = 8; icon_state = "pipe-c"},/turf/simulated/floor/tiled/dark/gray_platform,/area/nadezhda/absolutism/monistary)
 "FW" = (/obj/structure/flora/ausbushes/grassybush,/turf/simulated/floor/asteroid/dirt/mud,/area/nadezhda/outside/forest)
 "FX" = (/turf/simulated/floor/beach/water/jungle,/area/nadezhda/outside/forest)
 "FY" = (/turf/simulated/floor/wood/wild4,/area/nadezhda/outside/forest)
@@ -1547,6 +1551,7 @@
 "Hu" = (/obj/structure/flora/tree/jungle_small/variant1,/turf/simulated/floor/asteroid/grass,/area/nadezhda/outside/meadow)
 "Hv" = (/obj/structure/flora/small/grassa4,/obj/structure/flora/big/bush3,/turf/simulated/floor/asteroid/grass,/area/nadezhda/outside/forest)
 "Hw" = (/obj/structure/flora/tree/jungle/variant5,/obj/structure/flora/big/bush3,/turf/simulated/floor/asteroid/grass,/area/nadezhda/outside/forest)
+"Hx" = (/obj/effect/window_lwall_spawn/reinforced,/turf/simulated/floor/wood/wild1,/area/nadezhda/absolutism/monistary)
 "Hy" = (/obj/structure/flora/small/grassa5,/turf/simulated/floor/asteroid/grass,/area/nadezhda/outside/meadow)
 "Hz" = (/obj/structure/flora/big/bush3,/obj/structure/multiz/ladder,/turf/simulated/floor/asteroid/grass,/area/nadezhda/outside/forest)
 "HA" = (/obj/structure/fence{dir = 4},/turf/simulated/floor/asteroid/dirt/dark,/area/nadezhda/outside/meadow)
@@ -1655,8 +1660,8 @@
 "JN" = (/obj/random/mob/render/low_chance,/turf/simulated/floor/asteroid/dirt,/area/nadezhda/dungeon/outside/cave_monster)
 "JO" = (/obj/structure/flora/ausbushes/sunnybush,/turf/simulated/floor/asteroid/grass,/area/nadezhda/outside/meadow)
 "JP" = (/obj/structure/table/rack/shelf,/obj/random/common_oddities/low_chance,/obj/random/common_oddities/low_chance,/obj/random/common_oddities/low_chance,/obj/random/common_oddities/low_chance,/turf/simulated/floor/wood/wild5,/area/nadezhda/dungeon/outside/smuggler_zone_u)
+"JQ" = (/obj/effect/floor_decal/industrial/stand_clear{dir = 8},/turf/simulated/floor/tiled/dark/gray_platform,/area/nadezhda/absolutism/monistary)
 "JV" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 5},/turf/simulated/floor/tiled/white/golden,/area/nadezhda/absolutism/monistary)
-"JW" = (/obj/machinery/vending/hydroseeds{slogan_delay = 700},/turf/simulated/floor/tiled/dark/gray_platform,/area/nadezhda/outside/meadow)
 "JX" = (/obj/structure/bed/chair/office/light{dir = 4},/obj/landmark/join/start/serg,/turf/simulated/floor/carpet/bcarpet,/area/nadezhda/dungeon/outside/smuggler_zone)
 "Ka" = (/obj/machinery/power/nt_obelisk,/obj/machinery/atmospherics/unary/vent_pump/on{dir = 8},/turf/simulated/floor/rock/manmade/dungeons,/area/nadezhda/absolutism/monistary)
 "Kb" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,/turf/simulated/floor/tiled/steel/techfloor,/area/nadezhda/absolutism/monistary)
@@ -1698,7 +1703,6 @@
 "Lj" = (/obj/structure/table/rack,/obj/random/gun_normal,/obj/random/gun_normal,/obj/random/gun_normal,/obj/random/dungeon_gun_mods/low_chance,/turf/simulated/floor/tiled/dark/gray_platform,/area/nadezhda/dungeon/outside/prepper)
 "Lk" = (/obj/effect/window_lwall_spawn/reinforced,/turf/simulated/floor/tiled/white/golden,/area/nadezhda/absolutism/monistary)
 "Ll" = (/obj/structure/flora/big/bush3,/obj/structure/cable/heavyduty{icon_state = "1-2"},/obj/structure/catwalk,/turf/simulated/floor/asteroid/grass,/area/nadezhda/outside/forest)
-"Lo" = (/obj/machinery/conveyor/south{id = "churchgardenCon2"},/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 8},/obj/machinery/door/window/brigdoor{dir = 1; id = null; name = "chute windoor"; req_access = list(70)},/turf/simulated/floor/tiled/dark/gray_platform,/area/nadezhda/outside/meadow)
 "Lq" = (/obj/structure/table/onestar,/obj/machinery/atmospherics/unary/vent_pump/on{dir = 4},/turf/simulated/floor/tiled/white/golden,/area/nadezhda/absolutism/monistary)
 "Lr" = (/obj/structure/flora/rock/variant1,/turf/simulated/floor/rock/manmade/pavement3,/area/nadezhda/outside/meadow)
 "Ls" = (/obj/structure/sink/puddle,/obj/item/toy/desk/dippingbird,/turf/simulated/floor/asteroid/grass,/area/nadezhda/outside/forest)
@@ -1715,6 +1719,7 @@
 "LM" = (/obj/machinery/door/airlock/multi_tile/metal{dir = 1; name = "Knight Monistary"; req_access = list(70)},/turf/simulated/floor/tiled/white,/area/nadezhda/absolutism/monistary)
 "LT" = (/obj/structure/table/onestar,/obj/machinery/bioprinter,/turf/simulated/floor/tiled/white/golden,/area/nadezhda/absolutism/monistary)
 "LW" = (/obj/structure/table/bench/padded,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 9},/turf/simulated/floor/carpet,/area/nadezhda/absolutism/monistary)
+"Ma" = (/obj/structure/railing/grey{dir = 4},/turf/simulated/floor/rock/manmade/pavement1,/area/nadezhda/outside/meadow)
 "Md" = (/obj/structure/flora/small/busha2,/obj/structure/cable/heavyduty{icon_state = "1-2"},/obj/structure/catwalk,/turf/simulated/floor/asteroid/grass,/area/nadezhda/outside/forest)
 "Me" = (/obj/machinery/atmospherics/pipe/manifold/hidden/supply,/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,/turf/simulated/floor/tiled/dark/golden,/area/nadezhda/absolutism/monistary)
 "Mf" = (/obj/structure/disposalpipe/segment{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/tiled/white/golden,/area/nadezhda/absolutism/monistary)
@@ -1753,7 +1758,6 @@
 "Np" = (/obj/structure/disposalpipe/segment{dir = 1; icon_state = "pipe-c"},/turf/simulated/floor/wood/wild2,/area/nadezhda/absolutism/monistary)
 "Nr" = (/obj/machinery/door/airlock{name = "Sargent Bathroom"},/turf/simulated/floor/tiled/white,/area/nadezhda/absolutism/monistary)
 "Nt" = (/obj/structure/railing/grey{dir = 4},/obj/structure/flora/ausbushes/ywflowers,/turf/simulated/floor/asteroid/grass,/area/nadezhda/outside/meadow)
-"Nu" = (/obj/structure/disposalpipe/segment,/turf/simulated/floor/tiled/dark/gray_platform,/area/nadezhda/outside/meadow)
 "Nw" = (/obj/machinery/light{dir = 8},/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/tiled/dark/gray_platform,/area/nadezhda/absolutism/monistary)
 "Ny" = (/obj/machinery/disposal/deliveryChute{dir = 4; name = "biomatter chute"},/obj/structure/disposalpipe/trunk{dir = 8},/turf/simulated/floor/tiled/dark/gray_platform,/area/nadezhda/absolutism/monistary)
 "Nz" = (/obj/structure/flora/ausbushes/ywflowers,/obj/structure/cable/heavyduty{icon_state = "1-2"},/obj/structure/catwalk,/turf/simulated/floor/asteroid/grass,/area/nadezhda/outside/forest)
@@ -1794,12 +1798,11 @@
 "OC" = (/obj/effect/window_lwall_spawn/smartspawn,/turf/simulated/wall,/area/nadezhda/absolutism/monistary)
 "OD" = (/obj/structure/lattice,/obj/machinery/atmospherics/pipe/zpipe/down/supply{dir = 8},/turf/simulated/open,/area/nadezhda/absolutism/monistary)
 "OF" = (/obj/machinery/door/airlock/multi_tile/metal{name = "Black Guard Compound"; req_access = list(111)},/turf/simulated/floor/carpet/bcarpet,/area/nadezhda/dungeon/outside/smuggler_zone_u)
+"OG" = (/obj/effect/floor_decal/industrial/stand_clear{dir = 4},/obj/machinery/light{dir = 4},/obj/structure/disposalpipe/segment,/turf/simulated/floor/tiled/dark/gray_platform,/area/nadezhda/absolutism/monistary)
 "OH" = (/obj/machinery/computer/bssilk_control,/turf/simulated/floor/tiled/dark/golden,/area/nadezhda/absolutism/monistary)
 "OI" = (/obj/structure/invislight,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 1},/obj/structure/disposalpipe/segment,/turf/simulated/floor/rock/manmade/pavement3,/area/nadezhda/outside/meadow)
-"OJ" = (/obj/effect/floor_decal/industrial/loading/white,/turf/simulated/floor/tiled/dark/gray_platform,/area/nadezhda/outside/meadow)
 "OL" = (/obj/structure/fence{dir = 4},/obj/structure/disposalpipe/segment,/turf/simulated/floor/rock/manmade/pavement3,/area/nadezhda/outside/meadow)
 "OO" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/turf/simulated/floor/tiled/cafe,/area/nadezhda/absolutism/monistary)
-"OQ" = (/obj/effect/window_lwall_spawn/reinforced,/turf/simulated/floor/asteroid/grass,/area/nadezhda/absolutism/monistary)
 "OR" = (/obj/structure/disposalpipe/segment{dir = 4},/obj/machinery/atmospherics/pipe/zpipe/up/supply{dir = 8},/turf/simulated/floor/plating/under,/area/nadezhda/absolutism/monistary)
 "OT" = (/obj/structure/disposalpipe/segment{dir = 8; icon_state = "pipe-c"},/turf/simulated/floor/rock/manmade/asphalt,/area/nadezhda/outside/forest)
 "OV" = (/obj/structure/flora/ausbushes/grassybush,/obj/structure/cable/heavyduty{icon_state = "2-4"},/obj/structure/catwalk,/turf/simulated/floor/asteroid/grass,/area/nadezhda/outside/forest)
@@ -1819,7 +1822,6 @@
 "Pu" = (/turf/simulated/floor/rock/manmade/pavement3,/area/nadezhda/absolutism/monistary)
 "Pw" = (/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 1},/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 1},/turf/simulated/floor/tiled/dark/golden,/area/nadezhda/absolutism/monistary)
 "Px" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 10},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/floor/tiled/dark/golden,/area/nadezhda/absolutism/monistary)
-"Py" = (/obj/structure/reagent_dispensers/watertank/huge,/obj/effect/floor_decal/industrial/botright,/turf/simulated/floor/tiled/steel/gray_perforated,/area/nadezhda/outside/meadow)
 "PA" = (/obj/structure/sink/kitchen{dir = 8; pixel_x = 20},/turf/simulated/floor/wood/wild3,/area/nadezhda/outside/meadow)
 "PB" = (/obj/structure/multiz/stairs/enter/bottom,/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 1},/turf/simulated/floor/tiled/dark/golden,/area/nadezhda/absolutism/monistary)
 "PC" = (/obj/machinery/button/remote/airlock{id = "mondorm1"; name = "Door Bolt Control"; pixel_x = 7; pixel_y = -27; specialfunctions = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 5},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/turf/simulated/floor/wood,/area/nadezhda/absolutism/monistary)
@@ -1841,7 +1843,6 @@
 "Qk" = (/obj/structure/flora/big/bush3,/obj/structure/cable/heavyduty{icon_state = "4-8"},/obj/structure/catwalk,/turf/simulated/floor/asteroid/grass,/area/nadezhda/outside/forest)
 "Ql" = (/obj/structure/table/onestar,/obj/machinery/recharger/industrial,/turf/simulated/floor/tiled/dark/golden,/area/nadezhda/absolutism/monistary)
 "Qm" = (/obj/structure/cable/heavyduty{icon_state = "4-8"},/obj/structure/catwalk,/turf/simulated/floor/rock/manmade/pavement3,/area/nadezhda/outside/meadow)
-"Qn" = (/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 8},/obj/machinery/disposal/deliveryChute{dir = 1; name = "biomatter chute"},/obj/structure/window/reinforced{dir = 4},/obj/structure/disposalpipe/trunk{dir = 4},/turf/simulated/floor/tiled/dark/gray_platform,/area/nadezhda/outside/meadow)
 "Qo" = (/obj/structure/sign/warning/caution{pixel_x = -30},/obj/machinery/button/remote/airlock{id = "prospector_forman_base"; name = "Door Bolt Control"; pixel_x = -21; pixel_y = 8; req_access = list(79); specialfunctions = 4},/turf/simulated/floor/tiled/dark,/area/nadezhda/dungeon/outside/prepper)
 "Qp" = (/obj/machinery/door/airlock/highsecurity{id_tag = "prospector_armory"; locked = 1},/turf/simulated/floor/tiled/dark/monofloor,/area/nadezhda/dungeon/outside/prepper)
 "Qq" = (/obj/machinery/door/airlock/multi_tile/metal{dir = 1; name = "Knight Monistary"; req_access = list(70)},/turf/simulated/floor/rock/manmade/dungeons,/area/nadezhda/absolutism/monistary)
@@ -1860,9 +1861,11 @@
 "QP" = (/obj/machinery/multistructure/bioreactor_part/bioport,/turf/simulated/floor/tiled/dark/gray_platform,/area/nadezhda/absolutism/monistary)
 "QQ" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 5},/turf/simulated/floor/tiled/cafe,/area/nadezhda/absolutism/monistary)
 "QS" = (/obj/structure/flora/tree/jungle_small/variant1,/obj/structure/cable/heavyduty{icon_state = "1-2"},/turf/simulated/floor/asteroid/grass,/area/nadezhda/outside/forest)
+"QT" = (/obj/structure/railing/grey,/turf/simulated/floor/rock/manmade/pavement1,/area/nadezhda/outside/meadow)
 "QU" = (/obj/structure/disposalpipe/segment{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/floor/plating/under,/area/nadezhda/absolutism/monistary)
 "QV" = (/obj/structure/disposalpipe/up{dir = 8},/turf/simulated/floor/plating/under,/area/nadezhda/absolutism/monistary)
 "QZ" = (/obj/structure/railing/grey,/obj/structure/railing/grey{dir = 4},/turf/simulated/floor/asteroid/grass,/area/nadezhda/outside/meadow)
+"Rb" = (/obj/machinery/light{dir = 8},/turf/simulated/floor/tiled/dark/gray_platform,/area/nadezhda/absolutism/monistary)
 "Rc" = (/obj/machinery/disposal,/obj/structure/disposalpipe/trunk{dir = 8},/turf/simulated/floor/wood/wild2,/area/nadezhda/absolutism/monistary)
 "Rd" = (/obj/effect/floor_decal/industrial/warningwhite{dir = 1},/obj/machinery/atmospherics/pipe/manifold4w/hidden/cyan,/turf/simulated/floor/tiled/techmaint_cargo,/area/nadezhda/absolutism/monistary)
 "Re" = (/obj/machinery/atmospherics/unary/vent_pump/on{dir = 4},/turf/simulated/floor/plating,/area/nadezhda/absolutism/monistary)
@@ -1910,6 +1913,7 @@
 "So" = (/obj/structure/table/woodentable,/turf/simulated/floor/wood/wild1,/area/nadezhda/absolutism/monistary)
 "Ss" = (/obj/structure/sink{dir = 4; icon_state = "sink"; pixel_x = 11; pixel_y = 0},/obj/structure/mirror{pixel_x = 28},/obj/effect/floor_decal/corner_kafel/blue/diagonal{dir = 4},/obj/effect/floor_decal/corner_kafel/white/diagonal,/turf/simulated/floor/tiled/white,/area/nadezhda/absolutism/monistary)
 "St" = (/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 8},/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 8},/turf/simulated/floor/tiled/dark/golden,/area/nadezhda/absolutism/monistary)
+"Su" = (/obj/structure/railing/grey{dir = 8},/turf/simulated/floor/rock/manmade/pavement1,/area/nadezhda/outside/meadow)
 "Sv" = (/obj/structure/table/onestar,/obj/machinery/atmospherics/unary/vent_pump/on{dir = 8},/turf/simulated/floor/tiled/dark/golden,/area/nadezhda/absolutism/monistary)
 "Sz" = (/obj/structure/railing{dir = 1},/obj/structure/railing{dir = 4},/turf/simulated/floor/beach/water/shallow,/area/nadezhda/outside/meadow)
 "SA" = (/obj/effect/window_lwall_spawn/reinforced,/turf/simulated/wall,/area/nadezhda/absolutism/monistary)
@@ -1938,7 +1942,6 @@
 "To" = (/obj/machinery/bssilk_hub,/turf/simulated/floor/tiled/dark/golden,/area/nadezhda/absolutism/monistary)
 "Tp" = (/obj/effect/floor_decal/corner_kafel/white/diagonal,/obj/effect/floor_decal/corner_kafel/blue/diagonal{dir = 4},/obj/structure/sign/faction/neotheology_cross/gold{pixel_y = -32},/obj/machinery/light,/turf/simulated/floor/tiled/white,/area/nadezhda/absolutism/monistary)
 "Tq" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 10},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 1},/turf/simulated/floor/carpet,/area/nadezhda/absolutism/monistary)
-"Tt" = (/turf/simulated/floor/tiled/dark/gray_platform,/area/nadezhda/outside/meadow)
 "Tu" = (/obj/machinery/atmospherics/pipe/tank,/turf/simulated/floor/tiled/steel/techfloor,/area/nadezhda/absolutism/monistary)
 "Tx" = (/obj/effect/floor_decal/industrial/arrows/white{dir = 8},/turf/simulated/floor/rock/manmade/asphalt,/area/nadezhda/outside/forest)
 "Tz" = (/obj/machinery/door/airlock{name = "Monistary"},/turf/simulated/floor/wood/wild2,/area/nadezhda/absolutism/monistary)
@@ -1962,10 +1965,12 @@
 "Ud" = (/obj/structure/invislight,/turf/simulated/floor/rock/manmade/pavement2,/area/nadezhda/outside/meadow)
 "Uf" = (/obj/structure/disposalpipe/segment,/obj/machinery/atmospherics/unary/vent_pump/on{dir = 1},/turf/simulated/floor/tiled/white/golden,/area/nadezhda/absolutism/monistary)
 "Ug" = (/turf/simulated/floor/rock/manmade/pavement3,/area/nadezhda/outside/meadow)
+"Uh" = (/obj/effect/floor_decal/industrial/loading/white,/turf/simulated/floor/tiled/dark/gray_platform,/area/nadezhda/absolutism/monistary)
 "Ui" = (/turf/simulated/floor/wood/wild1,/area/nadezhda/absolutism/monistary)
 "Uk" = (/obj/structure/disposaloutlet{dir = 1},/obj/structure/disposalpipe/trunk{dir = 2},/turf/simulated/floor/rock/manmade/pavement1,/area/nadezhda/outside/forest)
 "Uo" = (/obj/machinery/door/airlock{name = "Surgury Room"},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/floor/tiled/white/golden,/area/nadezhda/absolutism/monistary)
 "Up" = (/obj/machinery/power/nt_obelisk,/turf/simulated/floor/tiled/white/golden,/area/nadezhda/absolutism/monistary)
+"Ur" = (/obj/machinery/light,/turf/simulated/floor/asteroid/dirt/dark,/area/nadezhda/outside/meadow)
 "Us" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 5},/turf/simulated/floor/tiled/techmaint_cargo,/area/nadezhda/absolutism/monistary)
 "Ut" = (/obj/structure/flora/ausbushes/sparsegrass,/obj/structure/flora/ausbushes/ywflowers,/obj/structure/cable/heavyduty{icon_state = "1-2"},/obj/structure/catwalk,/turf/simulated/floor/asteroid/grass,/area/nadezhda/outside/forest)
 "Uu" = (/obj/effect/floor_decal/corner_kafel/blue/diagonal{dir = 4},/obj/effect/floor_decal/corner_kafel/white/diagonal,/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 10},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 10},/obj/structure/disposalpipe/segment{dir = 2; icon_state = "pipe-c"},/turf/simulated/floor/tiled/white,/area/nadezhda/absolutism/monistary)
@@ -1989,6 +1994,7 @@
 "UV" = (/obj/structure/flora/small/busha1,/obj/structure/cable/heavyduty{icon_state = "4-8"},/obj/structure/catwalk,/turf/simulated/floor/asteroid/grass,/area/nadezhda/outside/forest)
 "UX" = (/obj/structure/disposalpipe/segment{dir = 4},/turf/simulated/floor/rock/manmade/dungeons,/area/nadezhda/absolutism/monistary)
 "UZ" = (/obj/structure/sink/puddle/fountain,/turf/simulated/floor/rock/manmade/pavement2,/area/nadezhda/outside/meadow)
+"Va" = (/obj/structure/reagent_dispensers/watertank/huge,/obj/effect/floor_decal/industrial/botright,/turf/simulated/floor/tiled/steel/gray_perforated,/area/nadezhda/absolutism/monistary)
 "Vc" = (/obj/structure/lattice,/obj/machinery/atmospherics/pipe/zpipe/down/scrubbers{dir = 8},/turf/simulated/open,/area/nadezhda/absolutism/monistary)
 "Vd" = (/obj/effect/floor_decal/industrial/warningwhite/end{dir = 8},/obj/machinery/portable_atmospherics/canister/air,/turf/simulated/floor/tiled/steel/techfloor,/area/nadezhda/absolutism/monistary)
 "Ve" = (/obj/structure/disposalpipe/segment{dir = 1; icon_state = "pipe-c"},/turf/simulated/wall/r_wall,/area/nadezhda/absolutism/monistary)
@@ -2008,7 +2014,6 @@
 "Vx" = (/obj/structure/railing/grey{dir = 8},/obj/structure/flora/ausbushes/brflowers,/turf/simulated/floor/asteroid/grass,/area/nadezhda/outside/meadow)
 "Vy" = (/obj/machinery/biomatter_solidifier,/turf/simulated/floor/tiled/dark/golden,/area/nadezhda/absolutism/monistary)
 "VA" = (/obj/machinery/light/small{dir = 1},/turf/simulated/floor/carpet,/area/nadezhda/absolutism/monistary)
-"VC" = (/obj/machinery/conveyor_switch/oneway{convdir = -1; id = "churchgardenCon2"},/obj/structure/disposalpipe/segment,/turf/simulated/floor/tiled/dark/gray_platform,/area/nadezhda/outside/meadow)
 "VD" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/structure/disposalpipe/segment,/turf/simulated/floor/rock/manmade/pavement3,/area/nadezhda/outside/meadow)
 "VE" = (/obj/structure/flora/ausbushes/brflowers,/obj/item/clothing/head/hairflower/white,/turf/simulated/floor/asteroid/grass,/area/nadezhda/outside/meadow)
 "VF" = (/obj/structure/disposalpipe/segment,/turf/simulated/floor/wood/wild2,/area/nadezhda/absolutism/monistary)
@@ -2026,12 +2031,12 @@
 "VZ" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 10},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 10},/turf/simulated/floor/wood,/area/nadezhda/absolutism/monistary)
 "Wb" = (/obj/structure/flora/tree/jungle/variant5,/obj/structure/flora/ausbushes/fullgrass,/turf/simulated/floor/asteroid/grass,/area/nadezhda/outside/meadow)
 "Wc" = (/obj/structure/closet/secure_closet/freezer/kitchen{name = "fridge"; req_access = list()},/obj/item/weapon/reagent_containers/food/drinks/milk,/obj/item/weapon/reagent_containers/food/drinks/milk,/obj/item/weapon/reagent_containers/food/drinks/milk,/obj/item/weapon/storage/fancy/egg_box,/obj/item/weapon/storage/fancy/egg_box,/obj/item/weapon/storage/fancy/egg_box,/turf/simulated/floor/tiled/cafe,/area/nadezhda/absolutism/monistary)
+"Wd" = (/obj/machinery/conveyor/south{id = "churchgardenCon2"},/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 8},/obj/machinery/door/window/brigdoor{dir = 1; id = null; name = "chute windoor"; req_access = list(70)},/turf/simulated/floor/tiled/dark/gray_platform,/area/nadezhda/absolutism/monistary)
 "We" = (/obj/structure/railing,/obj/structure/railing{dir = 8},/turf/simulated/floor/beach/water/shallow,/area/nadezhda/outside/meadow)
 "Wn" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/tiled/techmaint_cargo,/area/nadezhda/absolutism/monistary)
 "Wq" = (/obj/machinery/atmospherics/binary/pump/high_power{dir = 8},/turf/simulated/floor/tiled/steel/techfloor,/area/nadezhda/absolutism/monistary)
 "Ws" = (/obj/effect/floor_decal/corner_kafel/white/diagonal,/obj/effect/floor_decal/corner_kafel/blue/diagonal{dir = 4},/obj/structure/closet/secure_closet/personal,/turf/simulated/floor/tiled/white,/area/nadezhda/absolutism/monistary)
 "Wu" = (/obj/machinery/light{dir = 4},/turf/simulated/floor/tiled/white,/area/nadezhda/absolutism/monistary)
-"Wv" = (/obj/effect/floor_decal/industrial/stand_clear{dir = 4},/obj/machinery/light{dir = 4},/obj/structure/disposalpipe/segment,/turf/simulated/floor/tiled/dark/gray_platform,/area/nadezhda/outside/meadow)
 "Ww" = (/obj/structure/table/onestar,/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 8},/turf/simulated/floor/tiled/dark/golden,/area/nadezhda/absolutism/monistary)
 "Wy" = (/obj/structure/table/bench/padded,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 5},/obj/landmark/join/start/brocorp,/turf/simulated/floor/tiled/white/golden,/area/nadezhda/absolutism/monistary)
 "WA" = (/obj/structure/table/bench/padded,/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 10},/obj/landmark/join/start/brosarge,/turf/simulated/floor/tiled/white/golden,/area/nadezhda/absolutism/monistary)
@@ -2067,6 +2072,7 @@
 "Xz" = (/obj/machinery/light{dir = 8},/turf/simulated/floor/tiled/dark/golden,/area/nadezhda/absolutism/monistary)
 "XA" = (/obj/structure/disposalpipe/segment{dir = 8; icon_state = "pipe-c"},/turf/simulated/floor/rock/manmade/dungeons,/area/nadezhda/absolutism/monistary)
 "XB" = (/obj/machinery/button/remote/airlock{id = "mondorm2"; name = "Door Bolt Control"; pixel_x = 7; pixel_y = -27; specialfunctions = 4},/obj/machinery/atmospherics/pipe/manifold/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 5},/obj/structure/disposalpipe/segment{dir = 1; icon_state = "pipe-c"},/turf/simulated/floor/wood,/area/nadezhda/absolutism/monistary)
+"XC" = (/obj/structure/railing/grey{dir = 1},/turf/simulated/floor/rock/manmade/pavement1,/area/nadezhda/outside/meadow)
 "XF" = (/turf/simulated/floor/rock/manmade/pavement2,/area/nadezhda/outside/meadow)
 "XG" = (/obj/machinery/power/nt_obelisk,/turf/simulated/floor/wood/wild2,/area/nadezhda/outside/meadow)
 "XI" = (/obj/structure/sign/faction/neotheology_cross/gold{pixel_y = 32},/obj/machinery/light{dir = 1},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 10},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 10},/obj/structure/disposalpipe/segment{dir = 2; icon_state = "pipe-c"},/turf/simulated/floor/wood,/area/nadezhda/absolutism/monistary)
@@ -2114,6 +2120,7 @@
 "YT" = (/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 4},/obj/structure/disposalpipe/segment,/turf/simulated/floor/rock/manmade/pavement3,/area/nadezhda/outside/meadow)
 "YU" = (/obj/machinery/disposal/deliveryChute{dir = 1; name = "trash chute"},/obj/structure/disposalpipe/trunk{dir = 2},/turf/simulated/floor/tiled/dark/gray_platform,/area/nadezhda/absolutism/monistary)
 "YV" = (/obj/effect/step_trigger/teleporter{teleport_x = 139; teleport_y = 2; teleport_z = 7},/turf/simulated/floor/rock/manmade/pavement1,/area/nadezhda/outside/forest)
+"YW" = (/obj/machinery/vending/hydroseeds{slogan_delay = 700},/turf/simulated/floor/tiled/dark/gray_platform,/area/nadezhda/absolutism/monistary)
 "YX" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 5},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 5},/turf/simulated/floor/tiled/dark/gray_platform,/area/nadezhda/absolutism/monistary)
 "Za" = (/obj/effect/floor_decal/industrial/road/curve4,/turf/simulated/floor/rock/manmade/asphalt,/area/nadezhda/outside/forest)
 "Zb" = (/obj/structure/disposalpipe/segment,/turf/simulated/floor/rock/manmade/pavement3,/area/nadezhda/outside/meadow)
@@ -2121,7 +2128,6 @@
 "Zf" = (/obj/structure/table/woodentable,/obj/item/weapon/reagent_containers/glass/bucket,/obj/item/weapon/reagent_containers/glass/bucket,/obj/item/clothing/gloves/botanic_leather,/obj/item/clothing/gloves/botanic_leather,/obj/item/clothing/gloves/botanic_leather,/obj/item/weapon/storage/bag/produce,/obj/item/weapon/tool/minihoe,/turf/simulated/floor/wood/wild3,/area/nadezhda/outside/meadow)
 "Zg" = (/obj/effect/floor_decal/industrial/road/curvebig4,/turf/simulated/floor/rock/manmade/asphalt,/area/nadezhda/outside/forest)
 "Zi" = (/obj/machinery/multistructure/bioreactor_part/loader,/turf/simulated/floor/tiled/dark/gray_platform,/area/nadezhda/absolutism/monistary)
-"Zj" = (/obj/machinery/conveyor/south{id = "churchgardenCon2"},/turf/simulated/floor/tiled/dark/gray_platform,/area/nadezhda/outside/meadow)
 "Zk" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 9},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 9},/obj/structure/disposalpipe/segment{dir = 8; icon_state = "pipe-c"},/turf/simulated/floor/wood/wild2,/area/nadezhda/absolutism/monistary)
 "Zm" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/turf/simulated/floor/rock/manmade/dungeons,/area/nadezhda/absolutism/monistary)
 "Zn" = (/obj/structure/disposalpipe/segment{dir = 4},/turf/simulated/floor/rock/manmade/pavement3,/area/nadezhda/outside/meadow)
@@ -2137,14 +2143,12 @@
 "ZD" = (/obj/structure/disposalpipe/segment{dir = 2; icon_state = "pipe-c"},/turf/simulated/floor/rock/manmade/pavement3,/area/nadezhda/outside/meadow)
 "ZF" = (/obj/machinery/conveyor/west{id = "junk_to_bioreactor"},/turf/simulated/floor/tiled/dark/gray_platform,/area/nadezhda/absolutism/monistary)
 "ZG" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 5},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 5},/obj/structure/disposalpipe/segment{dir = 1; icon_state = "pipe-c"},/turf/simulated/floor/wood/wild1,/area/nadezhda/absolutism/monistary)
-"ZH" = (/obj/machinery/vending/hydronutrients,/turf/simulated/floor/tiled/dark/gray_platform,/area/nadezhda/outside/meadow)
 "ZI" = (/obj/structure/closet/crate/serbcrate,/obj/item/weapon/storage/box/shotgunammo/slug,/obj/item/weapon/storage/box/shotgunammo/slug,/obj/item/weapon/storage/box/shotgunammo/slug,/obj/item/weapon/storage/box/shotgunammo/slug,/obj/item/weapon/storage/box/shotgunammo/slug,/obj/item/weapon/storage/box/shotgunammo/slug,/obj/item/ammo_magazine/m12,/obj/item/ammo_magazine/m12,/obj/item/ammo_magazine/m12,/obj/item/ammo_magazine/m12,/turf/simulated/floor/wood/wild5,/area/nadezhda/dungeon/outside/smuggler_zone_u)
 "ZK" = (/obj/machinery/light{dir = 4},/turf/simulated/floor/tiled/white/golden,/area/nadezhda/absolutism/monistary)
 "ZQ" = (/obj/machinery/door/airlock/multi_tile/metal{name = "Black Guard Compound"; req_access = list(111)},/turf/simulated/floor/wood/wild5,/area/nadezhda/dungeon/outside/smuggler_zone_u)
 "ZR" = (/obj/structure/invislight,/turf/simulated/floor/asteroid/dirt,/area/nadezhda/outside/meadow)
 "ZS" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 6},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 10},/turf/simulated/floor/carpet,/area/nadezhda/absolutism/monistary)
 "ZT" = (/obj/effect/floor_decal/corner_kafel/blue/diagonal{dir = 4},/obj/effect/floor_decal/corner_kafel/white/diagonal,/obj/item/weapon/soap,/obj/structure/table/bench/steel,/obj/structure/window/reinforced,/turf/simulated/floor/tiled/white,/area/nadezhda/absolutism/monistary)
-"ZU" = (/obj/structure/disposalpipe/segment{dir = 8; icon_state = "pipe-c"},/turf/simulated/floor/tiled/dark/gray_platform,/area/nadezhda/outside/meadow)
 "ZY" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 1},/obj/structure/disposalpipe/segment,/turf/simulated/floor/rock/manmade/pavement3,/area/nadezhda/outside/meadow)
 "ZZ" = (/obj/structure/invislight,/obj/structure/disposalpipe/segment{dir = 4},/turf/simulated/floor/rock/manmade/pavement3,/area/nadezhda/outside/meadow)
 
@@ -2425,33 +2429,33 @@ fFfEfEfEfEfEfEhwzPzPilililhfhkgffEfEfEDxDxDxDxDxDxDxDxDxDxfEfEfEhwhwhmhmhmhwhwhw
 fFfEfEfEfEfEfEhwhwhkilililhfhkgffEfEDxDxDxDxDxDxDxDxDxDxDxDxDxfEhwhwhwhmhmhmhwhwhwhwhmhmhmhmhmIUIUIUDdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDdAeAeAeUgUgGLEtOWJOhWDaEtQzhWDaQzYLUgUgQzDdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDdqjZDIUIUIUilSiilililEfhkhkhkAiilhkhkhkilililAbilililililililAoAosPilililArEMvRilililililArArililhkilBChChCililililililhkhkfFnEnEnEnEnEnEnEnEnEnEnEnEnEnEnEnEnEfFheilililililhwhwfEfF
 fFfEfEfEfEfEfEhwhwhfilililzPhkgffEDxDxyQyQyQyQyQyQyQyQyQyQyQyQfEhwhwhwhmhmhmhwhwhwhwhmhmhmhmIUIUIUDdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDdDdAeAeAeAeAeAeAeUgUgUgXhKERfLvWGBoBozEWGQZUgUgUghWDdDdDdDdDdDdDdDdDdDdDdDdDdDdpTpTpTpTpTpTHAOLHAIUIUIUSiililBaEfhkhkhkhkilhkhkhkililAbALilililililAoAoAoilililililArilENENENENEQFOFOFOEOFRFSilililhChCzUililttilhkhkgffFfFfFfFfFfFfFfFfFfFfFfFfFfFfFfFfFfFheilFUililhwhwhwfEfF
 fFfEfEfEfEfEfEhwhkhfhEililzPzPgffEDxDxyQyRyRyRyQyQyRyRyRyRyQyQfEhwhwhmhmhmhmhwhwhwhwhmhmhmhmIUIUDdDdrgDdDdDdDdDdDdDdDdDdDdDdAeAeAeAeAeAeAeAeAeAeemUgUgUgUgUgUgUgUgUgUgUgUgUgUgUgUghWDdDdDdDdDdDdDdDdDdDdDdDdDdDdpTpOXRXmGOOChWZbhWDdIUIUSiililBahkhkhkhkEFilhZhkhkilAbAbAbilililililililililArhBELBZENENENilFWEOFXFXFXFYFYFXFRyYililililAoilililililhkhkhkhehefFfFfFfFfFfFfFfFfFfFfFfFfFfFfFilililililhwhwhwfEfF
-fFfEfEfEfEfEfEhwhkhkilililhEzPhkgfDxDxyQyRyRyRyQyQyRyRyRyRyQyQfEhwhmhmhmhmhmhwhwhwhwhmhmhmhmIUIUDdDdDdDdDdDdDdDdDdDdDdDdDdAeAeAeAeAeAeAeAeDdDdDdDaQzUgUgUgUgUgUguXuXUgUgUgUgUgUgAeAeAeDdDdDdDdDdDdDdDdDdDdDdDdDdpTReRkNXDNhHYsRvQmQmmkzYUGililBajrhkhkhkBlAoilAizuililililililililAbAbAbilBZArENENENENilEOEQFXFXFXFXFXFYFYFXFXAoililililAoililililysililhkilililililGaililililililililililttilililttililhwhwfEfF
-fFfEfEfEfEfEfEhwhkhkhkilililAbzPgfDxDxyQyRyRyRySySyRyRyRyRyQyQfEhwhmhmhmhmhmhwhwhwhwhmhmhmhmIUIUDdDdDdDdDdDdDdDdDdDdDdDdDdAeAeAeDdAeDdDdDdDdDdDdDdQzQzUgUgUgUguXUZXFuXUgUgUgUgEtAeAeAeAeAeDdDdDdDdDdDdDdDdDdDdDdpTpTpTpAYiOCqqZbhWDdIUIUililBailjrhkhkhkAiAoilAihkilililililAbGbAbAbilArArilvRENENENEQFOGcFXFXFXFXFXFXFYFYFXFXAoGkililililAoililililililililililililililililvRilGhililililvRvRililililililhwfEfF
-fFfEfEfEfEfEfEfEfEhkhfvmilttilzPkcDxDxfEyRyRyRyRyRyRyRyRyRyQyQfEhwhmDmhmhmhwhwhwhwhmhmhmhmhmIUIUDdDdDdDdDdDdDdAeAeAeAeAeAeAeAeDdDdAeAeDdDdDdDdDdDdDdzLzLDaUgUgUguXuXUgUgUgDaEtEtDdDdAeAeAeAeAeAeDdDdDdDdDdDdDdDdDdDdpTMoslpTqqZbhWDdIUIUilililyshkhkhkhkhkAbAoAihkilhkililBZilililililENENENENilEQEQFOFXFXFXFXFXFXFXGjFYFYFXGjwHGkGlililililGmililAoAoilFUililhLililttilililililililililililililililililhwhwfEfF
+fFfEfEfEfEfEfEhwhkhkilililhEzPhkgfDxDxyQyRyRyRyQyQyRyRyRyRyQyQfEhwhmhmhmhmhmhwhwhwhwhmhmhmhmIUIUDdDdDdDdDdDdDdDdDdDdDdDdDdAeAeAeAeAeAeAeAeDdDdDdDaQzUgUgUgUgUgUgQTQTUgUgUgUgUgUgAeAeAeDdDdDdDdDdDdDdDdDdDdDdDdDdpTReRkNXDNhHYsRvQmQmmkzYUGililBajrhkhkhkBlAoilAizuililililililililAbAbAbilBZArENENENENilEOEQFXFXFXFXFXFYFYFXFXAoililililAoililililysililhkilililililGaililililililililililttilililttililhwhwfEfF
+fFfEfEfEfEfEfEhwhkhkhkilililAbzPgfDxDxyQyRyRyRySySyRyRyRyRyQyQfEhwhmhmhmhmhmhwhwhwhwhmhmhmhmIUIUDdDdDdDdDdDdDdDdDdDdDdDdDdAeAeAeDdAeDdDdDdDdDdDdDdQzQzUgUgUgUgMaUZXFSuUgUgUgUgEtAeAeAeAeAeDdDdDdDdDdDdDdDdDdDdDdpTpTpTpAYiOCqqZbhWDdIUIUililBailjrhkhkhkAiAoilAihkilililililAbGbAbAbilArArilvRENENENEQFOGcFXFXFXFXFXFXFYFYFXFXAoGkililililAoililililililililililililililililvRilGhililililvRvRililililililhwfEfF
+fFfEfEfEfEfEfEfEfEhkhfvmilttilzPkcDxDxfEyRyRyRyRyRyRyRyRyRyQyQfEhwhmDmhmhmhwhwhwhwhmhmhmhmhmIUIUDdDdDdDdDdDdDdAeAeAeAeAeAeAeAeDdDdAeAeDdDdDdDdDdDdDdzLzLDaUgUgUgXCXCUgUgUgDaEtEtDdDdAeAeAeAeAeAeDdDdDdDdDdDdDdDdDdDdpTMoslpTqqZbhWDdIUIUilililyshkhkhkhkhkAbAoAihkilhkililBZilililililENENENENilEQEQFOFXFXFXFXFXFXFXGjFYFYFXGjwHGkGlililililGmililAoAoilFUililhLililttilililililililililililililililililhwhwfEfF
 fFfEfEfEfEfEfEfEgfhkhkhkililililDxDxfEfEyRyRyRyRyRyRyRyRyRyQyQfEhwhmhmhmhmhwhwhwhwhmhmhmhmhmIUIUDdDdDdAeAeAeAeAeAeAeDdDdDdAeDdDdDdDdAeDdDdDdDdDdDdDdDdDdxTUgUgUgUgUgUgUgUgDaDdDdDdDdDdDdAeAeAeAeAeAeAeOWDaDaOWEtOWOWpTpTpTpTqqZbhWDdIUIUilBaililjrjrhkhkhkAbAoAihkilhkilililililililililililEQFOFXFXFXFXFXFXGjFOEOEQEQFYFYFOEQEQilhBGkilililililAoAoililBmilililililililililililililililililililililililhwhwfEfF
 fFfEfEfEfEfEfEfEgfhkhkhfilililhmDxDxfEfEyRyRyRyRyRyRyRyRyRfEfEfEwIhmhmhmhmhwhwhwhmhmhmhmhmhmIUIUDdDdAeAeAeAeAeAeDdDdDdDdDdAeDdDdDdDdAeAeDdDdDdDdDdDdDdDdxTBWBWBWBWBWBWBWBWDaDdDdDdDdDdDdDdDdDdDdAeAeAeUgUgUgUgUgUgUgPuUgUgUgqqHCZZZDIUIUilBaBailhkhkhkhkzPAbilAihkBUililililhdililililBmArArvRFXFXFXFXFXFXGrFZFZililEOEQEQENEQilililGkhChCililililililililililililililililGmilililililililililililililililhwfEfF
 fFfEfEfEfEfEfEfEfEhkhkhkzPililhmDxfEfEfEyRyRyRyRyRyRyRyRyRfEfEfEhwhmhmhmhmhwhwhwhmhmhmhmhmilIUIUDdDdZRAeAeDdDdDdDdDdDdDdDdAeDdDdDdDdDdAeAeAeDdDdDdDdDdDdxTBWBWBWBWBWBWBWBWzLDdDdDdDdDdDdDdDdDdDdDdDdhWUgMwInInInInInMYInInInFoInseZbIUIUililBailhkhkhkzPzPililAihkGsililililililililililArArGuFXFXFXFXGvFZFZEOililAGililENENENENilililArhChCililililililililililililvRililililililililililililililililililhwfEfF
 fFfEfEfEfEfEfEfEfEhkhkhkzPyUhmhmDxfEfEfEyRyRyRyRyRyRyRyRfEfEfEfEhwhmhmhmhmhwhwhmhmhmhmhmGwilIUIUDdDdAeAeDdDdDdDdDdDdDdDdDdAeDdDdDdDdDdDdDdAeAeDdDdMpMpMpKuBWBWBWBWBWBWBWBWQiMpMpMpDdDdDdDdDdDdDdDdDdEtUgVDDapTpTpTpTpTpTpTpTpTpTZYZbIUIUililBaBahkhkzPGxhkilGyBailBUilGzililililvRBayKilililArGBFXFXEQGCEQEQililililvRilENENENENENENENilililililililililililililililililililililililDnilililililililililfEfEfEfF
 fFfEfEfEfEfEfEfEfEhwhkhkhfzPyUvmfEfEfEyRyRyRyRyRyRyRyRyRfEfEfEfEhwhmhmhmhmhwhwhwhmhmhmhmhmilIUIUDdDdAeAeDdHHHAHAHAHAHAHAHAqaHAHAHAHAHAHAHANRAeDdDdMpBbBWBWBWBWBWBWBWBWBWBWBWBWBbMpDdDdDdDdDdDdDdDdDdQzUgVDDapTNjNjNjTuTuTuVdSMpTZYZbIUIUilililBazuhkhkAihkBaBaBaBaililililyKililvRililililililAqGEFXFRArAoAoAoililhCililililililililililENENililhCyYililililililAoAoilililililvRvRilililililililGGililhwfEfEfEfF
 fFfEfEfEfEfEfEfEfEfEhwhkhkhkzPfEfEfEfEyRyRyRyRyRyRyRyRfEfEfEfEfEhwhmhmhmhmhwhwhwhmhmhwhwhwilIUIUDdDdAeAeDdawKfDdDdDdDdDdDdDdDdDdDdDdDdDdKfawAeDdDdMpXGBWBWBWBWBWBWBWBWBWBWBWBWXGMpDdDdDdDdDdDdDdDdDdQzUgVDDapTVwRdYorlVGVGwfzeSVZYZbIUIUililililhkhkGHAihkBazUilBaililBUililililvRvRilililililililGkGkAoAoAoBrGkGkhChCilililAoGkGIilArBmAoENilililhChCililililililAoAoAoililililililililililvRilililhwhwfEfEfEfF
-fFfEfEfEfEfEfEfEfEfEhwhwhkhkhkfEfEfEyRyRyRyRyRyRyRyRyRfEfEfEfEfEhwhwhwhmhmhwhwhwhmhmhwhwhwilIUIUDdDdAeAeDdawDdDdLtLtDdLtLtDdLtLtDdLtLtDdDdawAeDdpTpTOQOQpTxkSYmLmLmLmLxkSYpTOQOQpTpTDdDdDdDdDdDdDdDdEtUgVDQzpTSQEKNnNnPrKtRtRISVZYZbIUIUililililhkAiwNEfEfAoilzUBaililililililililvRvRilililililililAoGKGKGMArilililhChCArGkGkilililililAiililttililililililililililililttilililililttilililvRililhwhwhwfEfEfEfF
+fFfEfEfEfEfEfEfEfEfEhwhwhkhkhkfEfEfEyRyRyRyRyRyRyRyRyRfEfEfEfEfEhwhwhwhmhmhwhwhwhmhmhwhwhwilIUIUDdDdAeAeDdawDdDdLtLtDdLtLtDdLtLtDdLtLtDdDdawAeDdpTpTmLmLpTxkSYmLmLmLmLxkSYpTmLmLpTpTDdDdDdDdDdDdDdDdEtUgVDQzpTSQEKNnNnPrKtRtRISVZYZbIUIUililililhkAiwNEfEfAoilzUBaililililililililvRvRilililililililAoGKGKGMArilililhChCArGkGkilililililAiililttililililililililililililttilililililttilililvRililhwhwhwfEfEfEfF
 fFfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEyRyRyRyRyRyRyRyRyRfEfEfEfEfEfEhwhwhwhmhmhwhwhwhwhwhwhwhwilIUIUDdDdAeAeDdawDdDdLtLtDdLtLtDdLtLtDdLtLtDdDdawAeDdpTRRRXVYmLSYSYTgSYSYTgSYSYmLVYUcVOpTDdDdDdDdDdDdDdDdDaUgVDQzpTIMITWqpiIMGqGqWRpTZYZbIUIUililililhkhkwPwVhkAoilAoililBiililililGPilhkilililililililAbAbililililililililililililililililililyYilililililililililililililililhPililililililililililhwhwhwhwfEfEfEfF
 fFfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEyRyRyRyRyRyRyRyRyRfEfEfEfEfEfEhwhwhwhwhmhmhwhwhwhwhwhwhwilIUIUDdDdZRAeDdawDdDdLtLtDdLtLtDdLtLtDdLtLtDdDdawAeDdpTUcRAZqmLSYSYSYRVRVSYSYSYmLZqVYRXpTDdDdDdDdDdDdDdAeAeUgVDQzpTpTpTpTpTIMpnYARIpTOIZbIUIUililililhkGRjrEfAiililAoililtailililililyKAbililililililililililililililililililililnCztztilililililililililililttBmilililililililililililililililililhwhwhwhwhwfEfEfEfF
 fFfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEyRyRyRyRyRyRyRyRyRfEfEfEfEfEfEhwhwhwhwhwhwhwhwhwhwhwhwililIUIUDdDdAeAeDdawDdDdLtLtDdLtLtDdLtLtDdLtLtDdDdawAeAeasRXVYRAmLSYSYSYRVRVSYSYSYmLVYRAUcasAeAeAeAeAeAeAeAeQzUgVDQzDdDdDdDdpTIMWnYJVnpTZYZbIUIUililililhkhkhkhkEfBaAoAoililililBaBailililAbililililililililililililililililililililBNnCysBNilililililBmililililililililililililililililililililililfEfEfEfEfEfEfEfEfEfF
 fFfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEyRyRyRyRyRyRyRyRfEfEfEfEfEfEhwhwhwhwhwhwhwhwhwhwililililIUIUDdDdAeAeDdawDdDdLtLtDdLtLtDdLtLtDdLtLtDdDdawDdDdpTKcRXVYmLoQpeZmZSVLBqroKamLRAUcRZpTDdDdDdDdDdDdDdDdQzUgVDQzDdDdDdDdpTIMTVqHKbqzYTZbIUIUilililBihkhkhkhkjrBaGSsPilililBaBailvRililGTAbililililililililililililililililztztBZililztBNztztztysilsPsPililililililililililililvRBCilililililhwhwfEfEfEfEfEfEfEfEfEfF
-fFfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEyRyRyRyRyRyRyRfEfEfEfEfEfEhwhwhwhwhwhwhwhwhwilililttilIUIUDdDdAeAeDdawDdDdLtLtDdLtLtDdLtLtDdLtLtDdDdpTpTpTpTOQOQOQpTpTpTzVViRVLCpTpTpTOQOQOQpTDdDdDdDdDdDdDdDdQzUgVDQzDdDdDdDdpTpTpTpTpTpTZYZbIUIUilililBahkhkAiiSiSilzUsPsPilBaGVililililililAbilililililililililililililililztysztilililililztilztnCysyssPsPilililililililsPsPsPvRvRililililililhwhwfEfEfEfEfEfEfEfEfEfF
+fFfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEyRyRyRyRyRyRyRfEfEfEfEfEfEhwhwhwhwhwhwhwhwhwilililttilIUIUDdDdAeAeDdawDdDdLtLtDdLtLtDdLtLtDdLtLtDdDdpTpTpTpTmLmLmLpTpTpTzVViRVLCpTpTpTmLmLmLpTDdDdDdDdDdDdDdDdQzUgVDQzDdDdDdDdpTpTpTpTpTpTZYZbIUIUilililBahkhkAiiSiSilzUsPsPilBaGVililililililAbilililililililililililililililztysztilililililztilztnCysyssPsPilililililililsPsPsPvRvRililililililhwhwfEfEfEfEfEfEfEfEfEfF
 fFfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEyRyRyRyRyRyRyRyRfEfEfEfEfEhwhwhwhwhwhmhmilililililililIUIUDdDdAeAeAewQDdDdLtLtDdLtLtDdLtLtDdLtLtDdKfpTZpBwmMUiUiUipTXsOvSYViRVSYOvXspTvcJMATpTpTQzQzpZhWEtDaQzQzUgVDQzDdDdDdDdDdDdDdDdDdawOIZbIUIUilililBahkhkAihkjrnCililGSGSilililyKilvRililAbililililililililililililililililililttililililililysnCztztilyYililililililsPsPililGXvRvRililililhwhwhwfEfEfEfEfEfEfEfEfEfF
-fFfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEyRyRyRyRyRyRyRyRyRyRfEfEfEfEhwhwhwhwhwhmhmhmililBaililililIUIUDdrgAeAeDdawDdDdLtLtDdLtLtDdLtLtDdLtLtDdDdSAPXUiUiUiKiyfpTXsRVSYViRVSYRVXspTZvTcLWrPpTEtMwInInInInInInInVmQzDdDdDdDdDdDdDdDdDdawZYZbIUIUilililBaEfhkEFAihknCilililsPililililililvRilililililililililililililililysilililililililililDnilililililztilzsGYilyYsPsPsPsPsPilvRsPvRilililhwhwhwhwfEfEfEfEfEfEfEfEfEfF
-fFfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEyRyRyRyRyRyRyRyRyRyRyRfEfEfEfEhwhwhwhwhwhmhmililililBaBaililIUIUDdDdAeAeDdawDdDdLtLtDdLtLtDdLtLtDdLtLtDdDdSAPXUiUiUiSoPfpTXsRVSYViRVSYRVXspTwETqRVUSpTUgVDUgUgUgUgUgUgUgDahWDdDdDdDdpTpTpTpTpTpTZYZbIUIUililililEfhkhkAihkilnCilililBiililililililBZilililililililililililililysysDnilililililililililililililililililyYyYilyYilililililvRsPvRililhwhwhwhwhwfEfEfEfEfEfEfEfEfEfF
-fFfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEyRyRyRyRyRyRyRyRyRyRyRyRfEfEgfhkhkhkhkhlhlhmilililililBaBailIUIUDdDdAeAeDdawDdDdLtLtDdLtLtDdLtLtDdLtLtDdDdSAPXUiUiUiRNXZpTXsYgSYViRVSYYgXspTYabSMFYapTUgVDDaDahWQzQzQzhWhWDdDdDdDdDdpTBBhhhhHjpTZYZbIUIUilililBaEfhkhkhkhkilililnCililililililililililililililililililililysililililililililAoililililililililililGZililyYilyYililttilsPvRsPilililhwhwhwhwhwfEfEfEfEfEfEfEfEfEfF
+fFfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEyRyRyRyRyRyRyRyRyRyRfEfEfEfEhwhwhwhwhwhmhmhmililBaililililIUIUDdrgAeAeDdawDdDdLtLtDdLtLtDdLtLtDdLtLtDdDdHxPXUiUiUiKiyfpTXsRVSYViRVSYRVXspTZvTcLWrPpTEtMwInInInInInInInVmQzDdDdDdDdDdDdDdDdDdawZYZbIUIUilililBaEfhkEFAihknCilililsPililililililvRilililililililililililililililysilililililililililDnilililililztilzsGYilyYsPsPsPsPsPilvRsPvRilililhwhwhwhwfEfEfEfEfEfEfEfEfEfF
+fFfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEyRyRyRyRyRyRyRyRyRyRyRfEfEfEfEhwhwhwhwhwhmhmililililBaBaililIUIUDdDdAeAeDdawDdDdLtLtDdLtLtDdLtLtDdLtLtDdDdHxPXUiUiUiSoPfpTXsRVSYViRVSYRVXspTwETqRVUSpTUgVDUgUgUgUgUgUgUgDahWDdDdDdDdpTpTpTpTpTpTZYZbIUIUililililEfhkhkAihkilnCilililBiililililililBZilililililililililililililysysDnilililililililililililililililililyYyYilyYilililililvRsPvRililhwhwhwhwhwfEfEfEfEfEfEfEfEfEfF
+fFfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEyRyRyRyRyRyRyRyRyRyRyRyRfEfEgfhkhkhkhkhlhlhmilililililBaBailIUIUDdDdAeAeDdawDdDdLtLtDdLtLtDdLtLtDdLtLtDdDdHxPXUiUiUiRNXZpTXsYgSYViRVSYYgXspTYabSMFYapTUgVDDaDahWQzQzQzhWhWDdDdDdDdDdpTBBhhhhHjpTZYZbIUIUilililBaEfhkhkhkhkilililnCililililililililililililililililililililysililililililililAoililililililililililGZililyYilyYililttilsPvRsPilililhwhwhwhwhwfEfEfEfEfEfEfEfEfEfF
 fFfEfEfEfEfEfEfEfEfEfEfEfEfEfEyRyRyRyRyRyRyRyRyRyRyRyRyRfEfEfEhkhkhkhkhkhlJvhmililttililililIUIUDdDdAeAeDdawDdDdLtLtDdLtLtDdLtLtDdLtLtrBPApTYxbUUiUiUiNdpTpTpTzVViRVLCpTpTpTpTqLOopTpTDlHcpTpTpTpTDdDdDdDdDdDdDdDdDdpTTGVcMWBdakPKZbIUIUilililBaEfhkhkhkjrilBmilnCnCilililililililililBaBaHMililililililAoysBmililililililAoililililililililttililyYililvRyYyYililililsPvRililililhwhwhwhwhwfEfEfEfEfEfEfEfEfEfF
 fFfEfEfEfEfEfEfEfEfEfEfEfEfEfEyRyRyRyRyRyRyRyRyRyRyRyRyRyRyRfEhwhkhkhkhkhkhmhmilAJilLsilililIUIUDdDdZRAeDdawDdDdLtLtDdLtLtDdLtLtDdLtLtrBVRpTTWSJZCZCZCSbTzEJSYSYViRVSYSYEJEJEJQIEJEJqwEJqbpTUTRFpTDdDdDdDdDdDdDdDdDdpTDvODMWXMVQtfshIUIUilililBaEfhkhkhkHbilBailililhkililililililililililBaBailililililAbililttililBmilililililililililililililililyYililvRvRvRvRililsPvRilililililhwhwhwhwfEfEfEfEfEfEfEfEfEfF
-fFfEfEfEfEfEfEfEfEfEfEfEfEfEfEyRyRyRyRyRyRyRyRyRyRyRyRyRyRyRfEhwhwhkhkhkhkzahmililsPilililttIUIUDdDdAeAeDdawKfDdrBrBrBaogxOurBrBrBrBrBrBZfpTatQdXgFIUiZGpUVrYlywWEywywYlVrVrVrPbVrVrVrDqZkLFpjWIpTDdDdDdDdDdDdDdDdDdpTUsSNSNQJpTHAHAIUIUililililEfhkhkhkiSilBailililhkilililililBZilyKilililBaHMililililGGilililililililililAoAoililyKililililililAoHdyYilililyYvRvRvRvRilsPilililililhwhwhwfEfEfEfEfEfEfEfEfEfF
-fFfEfEfEfEfEfEfEfEfEfEfEfEfEfEyRyRyRyRyRyRyRyRyRyRyRyRyRyRyRfEhwhkhkhkhkhkhkHeilililililililIUIUDdDdAeAeDdUQHAMpZHTtOJVCpTFDTzpTpTpTpTpTpTpTpTpTpTpTpTpTpTEJSYRVAIRVRVSYEJEJEJRxqeEJEJNpRcpTPIYNpTDdDdDdDdDdDdDdDdDdpTpTpTpTpTpTDdDdIUIUililBailzihkhkhkiSilBaililHfyKilililililililililBailAJililililililililililAoilililililAoAoililililililililililyYilyKyYyYilililsPilvRilililttililililfEfEfEfEfEfEfEfEfEfF
-fFfEfEfEfEfEfEfEfEfEfEfEfEfEfEyRyRyRyRyRyRyRyRyRyRyRyRyRfEfEfEhwhkhkhkhkhkhlhCilililililttilIUIUDdDdAeAeDdDdDdMpJWeHZjWvpTVFEJEJEJqwEJEJEJEJEJEJqwEJEJEJEJEJSYRVAIRVRVSYpTpTKLnHpTpTKLKLpTpTpTpTpTpTpTpTDdDdDdDdDdDdDdDdDdDdDdrgDdDdIUIUilBaililEfhkhkhkilBaHgilvWHhililililililililililBaililililililililililililililililililililttilililililililililyYyYilyYHiyYilsPililsPililililililililgdfEfEfEfEfEfEfEfEfF
-fFfEfEfEfEfEfEfEfEfEfEfEfEfEfEyRyRyRyRyRyRyRyRyRyRyRyRDxfEfEfEhkhkhkhkhkhlhlililililililililIUIUDdDdZRAeDdDdDdMpTtTtLoNupTNpOYOYOYOYOYOYOYOYOYOYOYrKVrVrVrVrYlywxPRVRVSYpTThxrPeLKLKxrxrpTOagOVgVgOjVPpTDdDdDdDdhWhWhWhWFThWhWDdDdDdIUIUilBailhZEfhkhlyvilBayKvWHhililililililililililililHMilililililililHkAoililAoililililililililililililhCilAoAoililyYyYyYyYyYililililsPilililililililhwfEfEfEfEfEfEfEfEfEfF
-fFfEfEfEfEfEfEfEfEfEfEfEfEfEfEyRyRyRyRyRyRyRyRyRyRyRyRDxfEfEfEhkhkhkhkhkhkhkilililttilBaBaBaIUIUDdDdAeAeDdDdDdMpPyPyQnZUpTEJEJEJEJEJEJEJEJEJEJEJEJsvEJEJEJEJSYRVGpRVRVUPpTsyxrRjxuXSEExrRMhvhvhvhvhvVPpTDdDdDdhWhWhWhWhWhWhWhWhWDdDdIUIUilililhZhkhkyNhkilBavWvWBaBaHlililililililililililBavWvWililililililAoAoilililililCaililililhCilHmhChCilililAoAoilililhCilsPsPsPsPsPilililililililhwfEfEfEfEfEfEfEfEfEfF
-fFfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEyRyRyRySySyRyRyRyRyRyRDxfEfEgfhkhkhkhkhkhkhkilililililBaililIUIUDdDdAeAeDdDdDdMpMpMpMpMppTBGEJpTpTpTpTpTpTpTpTpTRDNGpTpTpTpTSYRVGpRVRVSYpTThxrRjxuXSEExrRMhxhxhxhvhvVPpTDdDdhWuRhWhWhWuRhWFThWhWhWDdIUIUilililhZhkhkjrhkBaBailBaBaBailililililililililHnHnHoEwHpvWililililililhChCililililililililhChCililililililililililililhChCililililililililililililfEfEfEfEfEfEfEfEfEfEfF
+fFfEfEfEfEfEfEfEfEfEfEfEfEfEfEyRyRyRyRyRyRyRyRyRyRyRyRyRyRyRfEhwhwhkhkhkhkzahmililsPilililttIUIUDdDdAeAeDdawKfUrrBrBrBaopXOurBrBrBrBrBrBZfpTatQdXgFIUiZGpUVrYlywWEywywYlVrVrVrPbVrVrVrDqZkLFpjWIpTDdDdDdDdDdDdDdDdDdpTUsSNSNQJpTHAHAIUIUililililEfhkhkhkiSilBailililhkilililililBZilyKilililBaHMililililGGilililililililililAoAoililyKililililililAoHdyYilililyYvRvRvRvRilsPilililililhwhwhwfEfEfEfEfEfEfEfEfEfF
+fFfEfEfEfEfEfEfEfEfEfEfEfEfEfEyRyRyRyRyRyRyRyRyRyRyRyRyRyRyRfEhwhkhkhkhkhkhkHeilililililililIUIUDdDdAeAeDdUQHApTvFVfUhqppTFDTzpTpTpTpTpTpTpTpTpTpTpTpTpTpTEJSYRVAIRVRVSYEJEJEJRxqeEJEJNpRcpTPIYNpTDdDdDdDdDdDdDdDdDdpTpTpTpTpTpTDdDdIUIUililBailzihkhkhkiSilBaililHfyKilililililililililBailAJililililililililililAoilililililAoAoililililililililililyYilyKyYyYilililsPilvRilililttililililfEfEfEfEfEfEfEfEfEfF
+fFfEfEfEfEfEfEfEfEfEfEfEfEfEfEyRyRyRyRyRyRyRyRyRyRyRyRyRfEfEfEhwhkhkhkhkhkhlhCilililililttilIUIUDdDdAeAeDdDdDdpTYWJQmVOGpTVFEJEJEJqwEJEJEJEJEJEJqwEJEJEJEJEJSYRVAIRVRVSYpTpTKLnHpTpTKLKLpTpTpTpTpTpTpTpTDdDdDdDdDdDdDdDdDdDdDdrgDdDdIUIUilBaililEfhkhkhkilBaHgilvWHhililililililililililBaililililililililililililililililililililttilililililililililyYyYilyYHiyYilsPililsPililililililililgdfEfEfEfEfEfEfEfEfF
+fFfEfEfEfEfEfEfEfEfEfEfEfEfEfEyRyRyRyRyRyRyRyRyRyRyRyRDxfEfEfEhkhkhkhkhkhlhlililililililililIUIUDdDdZRAeDdDdDdpTRbVfWdmNpTNpOYOYOYOYOYOYOYOYOYOYOYrKVrVrVrVrYlywxPRVRVSYpTThxrPeLKLKxrxrpTOagOVgVgOjVPpTDdDdDdDdhWhWhWhWFThWhWDdDdDdIUIUilBailhZEfhkhlyvilBayKvWHhililililililililililililHMilililililililHkAoililAoililililililililililililhCilAoAoililyYyYyYyYyYililililsPilililililililhwfEfEfEfEfEfEfEfEfEfF
+fFfEfEfEfEfEfEfEfEfEfEfEfEfEfEyRyRyRyRyRyRyRyRyRyRyRyRDxfEfEfEhkhkhkhkhkhkhkilililttilBaBaBaIUIUDdDdAeAeDdDdDdpTVaVaraFVpTEJEJEJEJEJEJEJEJEJEJEJEJsvEJEJEJEJSYRVGpRVRVUPpTsyxrRjxuXSEExrRMhvhvhvhvhvVPpTDdDdDdhWhWhWhWhWhWhWhWhWDdDdIUIUilililhZhkhkyNhkilBavWvWBaBaHlililililililililililBavWvWililililililAoAoilililililCaililililhCilHmhChCilililAoAoilililhCilsPsPsPsPsPilililililililhwfEfEfEfEfEfEfEfEfEfF
+fFfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEyRyRyRySySyRyRyRyRyRyRDxfEfEgfhkhkhkhkhkhkhkilililililBaililIUIUDdDdAeAeDdDdDdpTpTpTpTpTpTBGEJpTpTpTpTpTpTpTpTpTRDNGpTpTpTpTSYRVGpRVRVSYpTThxrRjxuXSEExrRMhxhxhxhvhvVPpTDdDdhWuRhWhWhWuRhWFThWhWhWDdIUIUilililhZhkhkjrhkBaBailBaBaBailililililililililHnHnHoEwHpvWililililililhChCililililililililhChCililililililililililililhChCililililililililililililfEfEfEfEfEfEfEfEfEfEfF
 fFfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEyRyRyRyQyQyRyRyRDxDxDxDxDxgdgfhkhkhkhkhkhkhkyKilililililililIUIUDdDdAeAeDdDdDdDdDdDdDdDdDaAeAepTXtJipTYppTYppTxrxrERLKxrlGpTSYRVGpRVRVSYpTThxrRjxuXSEEWupTZTSIPhhxhxXTpTDdDdhWhWhWuRjTjTChhWhWhWhWrgIUIUililhkhkhkhkjrhkBavWilBaBaililililililHnHnilililililBaEwAbililililililililhCHtililililBmhChCililililililhCilililhCilililhChCilililililililDnilililfEfEfEfEfEfEfEfEfEfEfF
 fFfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEhmhmFYFYhmhmhmhmhmhmhmhmilhkhkhkhkhkhkhkhkhZHsililililAJilIUIUDdDdAeAeAeDdDdDdDdDdDdDdQzAeAepTKBhxpTgvpTgvpTpfxrRgryNJWApTSYSYGpRVSYSYpTThxrLERSNUZrZrOzMTMTUuhvhvWspTDdDdChhWhWjTjThWhWhWhWhWChDdIUIUililhkhkhkhkzThkBavWilBaBaililililililHnilililsPsPililBaBaHnhChCililililililHmilililililililililililhChCililililhChCilililililililililililililililfEfEfEfEfEfEfEfEfEfEfF
 fFfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEfEhmhmhmhmhmhmhmhmhmhmhmhmilvmhkhkhkhkhkhkhkhkzPAbilililililnKIUDdDdAeAeAeDdDdDdDdDdDdDdDaAeAepTpTgvpThxKshxNrxrxrxrxrAzTepTOdEurxSYVIOdpTpTNCRwhTGWRwNCpThvrOTUTphvWspTDdDdklklhWjThWhWhWhWhWhWhWDdIUIUililhkhkhkhkjshkilyKilBaililililililililililsPsPililsPilBaHoHnhChCilililililililililililililililililililililyKililhCHthChCBZililililililttilililttfEfEfEfEfEfEfEfEfEfEfF

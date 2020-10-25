@@ -327,11 +327,18 @@
 /datum/ritual/targeted/cruciform/inquisitor/spawn_item
 	name = "Litany of Armaments"
 	phrase = "Supra Domini, bona de te peto. Audi me, et libera vocationem ad me munera tua."
-	desc = "Summons a Hospitaller Flamberge, with which to arm newly inducted Knights."
-	power = 50
-	cooldown = FALSE
+	desc = "Request a greatsword, tower shield, and suit of power armor from the church armory to become a real crusader. Establishing the connection takes a lot of power and this litany may only be used once every twelve hours."
+	power = 100
+	cooldown = TRUE
+	cooldown_time = 12 HOURS
+	cooldown_category = "armaments"
 
 
 /datum/ritual/targeted/cruciform/inquisitor/spawn_item/perform(mob/living/carbon/human/user, obj/item/weapon/implant/core_implant/C,list/targets)
-	new /obj/item/weapon/storage/pouch/nt_sheath(usr.loc)
-	new /obj/item/weapon/tool/sword/crusader/nt_sword/knight(usr.loc)
+	new /obj/item/weapon/tool/sword/crusader(usr.loc)
+	new /obj/item/clothing/accessory/holster/saber/greatsword/nt_sword/knight(usr.loc)
+	new /obj/item/weapon/shield/riot/crusader(usr.loc)
+	new /obj/item/weapon/storage/belt/security/neotheology(usr.loc)
+	new /obj/item/clothing/suit/space/void/crusader(usr.loc)
+	set_personal_cooldown(user)
+

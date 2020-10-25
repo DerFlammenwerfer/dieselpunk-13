@@ -30,8 +30,7 @@
 		STAT_BIO = 10,
 	)
 
-	perks = list(/datum/perk/junkborn)
-	perks = list(/datum/perk/space_asshole)
+	perks = list(/datum/perk/junkborn, /datum/perk/space_asshole, /datum/perk/stalker)
 
 	software_on_spawn = list(/datum/computer_file/program/comm,
 							 /datum/computer_file/program/digitalwarrant,
@@ -83,7 +82,7 @@
 		STAT_ROB = 10,
 	)
 
-	perks = list(/datum/perk/junkborn)
+	perks = list(/datum/perk/junkborn, /datum/perk/stalker)
 
 	description = "The Salvager is an informally trained specialist for the prospectors who functions as both an engineer and a doctor.<br>\
 	Your primary role is that of a field medic. Treat and stabilize the wounded on the combat backlines, and evacuate the critically injured.<br>\
@@ -126,8 +125,7 @@
 		STAT_BIO = 10,
 	)
 
-	perks = list(/datum/perk/junkborn)
-	perks = list(/datum/perk/space_asshole)
+	perks = list(/datum/perk/junkborn, /datum/perk/space_asshole, /datum/perk/stalker)
 
 	description = "The Prospector serves as hired muscle to the Foreman, positioned somewhere between meat shield and exterminator.<br>\
 	Your job is to keep the Salvagers and anyone else with you protected, handling the fighting and being the first to enter dangerous areas. <br>\

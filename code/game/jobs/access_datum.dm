@@ -298,7 +298,12 @@
 	desc = "Cargo Office"
 	region = ACCESS_REGION_SUPPLY
 
-// /var/const/free_access_id = 51
+/var/const/access_gunfactory = 51
+/datum/acess/gunfacotrio
+	id = access_gunfactory
+	desc = "gun Factorio"
+	region = ACCESS_REGION_SUPPLY
+
 // /var/const/free_access_id = 52
 
 /var/const/access_heads_vault = 53

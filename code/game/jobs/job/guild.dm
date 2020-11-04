@@ -16,7 +16,7 @@
 		access_maint_tunnels, access_mailsorting, access_cargo, access_cargo_bot, access_merchant, access_mining,
 		access_heads, access_mining_station, access_RC_announce, access_keycard_auth, access_sec_doors,
 		access_eva, access_external_airlocks, access_hydroponics, access_bar, access_kitchen, access_theatre,access_prospector,
-		access_foreman
+		access_foreman, access_gunfactory
 	)
 	ideal_character_age = 40
 	minimum_character_age = 30
@@ -71,7 +71,7 @@ Counsel the council on directing the colony towards profitable opportunities."
 
 	access = list(
 		access_mailsorting, access_cargo, access_cargo_bot, access_mining,
-		access_mining_station
+		access_mining_station, access_gunfactory
 	)
 
 	stat_modifiers = list(
@@ -115,7 +115,7 @@ Avoid the deeper tunnels unless otherwise instructed, however - this domain is h
 	selection_color = "#c3b9a6"
 	//alt_titles = list("Custodian","Sanitation Technician")
 	access = list(access_janitor, access_maint_tunnels, access_morgue, access_crematorium, access_mailsorting, access_cargo)
-	wage = WAGE_PROFESSIONAL
+	wage = WAGE_LABOUR_DUMB
 	outfit_type = /decl/hierarchy/outfit/job/service/janitor
 
 	stat_modifiers = list(
@@ -154,7 +154,7 @@ Avoid the deeper tunnels unless otherwise instructed, however - this domain is h
 	difficulty = "Easy."
 	selection_color = "#c3b9a6"
 	//alt_titles = list("Custodian","Sanitation Technician")
-	access = list(access_janitor, access_maint_tunnels, access_morgue, access_crematorium, access_mailsorting, access_cargo)
+	access = list(access_janitor, access_maint_tunnels, access_morgue, access_crematorium, access_mailsorting, access_cargo, access_gunfactory)
 	wage = WAGE_PROFESSIONAL
 	outfit_type = /decl/hierarchy/outfit/job/cargo/cargo_tech
 

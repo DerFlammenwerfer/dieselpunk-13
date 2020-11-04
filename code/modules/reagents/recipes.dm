@@ -402,7 +402,7 @@
 
 /datum/chemical_reaction/vermicetol
 	result = "vermicetol"
-	required_reagents = list("bicaridine" = 1, "blattedin" = 1, "cryoxadone" = 0.5, "clonexadone" = 0.5)
+	required_reagents = list("bicaridine" = 1, "blattedin" = 1, "fuhrerole" = 0.5)
 	catalysts = list("plasma" = 5)
 	result_amount = 2
 

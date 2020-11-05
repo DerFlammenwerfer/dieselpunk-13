@@ -19,7 +19,7 @@
 	access = list(
 		access_prospector, access_foreman, access_external_airlocks, access_eva, access_heads, access_sec_doors,
 		access_RC_announce, access_keycard_auth, access_maint_tunnels, access_mailsorting, access_cargo,
-		access_cargo_bot, access_mining, access_mining_station
+		access_cargo_bot, access_mining, access_mining_station, access_gunfactory
 	)
 
 	stat_modifiers = list(

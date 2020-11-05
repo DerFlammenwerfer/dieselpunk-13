@@ -72,7 +72,7 @@
 	difficulty = "Easy to Medium."
 	selection_color = "#ecd37d"
 	access = list(access_nt_preacher, access_morgue, access_crematorium, access_maint_tunnels, access_hydroponics, access_nt_disciple)
-	wage = WAGE_PROFESSIONAL
+	wage = WAGE_LABOUR
 	outfit_type = /decl/hierarchy/outfit/job/church/chaplain
 
 	stat_modifiers = list(
@@ -114,7 +114,7 @@
 	difficulty = "Easy to Medium."
 	selection_color = "#ecd37d"
 	access = list(access_oh_knight, access_nt_preacher, access_morgue, access_crematorium, access_maint_tunnels, access_hydroponics, access_nt_disciple)
-	wage = WAGE_PROFESSIONAL
+	wage = WAGE_LABOUR_HAZARD
 	outfit_type = /decl/hierarchy/outfit/job/church/broknight
 
 	stat_modifiers = list(
@@ -159,7 +159,7 @@
 	difficulty = "Easy to Medium."
 	selection_color = "#ecd37d"
 	access = list(access_oh_sargent, access_nt_preacher, access_morgue, access_crematorium, access_maint_tunnels, access_hydroponics, access_nt_disciple)
-	wage = WAGE_PROFESSIONAL
+	wage = WAGE_LABOUR
 	outfit_type = /decl/hierarchy/outfit/job/church/brosarge
 
 	stat_modifiers = list(
@@ -202,7 +202,7 @@
 	difficulty = "Easy to Medium."
 	selection_color = "#ecd37d"
 	access = list(access_oh_corperal, access_nt_preacher, access_morgue, access_crematorium, access_maint_tunnels, access_hydroponics, access_nt_disciple)
-	wage = WAGE_PROFESSIONAL
+	wage = WAGE_LABOUR
 	outfit_type = /decl/hierarchy/outfit/job/church/brocorp
 
 	stat_modifiers = list(

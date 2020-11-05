@@ -60,7 +60,7 @@
 	new /obj/item/clothing/suit/space/void/prime(src)
 	new /obj/item/clothing/accessory/holster/saber/greatsword(src)
 	new /obj/item/weapon/tool/sword/crusader/nt_sword/knight(src)
-	new /obj/item/weapon/gun/energy/captain 
+	new /obj/item/weapon/gun/energy/captain
 
 /obj/structure/closet/secure_closet/reinforced/ordensargent
 	name = "orden sargent's locker"

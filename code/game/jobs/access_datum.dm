@@ -299,7 +299,7 @@
 	region = ACCESS_REGION_SUPPLY
 
 /var/const/access_gunfactory = 51
-/datum/acess/gunfacotrio
+/datum/access/gunfacotrio
 	id = access_gunfactory
 	desc = "gun Factorio"
 	region = ACCESS_REGION_SUPPLY

@@ -273,7 +273,7 @@
 	var/S = 0
 	for(var/obj/item/stack/material/I in contents)
 		S += 5
-		points += I.amount * I.price_tag
+		points += I.amount * I.price_tag * eat_eff
 		//if(I.reagents.get_reagent_amount("nutriment") < 0.1)
 		//	points += 1
 		//else points += I.reagents.get_reagent_amount("nutriment") * 8 * eat_eff

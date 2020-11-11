@@ -184,3 +184,10 @@
 	base = 'icons/mob/human_races/r_nevrean.dmi'
 	deform = 'icons/mob/human_races/r_def_nevrean.dmi'
 	appearance_flags = HAS_HAIR_COLOR | HAS_EYE_COLOR | HAS_SKIN_COLOR | HAS_UNDERWEAR
+
+datum/species_form/avali
+	playable = FALSE
+	name = FORM_AVALI
+	base = 'icons/mob/human_races/r_def_avali.dmi'
+	deform = 'icons/mob/human_races/r_def_avali.dmi'
+	appearance_flags = HAS_HAIR_COLOR | HAS_EYE_COLOR | HAS_SKIN_COLOR | HAS_UNDERWEAR

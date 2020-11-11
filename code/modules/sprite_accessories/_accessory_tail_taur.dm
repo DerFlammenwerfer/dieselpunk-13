@@ -180,3 +180,14 @@
 	clip_mask_icon = null
 	clip_mask_state = null
 	colored_layers = 2
+
+
+/datum/sprite_accessory/tail/taur/avali
+	name = "Avali tail"
+	desc = ""
+	icon_state = "avali_tail"
+	colored_layers = 1
+	blend = ICON_MULTIPLY
+	hide_body_parts = null
+	clip_mask_icon = null
+	clip_mask_state = null

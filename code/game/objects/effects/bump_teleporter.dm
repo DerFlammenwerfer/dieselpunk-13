@@ -93,3 +93,19 @@ var/list/obj/effect/bump_teleporter/BUMP_TELEPORTERS = list()
 /obj/effect/bump_teleporter/surface_to_forest_2_B
 	id = "surface_to_forest_2_B"
 	id_target = "surface_to_forest_1_B"
+
+/obj/effect/bump_teleporter/surface_to_forest_1_C
+	id = "surface_to_forest_1_B"
+	id_target = "surface_to_forest_2_B"
+
+/obj/effect/bump_teleporter/surface_to_forest_2_C
+	id = "surface_to_forest_2_B"
+	id_target = "surface_to_forest_1_B"
+
+/obj/effect/bump_teleporter/surface_to_forest_1_D
+	id = "surface_to_forest_1_C"
+	id_target = "surface_to_forest_2_C"
+
+/obj/effect/bump_teleporter/surface_to_forest_2_D
+	id = "surface_to_forest_2_D"
+	id_target = "surface_to_forest_1_D"

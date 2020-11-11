@@ -85,3 +85,11 @@
 
 	return eyes_icon
 
+/obj/item/organ/internal/eyes/avali
+	icon_state = "eyes"
+
+/obj/item/organ/internal/eyes/avali/get_icon()
+	var/icon/eyes_icon
+	eyes_icon = icon('icons/mob/human_races/r_def_avali.dmi', "[icon_state]")
+	eyes_icon.Blend(BP_IS_ROBOTIC(src) ? robo_color : eyes_color, ICON_ADD)
+	return eyes_icon

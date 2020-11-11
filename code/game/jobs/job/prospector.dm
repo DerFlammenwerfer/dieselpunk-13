@@ -70,7 +70,7 @@
 
 	access = list(
 		access_prospector, access_external_airlocks, access_eva, access_maint_tunnels,
-		access_mailsorting, access_cargo, access_cargo_bot, access_mining, access_mining_station
+		access_mailsorting, access_cargo, access_cargo_bot, access_mining, access_mining_station, access_gunfactory
 	)
 
 	stat_modifiers = list(
@@ -115,7 +115,7 @@
 
 	access = list(
 		access_prospector, access_external_airlocks, access_eva, access_maint_tunnels,
-		access_mailsorting, access_cargo, access_cargo_bot, access_mining, access_mining_station
+		access_mailsorting, access_cargo, access_cargo_bot, access_mining, access_mining_station, access_gunfactory
 	)
 
 	stat_modifiers = list(

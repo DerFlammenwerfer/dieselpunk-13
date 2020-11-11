@@ -486,3 +486,50 @@
 
 /datum/species/cindarite/get_bodytype()
 	return "Cindarite"
+
+
+/datum/species/avali
+	name = "Avali"
+	name_plural = "Avali"
+	default_form = FORM_AVALI
+	obligate_name = TRUE
+	unarmed_types = list(/datum/unarmed_attack/punch, /datum/unarmed_attack/stomp,  /datum/unarmed_attack/kick, /datum/unarmed_attack/bite)
+	blurb = "birb"
+	num_alternate_languages = 2
+	name_language = null // Use the first-name last-name generator rather than a language scrambler
+	min_age = 18
+	max_age = 110
+
+	dark_color = "#ffffff"
+	light_color = "#000000"
+
+	stat_modifiers = list(
+		STAT_BIO = 2,
+		STAT_COG = 2,
+		STAT_MEC = 2,
+		STAT_ROB = 2,
+		STAT_TGH = 2,
+		STAT_VIG = 2
+	)
+
+	has_organ = list(    // which required-organ checks are conducted.
+		BP_HEART =    /obj/item/organ/internal/heart,
+		BP_LUNGS =    /obj/item/organ/internal/lungs,
+		BP_LIVER =    /obj/item/organ/internal/liver,
+		BP_KIDNEYS =  /obj/item/organ/internal/kidneys,
+		BP_BRAIN =    /obj/item/organ/internal/brain,
+		BP_APPENDIX = /obj/item/organ/internal/appendix,
+		BP_EYES =     /obj/item/organ/internal/eyes/avali
+		)
+
+	permitted_ears  = list("Avali wing")
+	permitted_ears  = list("Avali Ears")
+	permitted_tail  = list("Avali tail")
+
+
+	perks = list(/datum/perk/tenacity, /datum/perk/gutsandglory)
+
+	spawn_flags = CAN_JOIN
+
+/datum/species/human/get_bodytype()
+	return "Avali"

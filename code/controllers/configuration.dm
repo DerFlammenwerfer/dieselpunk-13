@@ -72,10 +72,10 @@ GLOBAL_LIST_EMPTY(storyteller_cache)
 	var/use_cortical_stacks = 0			//enables neural lace
 	var/empty_server_restart_time = 0	// Time in minutes before empty server will restart
 
-	var/character_slots = 10				// The number of available character slots
+	var/character_slots = 30				// The number of available character slots
 	var/loadout_slots = 3					// The number of loadout slots per character
 
-	var/max_gear_cost = 10 // Used in chargen for accessory loadout limit. 0 disables loadout, negative allows infinite points.
+	var/max_gear_cost = 20 // Used in chargen for accessory loadout limit. 0 disables loadout, negative allows infinite points.
 
 	var/max_maint_drones = 5				//This many drones can spawn,
 	var/allow_drone_spawn = 1				//assuming the admin allow them to.

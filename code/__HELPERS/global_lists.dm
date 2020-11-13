@@ -159,6 +159,13 @@ var/global/list/string_slot_flags = list(
 var/global/list/unworn_slots = list(slot_l_hand,slot_r_hand, slot_l_store, slot_r_store,slot_robot_equip_1,slot_robot_equip_2,slot_robot_equip_3)
 
 
+var/global/list/hair_gradients_list = list(
+	"None" = "none",
+	"Fade (Up)" = "fadeup",
+	"Fade (Down)" = "fadedown",
+	"Vertical Split" = "vsplit"
+	)
+
 //////////////////////////
 /////Initial Building/////
 //////////////////////////

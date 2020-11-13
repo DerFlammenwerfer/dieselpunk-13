@@ -81,3 +81,7 @@
 /datum/gear/shoes/winterboots
 	display_name = "winter boots"
 	path = /obj/item/clothing/shoes/winter
+
+/datum/gear/shoes/churchboots
+	display_name = "silky church boots"
+	path = /obj/item/clothing/shoes/church_bimbo

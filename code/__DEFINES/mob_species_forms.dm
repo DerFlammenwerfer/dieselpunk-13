@@ -23,7 +23,6 @@
 #define SPECIES_ZORREN_HIGH		"Wolf"
 #define SPECIES_STATIONXENO     "Xenomorph Hybrid"
 #define SPECIES_CUSTOM			"Custom Species"
-#define SPECIES_AVALI           "Avali"
 
 // Monkey and alien monkeys.
 #define SPECIES_MONKEY			"Monkey"
@@ -78,7 +77,6 @@
 #define FORM_CHTMANT			"Cht'mant"
 #define FORM_CINDAR				"Cindarite"
 #define FORM_OPIFEX				"Opifex"
-#define FORM_AVALI				"Avali"
 
 #define FORM_BIRD				"Avian"
 

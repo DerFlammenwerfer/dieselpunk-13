@@ -126,8 +126,13 @@ datum/preferences
 			pref.blood_color = (cform && cform.blood_color) ? cform.blood_color : "A10808"
 		return TOPIC_REFRESH_UPDATE_PREVIEW
 	if(href_list["ears_type"])
-		var/valid_ears = cspecies.permitted_ears ? cspecies.permitted_ears : GLOB.ears_styles_list
-		var/new_e_style = input(user, "Choose your character's ears:", CHARACTER_PREFERENCE_INPUT_TITLE, pref.ears_style)   as null|anything in (list("Default" = null) + valid_ears)
+		var/list/pretty_ear_styles = list("Default" = null)
+		for(var/path in GLOB.ears_styles_list)
+			var/datum/sprite_accessory/ears/instance = GLOB.ears_styles_list[path]
+			if(((!instance.ckeys_allowed) || (usr.ckey in instance.ckeys_allowed)))
+				pretty_ear_styles[instance.name] = path
+		var/valid_ears = cspecies.permitted_ears ? cspecies.permitted_ears : pretty_ear_styles
+		var/new_e_style = input(user, "Choose your character's ears:", CHARACTER_PREFERENCE_INPUT_TITLE, pref.ears_style)   as null|anything in valid_ears
 		if(new_e_style && CanUseTopic(user))
 			pref.ears_style = new_e_style
 			return TOPIC_REFRESH_UPDATE_PREVIEW
@@ -139,8 +144,13 @@ datum/preferences
 				pref.ears_colors[colornum] = color
 			return TOPIC_REFRESH_UPDATE_PREVIEW
 	if(href_list["tail_type"])
-		var/valid_tails = cspecies.permitted_tail ? cspecies.permitted_tail : GLOB.tail_styles_list
-		var/new_t_style = input(user, "Choose your character's tail:", CHARACTER_PREFERENCE_INPUT_TITLE, pref.tail_style)   as null|anything in (list("Default" = null) + valid_tails)
+		var/list/pretty_tail_styles = list("Default" = null)
+		for(var/path in GLOB.tail_styles_list)
+			var/datum/sprite_accessory/tail/instance = GLOB.tail_styles_list[path]
+			if(((!instance.ckeys_allowed) || (usr.ckey in instance.ckeys_allowed)))
+				pretty_tail_styles[instance.name] = path
+		var/valid_tails = cspecies.permitted_tail ? cspecies.permitted_tail : pretty_tail_styles
+		var/new_t_style = input(user, "Choose your character's tail:", CHARACTER_PREFERENCE_INPUT_TITLE, pref.tail_style)   as null|anything in valid_tails
 		if(new_t_style && CanUseTopic(user))
 			pref.tail_style = new_t_style
 			return TOPIC_REFRESH_UPDATE_PREVIEW
@@ -152,8 +162,13 @@ datum/preferences
 				pref.tail_colors[colornum] = color
 			return TOPIC_REFRESH_UPDATE_PREVIEW
 	if(href_list["wings_type"])
-		var/valid_wings = cspecies.permitted_wings ? cspecies.permitted_wings : GLOB.wings_styles_list
-		var/new_w_style = input(user, "Choose your character's wings:", CHARACTER_PREFERENCE_INPUT_TITLE, pref.wings_style) as null|anything in (list("Default" = null) + valid_wings)
+		var/list/pretty_wings_styles = list("Default" = null)
+		for(var/path in GLOB.wings_styles_list)
+			var/datum/sprite_accessory/wings/instance = GLOB.wings_styles_list[path]
+			if(((!instance.ckeys_allowed) || (usr.ckey in instance.ckeys_allowed)))
+				pretty_wings_styles[instance.name] = path
+		var/valid_wings = cspecies.permitted_wings ? cspecies.permitted_wings : pretty_wings_styles
+		var/new_w_style = input(user, "Choose your character's wings:", CHARACTER_PREFERENCE_INPUT_TITLE, pref.wings_style) as null|anything in valid_wings
 		if(new_w_style && CanUseTopic(user))
 			pref.wings_style = new_w_style
 			return TOPIC_REFRESH_UPDATE_PREVIEW
@@ -165,7 +180,12 @@ datum/preferences
 				pref.wings_colors[colornum] = color
 			return TOPIC_REFRESH_UPDATE_PREVIEW
 	if(href_list["marking_add"])
-		var/new_marking = input(user, "Choose a marking to add:", CHARACTER_PREFERENCE_INPUT_TITLE, null) as null|anything in GLOB.body_marking_list - pref.body_markings
+		var/list/pretty_marking_styles = list(null)
+		for(var/path in GLOB.body_marking_list)
+			var/datum/sprite_accessory/marking/instance = GLOB.body_marking_list[path]
+			if(((!instance.ckeys_allowed) || (usr.ckey in instance.ckeys_allowed)))
+				pretty_marking_styles[instance.name] = path
+		var/new_marking = input(user, "Choose a marking to add:", CHARACTER_PREFERENCE_INPUT_TITLE, null) as null|anything in pretty_marking_styles - pref.body_markings
 		if(new_marking && CanUseTopic(user))
 			pref.body_markings[new_marking] = "#000000"
 		return TOPIC_REFRESH_UPDATE_PREVIEW

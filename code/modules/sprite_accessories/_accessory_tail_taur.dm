@@ -191,3 +191,10 @@
 	hide_body_parts = null
 	clip_mask_icon = null
 	clip_mask_state = null
+
+/datum/sprite_accessory/tail/taur/less_long_lizard
+	name = "Less Large Dragon Tail"
+	icon_state = "bigliztwo"
+	hide_body_parts = null
+	clip_mask_icon = null
+	clip_mask_state = null

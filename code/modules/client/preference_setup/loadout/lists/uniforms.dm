@@ -141,6 +141,10 @@
 	display_name = "church clothes"
 	path = /obj/item/clothing/under/rank/church
 
+/datum/gear/uniform/churchbimbo
+	display_name = "reveling church cloths"
+	path = /obj/item/clothing/under/rank/church/bimbo
+
 /datum/gear/uniform/neon
 	display_name = "neon tracksuits, color presets"
 	path = /obj/item/clothing/under/neon

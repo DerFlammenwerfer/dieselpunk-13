@@ -74,6 +74,12 @@
 	icon_state = "church"
 	item_state = "church"
 
+/obj/item/clothing/under/rank/church/bimbo
+	desc = "If listen closely, you can hear a religion rolling in their grave."
+	name = "reveling church vestments"
+	icon_state = "church_bimbo"
+	item_state = "church_bimbo"
+
 /obj/item/clothing/under/rank/chef
 	desc = "A pleasant yet practical suit for professional kitchen staff."
 	name = "chef's uniform"

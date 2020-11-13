@@ -272,7 +272,7 @@
 /datum/ritual/targeted/cruciform/divisor/spawn_con
 	name = "Canticle of Defense"
 	phrase = "Sed Dominus autem mihi astitit, et confortavit me, ut per me prædicatio impleatur, et nuntius ut audirent eum omnes gentes."
-	desc = "Summons a Hospitaller longsword and a Centurio pistol for defending yourself and your fellow disciples. Establishing the connection takes a lot of power and this litany may only be used once every four hours."
+	desc = "Summons a Hospitaller longsword and a Counselor taser for defending yourself and your fellow disciples. Establishing the connection takes a lot of power and this litany may only be used once every four hours."
 	power = 50
 	cooldown = TRUE
 	cooldown_time = 4 HOURS
@@ -280,7 +280,7 @@
 
 
 /datum/ritual/targeted/cruciform/divisor/spawn_con/perform(mob/living/carbon/human/user, obj/item/weapon/implant/core_implant/C,list/targets)
-	new /obj/item/weapon/gun/energy/centurio(usr.loc)
+	new /obj/item/weapon/gun/energy/taser(usr.loc)
 	new /obj/item/clothing/accessory/holster/saber/greatsword/occupied(usr.loc)
 	new /obj/item/weapon/cell/medium/moebius/omega(usr.loc)
 	set_personal_cooldown(user)

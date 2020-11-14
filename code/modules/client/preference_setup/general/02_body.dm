@@ -275,7 +275,12 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 
 	else if(href_list["hair_style"])
 		var/list/valid_hairstyles = mob_species_form.get_hair_styles()
-		var/new_h_style = input(user, "Choose your character's hair style:", CHARACTER_PREFERENCE_INPUT_TITLE, pref.h_style)  as null|anything in valid_hairstyles
+		var/list/pretty_hair_styles = list(null)
+		for(var/path in valid_hairstyles)
+			var/datum/sprite_accessory/tail/instance = valid_hairstyles[path]
+			if(((!instance.ckeys_allowed) || (usr.ckey in instance.ckeys_allowed)))
+				pretty_hair_styles[instance.name] = path
+		var/new_h_style = input(user, "Choose your character's hair style:", CHARACTER_PREFERENCE_INPUT_TITLE, pref.h_style)  as null|anything in pretty_hair_styles
 
 		if(new_h_style && CanUseTopic(user) && (new_h_style in mob_species_form.get_hair_styles()))
 			pref.h_style = new_h_style

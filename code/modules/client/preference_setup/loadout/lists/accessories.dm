@@ -38,15 +38,35 @@
 	display_name = "tie selection"
 	path = /obj/item/clothing/accessory/tie
 	flags = GEAR_HAS_TYPE_SELECTION
-	
+
 /datum/gear/accessory/blackshieldpatch
 	display_name = "Blackshield arm patch"
 	path = /obj/item/clothing/accessory/patches/blackshield
 
-/datum/gear/accessory/collars
-	display_name = "collar selection"
-	path = /obj/item/clothing/accessory/collar
-	flags = GEAR_HAS_TYPE_SELECTION
+/datum/gear/accessory/collar
+	display_name = "collar, silver"
+	path = /obj/item/clothing/accessory/collar/silver
+	sort_category = "Accessories"
+
+/datum/gear/accessory/collar/golden
+	display_name = "collar, golden"
+	path = /obj/item/clothing/accessory/collar/gold
+
+/datum/gear/accessory/collar/bell
+	display_name = "collar, bell"
+	path = /obj/item/clothing/accessory/collar/bell
+
+/datum/gear/accessory/collar/spike
+	display_name = "collar, spike"
+	path = /obj/item/clothing/accessory/collar/spike
+
+/datum/gear/accessory/collar/pink
+	display_name = "collar, pink"
+	path = /obj/item/clothing/accessory/collar/pink
+
+/datum/gear/accessory/collar/holo
+	display_name = "collar, holo"
+	path = /obj/item/clothing/accessory/collar/holo
 
 /datum/gear/accessory/choker
 	display_name = "Choker"

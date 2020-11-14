@@ -3,6 +3,10 @@
 	var/hair_color = "#000000"
 	var/h_style = "Bald"
 
+	//Hair gradiants
+	var/grad_style = "none"
+	var/grad_color = "#000000"
+
 	//Facial hair colour and style
 	var/facial_color = "#000000"
 	var/f_style = "Shaved"

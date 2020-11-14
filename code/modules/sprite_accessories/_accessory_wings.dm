@@ -261,3 +261,9 @@
 	desc = ""
 	icon_state = "succubus"
 	colored_layers = 3
+
+/datum/sprite_accessory/wings/avali
+	name = "Avali wing"
+	desc = ""
+	icon_state = "avali_wing"
+	colored_layers = 1

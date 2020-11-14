@@ -72,3 +72,9 @@
 	desc = "A modified pair of workboots, designed for species with clawed feet."
 	icon_state = "workbootstoeless"
 	species_restricted = null
+
+/obj/item/clothing/shoes/church_bimbo
+	name = "silky church boots"
+	desc = "big flashy boots made of fine silk, a bit over designed for their intended role."
+	icon_state = "church_bimbo"
+	species_restricted = null

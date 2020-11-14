@@ -84,4 +84,3 @@
 	eyes_icon.Blend(right_eye)
 
 	return eyes_icon
-

@@ -78,7 +78,6 @@
 #define FORM_CINDAR				"Cindarite"
 #define FORM_OPIFEX				"Opifex"
 
-
 #define FORM_BIRD				"Avian"
 
 #define FORM_VOX				"Vox"

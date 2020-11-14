@@ -73,6 +73,13 @@ var/list/gear_datums = list()
 			continue
 		if(max_cost && G.cost > max_cost)
 			continue
+		//luke edits, hopfully this works
+		if(preference_mob && preference_mob.client)
+			if(G.ckeywhitelist && !(preference_mob.ckey in G.ckeywhitelist))
+				continue
+			if(G.character_name && !(preference_mob.client.prefs.real_name in G.character_name))
+				continue
+		//luke edits
 		. += gear_name
 
 /datum/category_item/player_setup_item/loadout/sanitize_character()
@@ -114,6 +121,7 @@ var/list/gear_datums = list()
 		user << browse_rsc(pref.preview_west, "new_previewicon[WEST].png")
 	. = list()
 	var/total_cost = 0
+	var/mob/preference_mob = preference_mob()
 	var/list/gears = pref.gear_list[pref.gear_slot]
 	for(var/i = 1; i <= gears.len; i++)
 		var/datum/gear/G = gear_datums[gears[i]]
@@ -174,6 +182,13 @@ var/list/gear_datums = list()
 			continue
 		var/list/entry = list()
 		var/datum/gear/G = LC.gear[gear_name]
+		//luke edits
+		if(preference_mob && preference_mob.client)
+			if(G.ckeywhitelist && !(preference_mob.ckey in G.ckeywhitelist))
+				continue
+			if(G.character_name && !(preference_mob.client.prefs.real_name in G.character_name))
+				continue
+		//luke edits
 		var/ticked = (G.display_name in pref.gear_list[pref.gear_slot])
 		entry += "<tr style='vertical-align:top;'><td width=25%><a style='white-space:normal;' [ticked ? "class='linkOn' " : ""]href='?src=\ref[src];toggle_gear=[G.display_name]'>[G.display_name]</a></td>"
 		entry += "<td width = 10% style='vertical-align:top'>[G.cost]</td>"

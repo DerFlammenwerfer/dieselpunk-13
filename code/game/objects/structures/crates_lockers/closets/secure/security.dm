@@ -83,6 +83,7 @@
 	new /obj/item/clothing/suit/greatcoat/ihc(src)
 	new /obj/item/clothing/suit/greatcoat/ihc/ihc_coat_cloak(src)
 
+
 /obj/structure/closet/secure_closet/warden
 	name = "supply specialist's locker"
 	req_access = list(access_armory)
@@ -141,10 +142,16 @@
 			new /obj/item/ammo_magazine/highcap_pistol_35(src)
 			new /obj/item/ammo_magazine/highcap_pistol_35/rubber(src)
 		if("colt")
-			new /obj/item/weapon/gun/projectile/colt/NM_colt(src)
-			new /obj/item/ammo_magazine/highcap_pistol_35(src)
-			new /obj/item/ammo_magazine/highcap_pistol_35(src)
-			new /obj/item/ammo_magazine/highcap_pistol_35/rubber(src)
+			if(prob(5))
+				new /obj/item/weapon/gun/projectile/clarissa/makarov(src)
+				new /obj/item/ammo_magazine/pistol_35(src)
+				new /obj/item/ammo_magazine/pistol_35(src)
+				new /obj/item/ammo_magazine/pistol_35/rubber(src)
+			else
+				new /obj/item/weapon/gun/projectile/colt/NM_colt(src)
+				new /obj/item/ammo_magazine/highcap_pistol_35(src)
+				new /obj/item/ammo_magazine/highcap_pistol_35(src)
+				new /obj/item/ammo_magazine/highcap_pistol_35/rubber(src)
 		if("ladon")
 			new /obj/item/weapon/gun/projectile/ladon/hs(src)
 			new /obj/item/ammo_magazine/magnum_40(src)
@@ -171,6 +178,7 @@
 	new /obj/item/ammo_casing/light_rifle_257/rubber
 	new /obj/item/ammo_magazine/light_rifle_257_short
 	new /obj/item/ammo_magazine/light_rifle_257
+	new /obj/item/weapon/melee/telebaton
 
 /obj/structure/closet/secure_closet/medspec
 	name = "corpsman's locker"

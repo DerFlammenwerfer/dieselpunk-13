@@ -403,3 +403,10 @@
 	icon_state = "big_liz"
 	colored_layers = 1
 	blend = ICON_MULTIPLY
+
+/datum/sprite_accessory/ears/avali
+	name = "Avali Ears"
+	desc = ""
+	icon_state = "avali_ear"
+	colored_layers = 1
+	blend = ICON_MULTIPLY

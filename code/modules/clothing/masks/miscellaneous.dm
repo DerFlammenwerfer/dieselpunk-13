@@ -46,6 +46,38 @@
 		rad = 0
 	)
 	price_tag = 10
+	var/hanging = 0
+
+/obj/item/clothing/mask/surgical/proc/adjust_mask(mob/user)
+	if(!usr.incapacitated())
+		src.hanging = !src.hanging
+		if (src.hanging)
+			gas_transfer_coefficient = 1
+			permeability_coefficient = 1
+			body_parts_covered = body_parts_covered & ~FACE
+			item_flags = item_flags & ~AIRTIGHT
+			icon_state = "sterile_down"
+			to_chat(user, "Your sterile mask is now hanging on your neck.")
+			armor = list(melee = 0, bullet = 0, energy = 0, bomb = 0, bio = 0, rad = 0)
+		else
+			gas_transfer_coefficient = initial(gas_transfer_coefficient)
+			permeability_coefficient = initial(permeability_coefficient)
+			body_parts_covered = initial(body_parts_covered)
+			item_flags = initial(item_flags)
+			icon_state = initial(icon_state)
+			to_chat(user, "You pull the sterile mask up to cover your face.")
+			armor = list(melee = 0, bullet = 0, energy = 0, bomb = 0, bio = 75, rad = 0)
+		update_wear_icon()
+
+/obj/item/clothing/mask/surgical/attack_self(mob/user)
+	adjust_mask(user)
+
+/obj/item/clothing/mask/surgical/verb/toggle()
+		set category = "Object"
+		set name = "Adjust mask"
+		set src in usr
+
+		adjust_mask(usr)
 
 /obj/item/clothing/mask/snorkel
 	name = "snorkel"

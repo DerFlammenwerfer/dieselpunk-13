@@ -108,3 +108,7 @@
 	display_name = "sweater selection"
 	path = /obj/item/clothing/suit/sweater
 	flags = GEAR_HAS_TYPE_SELECTION
+
+/datum/gear/suit/church_bimbo
+	display_name = "modesty belt"
+	path = /obj/item/clothing/suit/church_bimbo

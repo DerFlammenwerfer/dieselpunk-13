@@ -716,9 +716,8 @@ obj/item/clothing/accessory/scarf/green
 	icon_state = "bs_major"
 	item_state = "bs_major"
 
-/*/obj/item/clothing/accessory/patches/blackshield_brigadier
+/obj/item/clothing/accessory/patches/blackshield_brigadier
 	name = "blackshield brigadier patch"
 	desc = "A black, blue, and silver patch made to represent the Blackshield regiment. For use on uniforms when active, or other clothing in other positions."
 	icon_state = "bs_brigadier"
 	item_state = "bs_brigadier"
-*/

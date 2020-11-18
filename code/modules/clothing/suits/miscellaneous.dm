@@ -233,3 +233,9 @@ obj/item/clothing/suit/fluff/kimono
 	/obj/item/ammo_magazine,
 	/obj/item/ammo_magazine/ammobox/
 	)
+
+/obj/item/clothing/suit/church_bimbo
+	name = "modesty belt"
+	desc = "Modesty doesn't have to mean chastity..."
+	icon_state = "church_bimbo"
+	item_state = "church_bimbo"

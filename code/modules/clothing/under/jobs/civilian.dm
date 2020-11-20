@@ -76,7 +76,7 @@
 
 /obj/item/clothing/under/rank/church/bimbo
 	desc = "If listen closely, you can hear a religion rolling in their grave."
-	name = "reveling church vestments"
+	name = "revealing church vestments"
 	icon_state = "church_bimbo"
 	item_state = "church_bimbo"
 

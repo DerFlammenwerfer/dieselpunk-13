@@ -33,3 +33,10 @@
 	icon_state = "naga_face"
 	body_parts = list(BP_HEAD)
 	ckeys_allowed = list("dopiotl")
+
+//lukevale fluff tails
+/datum/sprite_accessory/tail/fluff/kitsune
+	name = "Black Red and White tail"
+	icon = 'icons/mob/fluff_accessory.dmi'
+	icon_state = "wrb_kitsune"
+	ckeys_allowed = list("lukevale")

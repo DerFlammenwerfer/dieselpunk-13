@@ -32,7 +32,7 @@
 /datum/gear/fluff/dogtags
 	path = /obj/item/clothing/accessory/dogtags/fluff/hyeana
 	display_name = "tags man"
-	ckeywhitelist = list("certifiedHyena")
+	ckeywhitelist = list("certifiedhyena")
 	character_name = list("Nikolai Volkov")
 
 //  D CKEYS

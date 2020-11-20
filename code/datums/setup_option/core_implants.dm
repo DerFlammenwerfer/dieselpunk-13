@@ -2,17 +2,7 @@
 	name = "Novice Cruciform"
 	desc = "The implant given to every disciple of the Absolute. This one is a standard Novice design, having the base-line of a normal cruciform."
 	implant_type = /obj/item/weapon/implant/core_implant/cruciform
-	restricted_jobs = list(
-		/datum/job/merchant,
-		/datum/job/swo,
-		/datum/job/foreman,
-		/datum/job/rd,
-		/datum/job/cmo,
-		/datum/job/chief_engineer,
-		/datum/job/supsec,
-		/datum/job/officer,
-		/datum/job/smc
-		)
+	restricted_jobs = list()
 	allowed_depts = CHURCH
 	allowed_jobs = list(
 		/datum/job/janitor
@@ -42,3 +32,13 @@
 	desc = "The implant given to every Hospitaller. This one is made for those who walk the path of the Templar, disciples who promote the security of the Order and its members, \
 	those who walk this path desire to protect the flock through arms, functioning as an internal guard to the Order."
 	implant_type = /obj/item/weapon/implant/core_implant/cruciform/divisor
+	restricted_jobs = list(
+		/datum/job/merchant,
+		/datum/job/swo,
+		/datum/job/rd,
+		/datum/job/cmo,
+		/datum/job/chief_engineer,
+		/datum/job/supsec,
+		/datum/job/officer,
+		/datum/job/smc
+		)

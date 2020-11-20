@@ -148,7 +148,7 @@
 
 	description = "The Chief Warrant Officer is the right hand of the Provost Marshal and the defacto controller of the armory and armory shop. <br>\
 	Your role is mainly a desk job - with duties rarely taking you outside of the city or even the armory.<br>\
-	You will often be called to sell weaponry and armory to citizens, maintaining the stock of the equipment and tracking who has what.<br>\
+	You will often be asked to sell weaponry and armory to citizens, maintaining the stock of the equipment and tracking who has what.<br>\
 	You will also be often asked to watch or process prisoners. Perform regular checkups on anyone locked in the brig - breakouts are intolerable.<br>\
 	In quieter times, you serve as the onsite weapons instructor. Take the initiative to offer a variety of training drills, especially to junior operatives.<br>\
 	Remember that any Provost Marshal duties may be delegated to you if they wish and internal tasks will fall to you at times."
@@ -305,7 +305,7 @@
 
 	duties = "Minimize casualties in combat situations and treat all related wounds.<br>\
 	Treat any prisoners and suspects, and thoroughly monitor their health.<br>\
-	Work with the Ranger to solve crimes through collecting forensic evidence and conducting autopsies."
+	Work with the Provosts to solve crimes through conducting autopsies."
 
 /obj/landmark/join/start/medspec
 	name = "Corpsman"
@@ -314,14 +314,14 @@
 
 
 /datum/job/trooper
-	title = "Blackshield Trooper"
+	title = "Black Guard Trooper"
 	flag = TROOPER
 	department = DEPARTMENT_SECURITY
 	department_flag = SECURITY
 	faction = MAP_FACTION
 	total_positions = 3
 	spawn_positions = 3
-	supervisors = "the Blackshield Commander"
+	supervisors = "the Infantry Commander"
 	difficulty = "Hard."
 	//alt_titles = list("Blackshield Junior Trooper")
 	selection_color = "#a7bbc6"
@@ -345,8 +345,8 @@
 
 	description = "The Trooper forms the base of the Black Guard, the frontline against pirates, terrorists, and xenos.<br>\
 	You are a professional soldier in service to the Commonwealth. Employ your talents to bring an end to threats and conflict situations.<br>\
-	Tactics and teamwork are vital. You are paid to follow orders, not to think. Remember your focus on external threats - leave otherwise to Marshals.<br>\
-	When there are no standing orders, your ongoing task is to patrol and be on the lookout for threats or problems. Help the Marshals if explicitly asked. <br>\
+	Tactics and teamwork are vital. You are paid to follow orders, not to think. Remember your focus on external threats - leave otherwise to Provosts.<br>\
+	When there are no standing orders, your ongoing task is to patrol and be on the lookout for threats or problems. Help the Provosts if explicitly asked. <br>\
 	Watch the main gate and perimeter. You have access to most places to help with your duties - do not abuse this."
 
 	duties = "Patrol the city, provide a security presence, and look for trouble.<br>\
@@ -356,20 +356,20 @@
 		Obey the law. You are not above it."
 
 /obj/landmark/join/start/trooper
-	name = "Blackshield Trooper"
+	name = "Black Guard Trooper"
 	icon_state = "player-blue"
 	join_tag = /datum/job/trooper
 
 
 /datum/job/officer
-	title = "Marshal Officer"
+	title = "Master-at-Arms"
 	flag = OFFICER
 	department = DEPARTMENT_SECURITY
 	department_flag = SECURITY
 	faction = MAP_FACTION
 	total_positions = 4
 	spawn_positions = 4
-	supervisors = "the Warrant Officer"
+	supervisors = "the Chief Warrant Officer"
 	difficulty = "Hard."
 	//alt_titles = list("Marshal Junior Operative")
 	selection_color = "#a7bbc6"
@@ -386,6 +386,7 @@
 		STAT_ROB = 25,
 		STAT_TGH = 25,
 		STAT_VIG = 20,
+		STAT_BIO = 15
 	)
 
 	software_on_spawn = list(/datum/computer_file/program/digitalwarrant,
@@ -404,7 +405,7 @@
 		Obey the law. You are not above it."
 
 /obj/landmark/join/start/officer
-	name = "Marshal Officer"
+	name = "Master-at-Arms"
 	icon_state = "player-blue"
 	join_tag = /datum/job/officer
 

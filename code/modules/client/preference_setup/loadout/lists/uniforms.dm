@@ -142,7 +142,7 @@
 	path = /obj/item/clothing/under/rank/church
 
 /datum/gear/uniform/churchbimbo
-	display_name = "reveling church cloths"
+	display_name = "revealing church cloths"
 	path = /obj/item/clothing/under/rank/church/bimbo
 
 /datum/gear/uniform/neon

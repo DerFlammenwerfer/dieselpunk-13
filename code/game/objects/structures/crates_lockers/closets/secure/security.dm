@@ -101,7 +101,7 @@
 		new /obj/item/ammo_magazine/highcap_pistol_35/rubber(src)
 	else
 		new /obj/item/weapon/gun/projectile/lamia(src)
-		new /obj/item/ammo_magazine/kurtz_50(src)	
+		new /obj/item/ammo_magazine/kurtz_50(src)
 		new /obj/item/ammo_magazine/kurtz_50(src)
 		new /obj/item/ammo_magazine/kurtz_50/rubber(src)
 	new /obj/item/weapon/storage/backpack/satchel/ironhammer(src)
@@ -174,11 +174,11 @@
 	new /obj/item/taperoll/police(src)
 	new /obj/item/clothing/head/seccap(src)
 	new /obj/item/clothing/suit/armor/commander/marshal_coat(src)
-	new /obj/item/ammo_casing/light_rifle_257/rubber
-	new /obj/item/ammo_casing/light_rifle_257/rubber
-	new /obj/item/ammo_magazine/light_rifle_257_short
-	new /obj/item/ammo_magazine/light_rifle_257
-	new /obj/item/weapon/melee/telebaton
+	new /obj/item/ammo_casing/light_rifle_257/rubber(src)
+	new /obj/item/ammo_casing/light_rifle_257/rubber(src)
+	new /obj/item/ammo_magazine/light_rifle_257_short(src)
+	new /obj/item/ammo_magazine/light_rifle_257(src)
+	new /obj/item/weapon/melee/telebaton(src)
 
 /obj/structure/closet/secure_closet/medspec
 	name = "corpsman's locker"

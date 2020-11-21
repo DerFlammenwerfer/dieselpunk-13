@@ -123,7 +123,7 @@
 	new /obj/item/clothing/suit/armor/commander/marshal_coat_ss(src)
 
 /obj/structure/closet/secure_closet/personal/security
-	name = "marshal officer's locker"
+	name = "master-at-arms' locker"
 	req_access = list(access_hos)
 	access_occupy = list(access_brig)
 	icon_state = "sec"

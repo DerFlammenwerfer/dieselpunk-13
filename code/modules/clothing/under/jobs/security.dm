@@ -28,27 +28,27 @@
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
 
 /obj/item/clothing/under/rank/security
-	name = "marshal officer's jumpsuit"
+	name = "master-at-arms' jumpsuit"
 	desc = "A durable officer's jumpsuit, designed to provide moderate combat protection."
 	icon_state = "security"
 	item_state = "ba_suit"
 	siemens_coefficient = 0.8
 
 /obj/item/clothing/under/rank/security/skirt
-	name = "marshal officer's jumpskirt"
+	name = "master-at-arms' jumpskirt"
 	desc = "A durable officer's jumpsuit, designed to provide moderate combat protection."
 	icon_state = "security_skirt"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
 
 /obj/item/clothing/under/rank/medspec
-	name = "militia corpmen's jumpsuit"
+	name = "black guard corpsman's jumpsuit"
 	desc = "A durable corpsman's jumpsuit, designed to provide moderate combat protection."
 	icon_state = "medspec"
 	item_state = "ba_suit"
 	siemens_coefficient = 0.8
 
 /obj/item/clothing/under/rank/medspec/skirt
-	name = "militia corpmen's jumpskirt"
+	name = "black guard corpsman's jumpskirt"
 	desc = "It's made of a slightly sturdier material than standard jumpskirts, to allow for robust protection. It has the words \"Corpsman\" written on the shoulders."
 	icon_state = "medspec_skirt"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
@@ -118,27 +118,27 @@
  * Ironhammer Commander
  */
 /obj/item/clothing/under/rank/ih_commander
-	desc = "It's a jumpsuit worn by those few with the dedication to achieve the position of \"Warrant Officer\". It has additional armor to protect the wearer."
-	name = "warrant officer's jumpsuit"
+	desc = "It's a jumpsuit worn by those few with the dedication to achieve the position of \"Chief Warrant Officer\". It has additional armor to protect the wearer."
+	name = "chief warrant officer's jumpsuit"
 	icon_state = "hos"
 	item_state = "r_suit"
 	siemens_coefficient = 0.8
 
 /obj/item/clothing/under/rank/ih_commander/skirt
-	name = "warrant officer's jumpskirt"
-	desc = "It's a jumpskirt worn by those few with the dedication to achieve the position of \"Warrant Officer\". It has additional armor to protect the wearer."
+	name = "chief warrant officer's jumpskirt"
+	desc = "It's a jumpskirt worn by those few with the dedication to achieve the position of \"Chief Warrant Officer\". It has additional armor to protect the wearer."
 	icon_state = "hos_skirt"
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|ARMS
 /obj/item/clothing/head/rank/commander
-	name = "warrant officer's Hat"
-	desc = "The hat of the Warrant Officer. For showing the officers who's in charge."
+	name = "chief warrant officer's Hat"
+	desc = "The hat of the Chief Warrant Officer. For showing the officers who's in charge."
 	icon_state = "hoshat"
 	body_parts_covered = 0
 	siemens_coefficient = 0.6
 
 /obj/item/clothing/head/rank/mcommander
-	name = "commander's Hat"
-	desc = "The hat of the blackshield commander. Has a scent of napalm. Smells like victory."
+	name = "infantry commander's Hat"
+	desc = "The hat of the Black Guard's infantry commander. Has a scent of napalm. Smells like victory."
 	icon_state = "hoshat"
 	body_parts_covered = 0
 	siemens_coefficient = 0.6

@@ -63,7 +63,7 @@ var/list/dreams = list(
 	"the Soteria Biolab Overseer","the Chief Executive Officer","an Assistant","a Bartender","a Janitor","a Gardener",
 	"a Prime","an Entertainer","a Chef","a Doctor","a Psychologist","a Soteria Paramedic",
 	"a Soteria Chemist","a Soteria Scientist","a Soteria Roboticist","a Cyborg","a Cargo Technician","a Lonestar Miner",
-	"a Guild Adept", "a Marshal Officer","a Supply Specialist","a Ranger", "the Premier",
+	"a Guild Adept", "a Master-at-Arms","a Supply Specialist","a Ranger", "the Premier",
 	"a Corpsman", "a Trooper",
 
 //Races (Check Creatures Before Adding Stuff Here, There's Some Overlap!)

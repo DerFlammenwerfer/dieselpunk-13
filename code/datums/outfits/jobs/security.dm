@@ -62,7 +62,7 @@
 	backpack_contents = list(/obj/item/clothing/accessory/dogtags = 1,/obj/item/weapon/handcuffs = 1, /obj/item/device/lighting/toggleable/flashlight/seclite = 1, /obj/item/weapon/cell/small/high = 2, /obj/item/weapon/gun/energy/gun/martin = 1)
 
 /decl/hierarchy/outfit/job/security/inspector
-	name = OUTFIT_JOB_NAME("Provosts - Master-At-Arms")
+	name = OUTFIT_JOB_NAME("Provosts - Master-at-Arms")
 	head = /obj/item/clothing/head/rank/inspector
 	uniform = /obj/item/clothing/under/rank/inspector
 	suit = /obj/item/clothing/suit/storage/rank/insp_trench
@@ -93,7 +93,7 @@
 	backpack_contents = list(/obj/item/clothing/accessory/dogtags = 1,/obj/item/weapon/gun/energy/gun/martin = 1, /obj/item/weapon/cell/small/high = 1)
 
 /decl/hierarchy/outfit/job/security/ihoper
-	name = OUTFIT_JOB_NAME("Provost - Master-At-Arms")
+	name = OUTFIT_JOB_NAME("Provosts - Master-at-Arms")
 	l_pocket = /obj/item/device/flash
 	uniform = /obj/item/clothing/under/rank/security
 	mask = /obj/item/clothing/mask/balaclava/tactical

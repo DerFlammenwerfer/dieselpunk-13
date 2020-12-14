@@ -1,8 +1,6 @@
 /obj/item/organ/internal
 	var/list/owner_verbs = list()
-	var/list/organ_efficiency = list()	//Efficency of an organ, should become the most important variable
-	var/unique_tag	//If an organ is unique and doesn't scale off of organ processes
-	var/specific_organ_size = 1  // Space organs take up in weight calculations, unaffected by w_class for balance reasons
+	var/organ_efficiency = 100	//Efficency of an organ, should become the most important variable
 	layer = ABOVE_LYING_MOB_LAYER
 
 /obj/item/organ/internal/New(mob/living/carbon/human/holder, datum/organ_description/OD)

@@ -4,7 +4,7 @@
 	var/organ_tag = "limb"
 	var/additional_limb_parts = list() //Other parts to put on top of limbs.
 	var/body_part
-	var/parent_organ_base
+	var/parent_organ
 	var/default_type = /obj/item/organ/external
 	var/default_bone_type = /obj/item/organ/internal/bone
 

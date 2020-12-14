@@ -2,15 +2,12 @@
 	name = "bone"
 	icon_state = "bone_braces"
 	desc = "You have got a bone to pick with this"
-	organ_efficiency = list(OP_BONE = 100)
+	organ_tag = BP_B_CHEST
 	price_tag = 100
 	force = WEAPON_FORCE_NORMAL
 	var/broken_description = ""
 	var/reinforced = FALSE
 
-/obj/item/organ/internal/bone/Initialize()
-    . = ..()
-    src.transform *= 0.5 // this little trick makes bone size small while keeping detail level of 32x32 bones.
 
 /obj/item/organ/internal/bone/proc/fracture()
 	if(owner)
@@ -39,7 +36,7 @@
 
 /obj/item/organ/internal/bone/proc/reinforce()
 	if(!reinforced) //Just in case
-		organ_efficiency[OP_BONE] += 33
+		organ_efficiency += 33
 		reinforced = TRUE
 		name = "reinforced [name]"
 		icon_state = "reinforced_[icon_state]"
@@ -47,38 +44,45 @@
 /obj/item/organ/internal/bone/chest
 	name = "ribcage"
 	icon_state = "ribcage"
-	parent_organ_base = BP_CHEST
+	organ_tag = BP_B_CHEST
+	parent_organ = BP_CHEST
 
 /obj/item/organ/internal/bone/groin
 	name = "pelvis"
 	icon_state = "pelvis"
-	parent_organ_base = BP_GROIN
+	organ_tag = BP_B_GROIN
+	parent_organ = BP_GROIN
 
 /obj/item/organ/internal/bone/head
 	name = "skull"
 	icon_state = "skull"
-	parent_organ_base = BP_HEAD
+	organ_tag = BP_B_HEAD
+	parent_organ = BP_HEAD
 
 /obj/item/organ/internal/bone/r_arm
 	name = "right humerus"
 	icon_state = "right_arm"
-	parent_organ_base = BP_R_ARM
+	organ_tag = BP_B_R_ARM
+	parent_organ = BP_R_ARM
 
 /obj/item/organ/internal/bone/l_arm
 	name = "left humerus"
 	icon_state = "left_arm"
-	parent_organ_base = BP_L_ARM
+	organ_tag = BP_B_L_ARM
+	parent_organ = BP_L_ARM
 
 /obj/item/organ/internal/bone/r_leg
 	name = "right femur"
 	icon_state = "right_leg"
-	parent_organ_base = BP_R_LEG
+	organ_tag = BP_B_R_LEG
+	parent_organ = BP_R_LEG
 	force = WEAPON_FORCE_PAINFUL
 
 /obj/item/organ/internal/bone/l_leg
 	name = "left femur"
 	icon_state = "left_leg"
-	parent_organ_base = BP_L_LEG
+	organ_tag = BP_B_L_LEG
+	parent_organ = BP_L_LEG
 	force = WEAPON_FORCE_PAINFUL
 
 //Robotic limb variants
@@ -86,43 +90,36 @@
 	name = "chest frame"
 	icon_state = "metal_ribcage"
 	nature = MODIFICATION_SILICON
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 2)
 
 /obj/item/organ/internal/bone/groin/robotic
 	name = "groin frame"
 	icon_state = "metal_pelvis"
 	nature = MODIFICATION_SILICON
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 2)
 
 /obj/item/organ/internal/bone/head/robotic
 	name = "head frame"
 	icon_state = "metal_skull"
 	nature = MODIFICATION_SILICON
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 2)
 
 /obj/item/organ/internal/bone/r_arm/robotic
 	name = "right arm frame"
 	icon_state = "metal_right_arm"
 	nature = MODIFICATION_SILICON
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 2)
 
 /obj/item/organ/internal/bone/l_arm/robotic
 	name = "left arm frame"
 	icon_state = "metal_left_arm"
 	nature = MODIFICATION_SILICON
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 2)
 
 /obj/item/organ/internal/bone/r_leg/robotic
 	name = "right leg frame"
 	icon_state = "metal_right_leg"
 	nature = MODIFICATION_SILICON
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 2)
 
 /obj/item/organ/internal/bone/l_leg/robotic
 	name = "left leg frame"
 	icon_state = "metal_left_leg"
 	nature = MODIFICATION_SILICON
-	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 2)
 
 //Bone braces
 /obj/item/bone_brace

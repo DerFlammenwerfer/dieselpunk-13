@@ -1,8 +1,7 @@
 //Oddities which are specific to factions or certain jobs.
 /obj/item/biosyphon
 	name = "Biosiphon Anomaly"
-	desc = "An exceedingly rare bluespace anomaly discovered by a marshal ranger outside the colony. After weeks of study it was discovered its only purpose was duplicating boxes of donuts. \
-	Soteria's disappointment was so great they gave the item to security for safe keeping."
+	desc = "An exceedingly rare bluespace anomaly discovered by a marshal ranger outside the colony. After weeks of study it was determined its only purpose was duplicating boxes of donuts. Soteria's disappointment was so great they gave the item to security for safe keeping. Months after its discovery it began to create refined cases of incredibly tasty donuts filled with long-lasting effective stimulents every two hours."
 	icon = 'icons/obj/device.dmi'
 	icon_state = "biosyphon"
 	item_state = "biosyphon"
@@ -15,7 +14,7 @@
 	origin_tech = list(TECH_MATERIAL = 4, TECH_BLUESPACE = 9, TECH_POWER = 7)
 	matter = list(MATERIAL_PLASTIC = 6, MATERIAL_GLASS = 7)
 	var/last_produce = 0
-	var/cooldown = 30 MINUTES
+	var/cooldown = 2 HOURS
 
 /obj/item/biosyphon/New()
 	..()
@@ -27,15 +26,14 @@
 
 /obj/item/biosyphon/Process()
 	if(world.time >= (last_produce + cooldown))
-		var/obj/item/weapon/storage/box/donut/D = new /obj/item/weapon/storage/box/donut(get_turf(src))
+		var/obj/item/weapon/storage/case/donut/D = new /obj/item/weapon/storage/case/donut(get_turf(src))
 		visible_message(SPAN_NOTICE("[name] drop [D]."))
 		last_produce = world.time
 
 
 /obj/item/device/von_krabin
 	name = "Von-Krabin Stimulator"
-	desc = "A strange anomalous item given to the research directors of the soteria as its latent effects enhance the mind. Some say this is an unfinished prototype of the technology the church of \
-	absolute uses to enhance the abilities of others."
+	desc = "A strange anomalous item given to the research directors of the soteria as its latent effects enhance the mind. Some say this is an unfinished prototype of the technology the church of absolute uses to enhance the abilities of others."
 	icon = 'icons/obj/device.dmi'
 	icon_state = "von-krabin"
 	item_state = "von-krabin"
@@ -287,9 +285,9 @@
 			else
 				to_chat(src.loc, SPAN_WARNING("The [src] is too complicated to use!"))
 		else
-			visible_message("\The [src] beeps, \"The [src] is not full enough to produce.\".")
+			visible_message("\icon The [src] beeps, \"The [src] is not full enough to produce.\".")
 	else
-		visible_message("\The [src] beeps, \"The [src] need time to cooldown.\".")
+		visible_message("\icon The [src] beeps, \"The [src] need time to cooldown.\".")
 
 /obj/item/device/techno_tribalism/examine(user)
 	..()
@@ -334,7 +332,7 @@
 			new /obj/item/clothing/head/costume/animal/kitty(get_turf(src))
 			qdel(src)
 
-/obj/item/weapon/reagent_containers/enricher/afterattack(var/obj/target, var/mob/user, var/flag)
+/obj/item/weapon/maneki_neko/afterattack(obj/target, mob/user, var/flag)
 	if(user.a_intent == I_HURT)
 		playsound(src, "shatter", 70, 1)
 		new /obj/item/clothing/head/costume/animal/kitty(get_turf(src))
@@ -354,12 +352,12 @@
 		var/neko = uppertext(src.name)
 		to_chat(H, SPAN_DANGER(pick("LIFE IS RUINED FOR ME! I CANNOT FIND [neko]!", "WHO STOLE MY [neko]!", "WHERE IS [neko]?!", "WHY I CANNOT FIND [neko]?!")))
 
-/obj/item/weapon/tool/sword/crusader/nt_sword
+/obj/item/weapon/tool/sword/crusader/nt_sword_truth
 	name = "Joyeuse"
 	desc = "A sword made out of an unknown alloy, humming from an unknown power source."
 	icon = 'icons/obj/device.dmi'
-	icon_state = "nt_sword"
-	item_state = "nt_sword"
+	icon_state = "nt_sword_truth"
+	item_state = "nt_sword_truth"
 	slot_flags = FALSE
 	origin_tech = list(TECH_COMBAT = 9, TECH_POWER = 9, TECH_MATERIAL = 9)
 	price_tag = 20000
@@ -376,11 +374,11 @@
 	..()
 	set_light(l_range = 4, l_power = 3)
 
-/obj/item/weapon/tool/sword/crusader/nt_sword/unwield(mob/living/user)
+/obj/item/weapon/tool/sword/crusader/nt_sword_truth/unwield(mob/living/user)
 	..()
 	set_light(l_range = 0, l_power = 0)
 
-/obj/item/weapon/tool/sword/crusader/nt_sword/attack_self(mob/user)
+/obj/item/weapon/tool/sword/crusader/nt_sword_truth/attack_self(mob/user)
 	if(isBroken)
 		to_chat(user, SPAN_WARNING("\The [src] is broken."))
 		return
@@ -430,11 +428,11 @@
 	anchored = TRUE
 	density = TRUE
 	breakable = FALSE
-	var/obj/item/weapon/tool/sword/crusader/nt_sword/sword = null
+	var/obj/item/weapon/tool/sword/crusader/nt_sword_truth/sword = null
 
 /obj/structure/nt_pedestal/New(var/loc, var/turf/anchor)
 	..()
-	sword = new /obj/item/weapon/tool/sword/crusader/nt_sword(src)
+	sword = new /obj/item/weapon/tool/sword/crusader/nt_sword_truth(src)
 	update_icon()
 
 /obj/structure/nt_pedestal/attackby(obj/item/I, mob/user)
@@ -447,7 +445,7 @@
 			if(I.use_tool(user, src, WORKTIME_NEAR_INSTANT, QUALITY_BOLT_TURNING, FAILCHANCE_VERY_EASY, required_stat = STAT_MEC))
 				to_chat(user, SPAN_NOTICE("You've unsecured the [src] assembly!"))
 				anchored = FALSE
-	if(istype(I, /obj/item/weapon/tool/sword/crusader/nt_sword))
+	if(istype(I, /obj/item/weapon/tool/sword/crusader/nt_sword_truth))
 		if(sword)
 			to_chat(user, SPAN_WARNING("[src] already has a sword in it!"))
 		insert_item(I, user)
@@ -482,28 +480,12 @@
 /obj/structure/nt_pedestal/update_icon()
 	icon_state = "nt_pedestal[sword?"1":"0"]"
 
-/obj/item/weapon/storage/pouch/nt_sheath
+/obj/item/weapon/storage/sheath/joyeuse
 	name = "Joyeuse sheath"
 	desc = "A specially designed sheathe for the joyeuse, of which is the only object that shall fit in it."
-	icon = 'icons/obj/device.dmi'
-	icon_state = "nt_sheath0"
-	item_state = "nt_sheath0"
-	slot_flags = SLOT_BELT
-	price_tag = 1000
-	storage_slots = 1
-	w_class = ITEM_SIZE_NORMAL
-	max_w_class = ITEM_SIZE_BULKY
-
 	can_hold = list(
-		/obj/item/weapon/tool/sword/crusader/nt_sword
+		/obj/item/weapon/tool/sword/crusader/nt_sword_truth
 		)
-
-	sliding_behavior = TRUE
-
-/obj/item/weapon/storage/pouch/nt_sheath/update_icon()
-	icon_state = "nt_sheath[contents.len?"1":"0"]"
-	item_state = "nt_sheath[contents.len?"1":"0"]"
-	..()
 
 /obj/item/weapon/reagent_containers/atomic_distillery
 	name = "Atomic Distillery"
@@ -554,3 +536,46 @@
 		return TRUE
 	if(standard_dispenser_refill(user, target))
 		return TRUE
+
+/** Special plant coded in but not added as a map object yet. Not entirely sure what I want to do with it, might make it a weird strange seed/fruit producer oddity for science. -Kaz
+	Every 10 seconds, checks if it has 10+ units of any alcohol.
+		If it does, removes said alcohol, and spawns a random base fruit or vegetable.
+		Ratio, 10 alcohol: 1 produce.
+**/
+
+/obj/item/weapon/reagent_containers/bonsai
+	name = "Laurelin bonsai"
+	desc = "A small tree, gifted to the club by a previous patron. It subsists off of numerous alcohols, and produces fruits and vegetables in return."
+
+	icon = 'icons/obj/plants.dmi'
+	icon_state = "plant-21" //Placeholder until we can get a proper sprite for them.
+
+	volume = 100 //Average bottle volume
+	reagent_flags = OPENCONTAINER
+
+	price_tag = 4000
+
+	matter = list(MATERIAL_BIOMATTER = 50)
+	var/ticks
+
+/obj/item/weapon/reagent_containers/bonsai/Process()
+	if(++ticks % 10 == 0 && reagents.total_volume)
+		var/reagent_count = 0
+		for(var/datum/reagent/R in reagents.reagent_list)
+			if(istype(R, /datum/reagent/ethanol))
+				reagent_count += R.volume
+				R.remove_self(R.volume)
+		if(reagent_count > 10)
+			var/amount_to_spawn = round(reagent_count/10)
+			for(var/i = 0 to amount_to_spawn)
+				var/datum/seed/S = plant_controller.seeds[pick(
+					"tomato",
+					"carrot",
+					"corn",
+					"eggplant",
+					"chili",
+					"mushrooms",
+					"wheat",
+					"potato",
+					"rice")]
+				S.harvest(get_turf(src),0,0,1)

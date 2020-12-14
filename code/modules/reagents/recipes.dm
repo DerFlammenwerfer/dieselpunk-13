@@ -226,7 +226,6 @@
 
 	dat["result_amount"] = "[result_amount] part\s"
 	return dat
-/* Common reactions */
 
 /datum/chemical_reaction/inaprovaline
 	result = "inaprovaline"

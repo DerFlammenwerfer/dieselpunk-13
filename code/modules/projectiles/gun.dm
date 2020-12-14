@@ -27,7 +27,7 @@
 
 	var/damage_multiplier = 1 //Multiplies damage of projectiles fired from this gun
 	var/penetration_multiplier = 1 //Multiplies armor penetration of projectiles fired from this gun
-	var/pierce_multiplier = 0 //Additing wall penetration to projectiles fired from this gun
+	var/pierce_multiplier = 0 //ADDITIVE wall penetration to projectiles fired from this gun
 	var/burst = 1
 	var/fire_delay = 6 	//delay after shooting before the gun can be used again
 	var/burst_delay = 2	//delay between shots, if firing in bursts
@@ -86,6 +86,7 @@
 /obj/item/weapon/gun/Initialize()
 	. = ..()
 	initialize_firemodes()
+	initialize_scope()
 	//Properly initialize the default firing mode
 	if (firemodes.len)
 		set_firemode(sel_mode)
@@ -94,11 +95,6 @@
 		verbs += /obj/item/weapon/gun/proc/toggle_safety_verb//addint it to all guns
 
 		var/obj/screen/item_action/action = new /obj/screen/item_action/top_bar/gun/safety
-		action.owner = src
-		hud_actions += action
-
-	if(zoom_factor)
-		var/obj/screen/item_action/action = new /obj/screen/item_action/top_bar/gun/scope
 		action.owner = src
 		hud_actions += action
 
@@ -286,7 +282,7 @@
 
 		projectile.multiply_projectile_damage(damage_multiplier)
 
-		projectile.multiply_projectile_penetration(penetration_multiplier)
+		projectile.multiply_projectile_penetration(penetration_multiplier + user.stats.getStat(STAT_VIG) * 0.2)
 
 		projectile.multiply_pierce_penetration(pierce_multiplier)
 
@@ -418,7 +414,7 @@
 	if(params)
 		P.set_clickpoint(params)
 	var/offset = init_offset
-	if(user.calc_recoil())
+	if(user.recoil)
 		offset += user.recoil
 	offset = min(offset, MAX_ACCURACY_OFFSET)
 	offset = rand(-offset, offset)
@@ -520,6 +516,23 @@
 		qdel(action)
 		hud_actions -= action
 
+/obj/item/weapon/gun/proc/initialize_scope()
+	var/obj/screen/item_action/action = locate(/obj/screen/item_action/top_bar/gun/scope) in hud_actions
+	if(zoom_factor > 0)
+		if(!action)
+			action = new /obj/screen/item_action/top_bar/gun/scope
+			action.owner = src
+			hud_actions += action
+			if(istype(src.loc, /mob))
+				var/mob/user = src.loc
+				user.client.screen += action
+	else
+		if(istype(src.loc, /mob))
+			var/mob/user = src.loc
+			user.client.screen -= action
+		hud_actions -= action
+		qdel(action)
+
 /obj/item/weapon/gun/proc/add_firemode(var/list/firemode)
 	//If this var is set, it means spawn a specific subclass of firemode
 	if (firemode["mode_type"])
@@ -538,6 +551,7 @@
 	return set_firemode(sel_mode)
 
 /obj/item/weapon/gun/proc/set_firemode(var/index)
+	refresh_upgrades()
 	if(index > firemodes.len)
 		index = 1
 	var/datum/firemode/new_mode = firemodes[sel_mode]
@@ -681,6 +695,9 @@
 	fire_sound = initial(fire_sound)
 	restrict_safety = initial(restrict_safety)
 	rigged = initial(rigged)
+	zoom_factor = initial(zoom_factor)
+	force = initial(force)
+	initialize_scope()
 	initialize_firemodes()
 
 	//Now lets have each upgrade reapply its modifications
@@ -691,8 +708,8 @@
 	//then update any UIs with the new stats
 	SSnano.update_uis(src)
 
-/* //Gun grips via the ergonomic grip would only go on a rifle with this code, which is... dumb. I set the ergo grip to not require a guntag, ergo you can put them on any gun. -Kaz
+/* //Eris has this but it, unsurpriingly, has issues, just gonna comment it out for now incase I use the code for something else later.
 /obj/item/weapon/gun/proc/generate_guntags()
-	if(one_hand_penalty)
-		gun_tags |= GUN_GRIP
+	if(!zoom_factor && !(slot_flags & SLOT_HOLSTER))
+		gun_tags |= GUN_SCOPE
 */

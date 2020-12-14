@@ -31,17 +31,20 @@
 	build_path = /obj/item/weapon/gun/projectile/colt
 
 /datum/design/autolathe/gun/NM_colt
-	name = "HG .35 \"Bronco\""
+	name = "BR .35 \"Bronco\""
 	build_path = /obj/item/weapon/gun/projectile/colt/NM_colt
 
 /datum/design/autolathe/gun/detective
-	name = "H&S REV ..35 \"Havelock\""
+	name = "H&S REV .35 \"Havelock\""
 	build_path = /obj/item/weapon/gun/projectile/revolver/detective
 
 /datum/design/autolathe/gun/mk58
 	name = "OT HG .35 \"Mk58\""
 	build_path = /obj/item/weapon/gun/projectile/mk58
 
+/datum/design/autolathe/gun/alemao
+	name = "BR .35 \"O Alemao\""
+	build_path = /obj/item/weapon/gun/projectile/automatic/alemao
 ///. 4 0 M A G N U M
 
 /datum/design/autolathe/gun/ladon
@@ -217,6 +220,9 @@
 	name = "HS BR .257 \"Roe\""
 	build_path = /obj/item/weapon/gun/projectile/boltgun/scout/light/wood
 
+/datum/design/autolathe/gun/zatvor
+	name = "BR .257 \"zatvor\""
+	build_path = /obj/item/weapon/gun/projectile/boltgun/zatvor
 
 ///R I F L E S
 //7 . 5 m m
@@ -245,6 +251,10 @@
 	name = "SA BR 7.5mm \"Novakovic\""
 	build_path = /obj/item/weapon/gun/projectile/boltgun/sa
 
+/datum/design/autolathe/gun/strelki
+	name = "BR  7.5mm \"strelki\""
+	build_path = /obj/item/weapon/gun/projectile/automatic/nordwind/strelki
+
 // . 4 0 8 H E A V Y  R I F L E S
 
 /datum/design/autolathe/gun/standard_omnirifle
@@ -257,7 +267,7 @@
 
 /datum/design/autolathe/gun/omnirifle
 	name = "SA BR .408 \"Hustler\""
-	build_path = /obj/item/weapon/gun/projectile/automatic/omnirifle/
+	build_path = /obj/item/weapon/gun/projectile/automatic/omnirifle
 
 /datum/design/autolathe/gun/omnicarbine
 	name = "H&S BR .408 \"Boar\""
@@ -275,6 +285,11 @@
 	name = "SA BR - .408  \"STS-40\""
 	build_path = /obj/item/weapon/gun/projectile/automatic/sts/hrifle
 
+// .40 rifles
+
+/datum/design/autolathe/gun/lever
+	name = "H&S .40 lever action \"Armstrong\""
+	build_path = /obj/item/weapon/gun/projectile/boltgun/lever
 
 // S N O W F L A K E S
 
@@ -322,6 +337,14 @@
 	name = "NT LP \"Serenity\""
 	build_path = /obj/item/weapon/gun/energy/ntpistol
 
+/datum/design/autolathe/gun/lasercore
+	name = "H&S PDW \"Laser Core\""
+	build_path = /obj/item/weapon/gun/energy/lasercore
+
+/datum/design/autolathe/gun/firestorm
+	name = "H&S PDW \"Firestorm\""
+	build_path = /obj/item/weapon/gun/energy/firestorm
+
 /datum/design/autolathe/gun/energy_crossbow
 	name = "OT EC \"Nemesis\""
 	build_path = /obj/item/weapon/gun/energy/crossbow
@@ -365,3 +388,9 @@
 /datum/design/autolathe/gun/plasma/martyr
 	name = "NT PR \"Martyr\""
 	build_path = /obj/item/weapon/gun/energy/plasma/martyr
+
+// Gun mods
+
+/datum/design/autolathe/gun/cop_mod
+	name = "H&S \"Cop Block\" Trigger"
+	build_path = /obj/item/weapon/gun_upgrade/trigger/cop_block

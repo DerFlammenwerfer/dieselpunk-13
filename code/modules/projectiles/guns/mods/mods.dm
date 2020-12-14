@@ -7,21 +7,21 @@
 /obj/item/weapon/gun_upgrade/barrel
 
 //Silences the weapon, reduces damage multiplier slightly, Legacy port.
-/obj/item/weapon/gun_upgrade/barrel/silencer
+/obj/item/weapon/gun_upgrade/muzzle/silencer
 	name = "silencer"
-	desc = "A threaded silencer that can be attached to the barrel of certain guns. Vastly reduces noise, but impedes muzzle velocity."
+	desc = "A threaded silencer that can be attached to the muzzle of certain guns. Vastly reduces noise, but impedes muzzle velocity."
 	matter = list(MATERIAL_PLASTEEL = 3, MATERIAL_PLASTIC = 1)
 	icon_state = "silencer"
 
 
-/obj/item/weapon/gun_upgrade/barrel/silencer/New()
+/obj/item/weapon/gun_upgrade/muzzle/silencer/New()
 	..()
 	var/datum/component/item_upgrade/I = AddComponent(/datum/component/item_upgrade)
 	I.weapon_upgrades = list(
 		GUN_UPGRADE_SILENCER = TRUE,
 		GUN_UPGRADE_DAMAGE_PLUS = -0.1
 		)
-	I.gun_loc_tag = GUN_BARREL
+	I.gun_loc_tag = GUN_MUZZLE
 	I.req_gun_tags = list(GUN_SILENCABLE)
 
 //Decreases fire delay. Acquired through loot spawns or guild crafting
@@ -42,7 +42,7 @@
 //Increases penetration multiplier, projectile speed. Increases fire delay. Acquired via science
 /obj/item/weapon/gun_upgrade/barrel/mag_accel
 	name = "Soteria \"Penetrator\" magnetic accelerator barrel"
-	desc = "Uses sympathetic magnetic coiling to increase exit velocity of a metal projectile."
+	desc = "Uses sympathetic magnetic coiling to increase exit velocity and penetration capabilities of a metal projectile. The added strain to the gun's barrel requires an additional cooldown period between shots."
 	icon_state = "Penetrator"
 	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_PLASTEEL = 1, MATERIAL_GOLD = 1)
 
@@ -51,6 +51,7 @@
 	var/datum/component/item_upgrade/I = AddComponent(/datum/component/item_upgrade)
 	I.weapon_upgrades = list(
 		GUN_UPGRADE_PEN_MULT = 1.2,
+		GUN_UPGRADE_PIERC_MULT = 1, // Adds 1 to the gun's penetrating value
 		GUN_UPGRADE_STEPDELAY_MULT = 0.8,
 		GUN_UPGRADE_FIRE_DELAY_MULT = 1.5,
 		)
@@ -118,6 +119,7 @@
 	I.req_gun_tags = list(GUN_ENERGY)
 
 /obj/item/weapon/gun_upgrade/trigger
+	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_PLASTEEL = 1)
 
 //Disables the ability to toggle the safety, toggles the safety permanently off, decreases fire delay. Acquired through loot spawns
 /obj/item/weapon/gun_upgrade/trigger/dangerzone
@@ -137,12 +139,13 @@
 //Disables the ability to toggle the safety, toggles the safety permanently on, takes 2 minutes to remove (yikes). Acquired through loot spawns
 /obj/item/weapon/gun_upgrade/trigger/cop_block
 	name = "H&S \"Cop Block\" Trigger"
-	desc = "A simpler way of making a weapon display-only"
+	desc = "A trigger guard to force the safety on a gun, used to pacify weapons from targets or trigger happy marshals. A simpler way of making a weapon display-only"
 	icon_state = "Cop_Block"
 
 /obj/item/weapon/gun_upgrade/trigger/cop_block/New()
 	..()
 	var/datum/component/item_upgrade/I = AddComponent(/datum/component/item_upgrade)
+	I.install_time = WORKTIME_INSTANT
 	I.weapon_upgrades = list(
 		GUN_UPGRADE_FORCESAFETY = TRUE,
 		)
@@ -238,7 +241,7 @@
 // Double damage at the cost of more recoil and a tripled energy consumption
 /obj/item/weapon/gun_upgrade/mechanism/battery_shunt
 	name = "Soteria \"Thunder\" battery shunt"
-	desc = "This experimental battery shunt is a cutting edge tool attachment which bypasses battery protection circuits to deliver the maximum amount of power in the shortest amount of time."
+	desc = "This experimental battery shunt is a cutting edge tool attachment which bypasses battery protection circuits to deliver the maximum amount of power in the shortest amount of time. For those who care more about stopping power than number of shots."
 	icon_state = "battery_shunt"
 	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_PLASTEEL = 1, MATERIAL_GOLD = 1, MATERIAL_URANIUM = 1)
 
@@ -255,7 +258,7 @@
 // Greatly increase firerate at the cost of lower damage
 /obj/item/weapon/gun_upgrade/mechanism/overdrive
 	name = "Soteria \"Tesla\" overdrive chip"
-	desc = "This experimental chip is a cutting edge tool attachment which bypasses power management protocols to dramatically increase the rate of fire at the cost of a reduced stopping power."
+	desc = "This experimental chip is a cutting edge tool attachment which bypasses power management protocols to dramatically increase the rate of fire at the cost of reduced stopping power."
 	icon_state = "overdrive"
 	matter = list(MATERIAL_PLASTIC = 2, MATERIAL_PLASTEEL = 1, MATERIAL_GOLD = 1, MATERIAL_URANIUM = 1)
 
@@ -332,3 +335,93 @@
 	I.req_gun_tags = list(GUN_PROJECTILE)
 	I.gun_loc_tag = GUN_MECHANISM
 */
+
+/obj/item/weapon/gun_upgrade/mechanism/grayson_master_catalyst
+	name = "Grayson \"Master Unmaker\" infuser"
+	desc = "One of the rarest and most powerful weapon modification ever made by Grayson Positronics and one of the numerous reasons they remain a threat even after the company collapsed into malfunctioning artificial intelligences. It can infuse any weapon with immense power that causes utter ruin to machine and organic matter alike."
+	icon_state = "psionic_catalyst"
+	matter = list(MATERIAL_PLATINUM = 5, MATERIAL_PLASTEEL = 3, MATERIAL_DIAMOND = 10)
+
+/obj/item/weapon/gun_upgrade/mechanism/grayson_master_catalyst/New()
+	..()
+	var/datum/component/item_upgrade/I = AddComponent(/datum/component/item_upgrade)
+	I.weapon_upgrades = list(
+		GUN_UPGRADE_DAMAGE_BRUTE = 10,
+		GUN_UPGRADE_DAMAGE_BURN = 10,
+		GUN_UPGRADE_DAMAGE_TOX = 5,
+		GUN_UPGRADE_DAMAGE_OXY = 5,
+		GUN_UPGRADE_DAMAGE_CLONE = 5,
+		GUN_UPGRADE_DAMAGE_HALLOSS = 5
+	)
+	I.removal_time *= 10
+	I.gun_loc_tag = GUN_MECHANISM
+
+/obj/item/weapon/gun_upgrade/barrel/gauss
+	name = "Void Wolf \"Gauss Coil\" barrel"
+	desc = "Makes bullets pierce through walls and penetrate armor easily, but loses rate of fire and increases recoil."
+	icon_state = "Gauss"
+
+/obj/item/weapon/gun_upgrade/barrel/gauss/New()
+	..()
+	var/datum/component/item_upgrade/I = AddComponent(/datum/component/item_upgrade)
+	I.weapon_upgrades = list(
+		GUN_UPGRADE_DAMAGE_BRUTE = 10,
+		GUN_UPGRADE_PEN_MULT = 1.2,
+		GUN_UPGRADE_PIERC_MULT = 1,
+		GUN_UPGRADE_FIRE_DELAY_MULT = 1.2,
+		GUN_UPGRADE_RECOIL = 1.2,
+		)
+	I.removal_time *= 10
+	I.gun_loc_tag = GUN_BARREL
+	I.req_gun_tags = list(GUN_PROJECTILE)
+
+/obj/item/weapon/gun_upgrade/trigger/boom
+	name = "Void Wolf \"Self Destruct\" trigger"
+	desc = "A trigger built for energy weapons that cause it to explode when fired, the perfect bait and switch for the dishonest pirate."
+	icon_state = "Boom"
+
+/obj/item/weapon/gun_upgrade/trigger/boom/New()
+	..()
+	var/datum/component/item_upgrade/I = AddComponent(/datum/component/item_upgrade)
+	I.weapon_upgrades = list(
+		GUN_UPGRADE_EXPLODE = TRUE,
+		)
+	I.removal_time *= 10
+	I.gun_loc_tag = GUN_TRIGGER
+	I.req_gun_tags = list(GUN_ENERGY)
+
+/obj/item/weapon/gun_upgrade/scope
+//	bad_type = /obj/item/weapon/gun_upgrade/scope
+
+/obj/item/weapon/gun_upgrade/scope/watchman
+	name = "Artificer's Guild \"Watchman\" scope"
+	desc = "In the age of 3D printing, the design of a scope one can rely on is common, but a scope that is special is a rarity. Hand-made scopes forged by the Artificer's Guild are known across the entire terran federation for the quality they have and this one is no diffrent."
+	icon_state = "Watchman"
+	matter = list(MATERIAL_GLASS = 2, MATERIAL_PLASTEEL = 1)
+
+/obj/item/weapon/gun_upgrade/scope/watchman/New()
+	..()
+	var/datum/component/item_upgrade/I = AddComponent(/datum/component/item_upgrade)
+	I.weapon_upgrades = list(
+		GUN_UPGRADE_OFFSET = 0.9,
+		GUN_UPGRADE_RECOIL = 1.1,
+		GUN_UPGRADE_ZOOM = 1.2
+		)
+	I.gun_loc_tag = GUN_SCOPE
+	I.req_gun_tags = list(GUN_SCOPE)
+
+/obj/item/weapon/gun_upgrade/scope/killer
+	name = "Void Wolf \"Contract Killer\" scope"
+	desc = "A digital scope machine printed by void wolf reavers, often combined with gauss weaponry and thermal scanners to cause breaches to ships and dead pilots in void-based dog fights."
+	icon_state = "Killer"
+
+/obj/item/weapon/gun_upgrade/scope/killer/New()
+	..()
+	var/datum/component/item_upgrade/I = AddComponent(/datum/component/item_upgrade)
+	I.weapon_upgrades = list(
+		GUN_UPGRADE_OFFSET = 0.7,
+		GUN_UPGRADE_RECOIL = 1.3,
+		GUN_UPGRADE_ZOOM = 2
+		)
+	I.gun_loc_tag = GUN_SCOPE
+	I.req_gun_tags = list(GUN_SCOPE)

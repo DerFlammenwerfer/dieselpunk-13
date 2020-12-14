@@ -23,4 +23,5 @@
 		WEAPON_CHARGE
 	)
 	twohanded = TRUE
+	gun_tags = list(GUN_ENERGY)
 	one_hand_penalty = 15

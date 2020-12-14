@@ -30,9 +30,10 @@
 	permeability_coefficient = 0.05
 	price_tag = 50
 
-	New()
-		//average of 0.5, somewhat better than regular gloves' 0.75
-		siemens_coefficient = pick(0,0.1,0.3,0.5,0.5,0.75,1.35)
+/obj/item/clothing/gloves/insulated/cheap/Initialize(mapload, ...)
+	. = ..()
+	//average of 0.5, somewhat better than regular gloves' 0.75
+	siemens_coefficient = pick(0,0.1,0.3,0.5,0.5,0.75,1.35)
 
 /obj/item/clothing/gloves/thick
 	desc = "A pair of fire-resistant black work gloves."
@@ -48,6 +49,12 @@
 	min_cold_protection_temperature = GLOVES_MIN_COLD_PROTECTION_TEMPERATURE
 	heat_protection = ARMS
 	max_heat_protection_temperature = GLOVES_MAX_HEAT_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/gloves/thick/brown
+	desc = "A pair of fire-resistant brown work gloves."
+	name = "thick brown gloves"
+	icon_state = "germangloves"
+	item_state = "germangloves"
 
 /obj/item/clothing/gloves/thick/handmade
 	name = "handmade combat gloves"

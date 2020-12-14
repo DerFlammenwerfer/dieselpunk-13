@@ -121,6 +121,10 @@
 	new /obj/item/weapon/storage/pouch/pistol_holster(src)
 	new /obj/item/weapon/storage/pouch/baton_holster(src)
 	new /obj/item/clothing/suit/armor/commander/marshal_coat_ss(src)
+	if(prob(50))
+		new /obj/item/clothing/head/helmet/faceshield/helmet_visor(src)
+	else
+		new /obj/item/clothing/head/helmet/marshal_full(src)
 
 /obj/structure/closet/secure_closet/personal/security
 	name = "master-at-arms' locker"
@@ -173,6 +177,10 @@
 	new /obj/item/clothing/suit/armor/platecarrier/ih(src)
 	new /obj/item/taperoll/police(src)
 	new /obj/item/clothing/head/seccap(src)
+	if(prob(50))
+		new /obj/item/clothing/head/helmet/faceshield/helmet_visor(src)
+	else
+		new /obj/item/clothing/head/helmet/marshal_full(src)
 	new /obj/item/clothing/suit/armor/commander/marshal_coat(src)
 	new /obj/item/ammo_casing/light_rifle_257/rubber(src)
 	new /obj/item/ammo_casing/light_rifle_257/rubber(src)
@@ -209,6 +217,7 @@
 	new /obj/item/clothing/under/rank/inspector/black(src)
 	new /obj/item/clothing/under/rank/inspector(src)
 	new /obj/item/clothing/suit/storage/rank/det_trench(src)
+	new /obj/item/clothing/suit/storage/rank/det_trench/grey(src)
 	new /obj/item/clothing/suit/storage/rank/insp_trench(src)
 	new /obj/item/clothing/mask/gas/ihs(src)
 	new /obj/item/clothing/gloves/thick(src)

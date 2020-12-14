@@ -135,6 +135,7 @@
 	ambience = list('sound/ambience/maintambience.ogg')
 	area_light_color = COLOR_LIGHTING_MAINT_DARK
 	dynamic_lighting = FALSE
+	ship_area = FALSE
 
 /area/nadezhda/dungeon/outside/abandoned_solars
 	name = "Abandoned Solars"
@@ -252,6 +253,15 @@
 	icon_state = "forest"
 	sound_env = FOREST
 	forced_ambience = list('sound/ambience/forestamb1.ogg', 'sound/ambience/forestamb2.ogg', 'sound/ambience/forestamb3.ogg', 'sound/ambience/forestamb5.ogg', 'sound/ambience/forestamb6.ogg')
+
+/area/nadezhda/outside/forest/beast_cave_light
+	name = "Swamp Caves"
+	icon_state = "forest"
+
+/area/nadezhda/outside/forest/beast_cave_dark
+	name = "Swamp Caves"
+	icon_state = "erisblue"
+	dynamic_lighting = TRUE
 
 /area/nadezhda/outside/lakeside
     name = "Lakeside"
@@ -1333,6 +1343,18 @@ area/nadezhda/medical/medbaymeeting
 
 /area/nadezhda/security/prisoncells
 	name = "Prison Cells"
+	icon_state = "hammerblue"
+
+/area/nadezhda/security/laber_area
+	name = "Labor Transfer"
+	icon_state = "hammerblue"
+
+/area/nadezhda/security/hut_cell1
+	name = "HuT Cell 1"
+	icon_state = "hammerblue"
+
+/area/nadezhda/security/hut_cell2
+	name = "HuT Cell 2"
 	icon_state = "hammerblue"
 
 /area/nadezhda/security/evidencestorage

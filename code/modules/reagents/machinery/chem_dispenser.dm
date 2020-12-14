@@ -1,5 +1,5 @@
 #define chemical_dispenser_ENERGY_COST (CHEM_SYNTH_ENERGY * CELLRATE) //How many cell charge do we use per unit of chemical?
-#define BOTTLE_SPRITES list("bottle-1", "bottle-2", "bottle-3", "bottle-4") //list of available bottle sprites
+#define BOTTLE_SPRITES list("bottle") //list of available bottle sprites
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -263,7 +263,7 @@
 	density = FALSE
 	level0 = list(
 		"coffee","cream","tea","greentea","sugar","hot_coco","espresso")
-
+	hacked_reagents = list("ice")
 	level1 = list("cappuccino")
 	level2 = list("macchiato")
 	level3 = list("soymilk") //Commie stock part gives this

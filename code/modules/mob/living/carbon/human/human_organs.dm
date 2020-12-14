@@ -81,12 +81,6 @@
 			else
 				stance_damage += organ.get_tally()
 
-		// A missing limb causes high stance damage
-		if(!E)
-			stance_damage += 4
-		else
-			stance_damage += E.get_tally()
-
 	// Canes and crutches help you stand (if the latter is ever added)
 	// One cane fully mitigates a broken leg.
 	// Two canes are needed for a lost leg. If you are missing both legs, canes aren't gonna help you.

@@ -19,6 +19,13 @@
 				/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/colt = 3,
 				/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/rafale = 2,
 
+				/obj/item/weapon/computer_hardware/hard_drive/portable/design/blackshield/alemao = 6,
+				/obj/item/weapon/computer_hardware/hard_drive/portable/design/blackshield/strelki = 2,
+				/obj/item/weapon/computer_hardware/hard_drive/portable/design/blackshield/zatvor = 4,
+				/obj/item/weapon/computer_hardware/hard_drive/portable/design/blackshield/luger = 1,
+
+				/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/armstrong = 3,
+
 				/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/revolver = 2,
 				/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/sixshot = 1,
 
@@ -46,6 +53,8 @@
 				/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/counselor = 2,
 				/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/spiderrose = 1,
 				/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/martin = 3,
+				/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/firestorm = 0.6,
+				/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/lasercore = 0.4,
 
 				/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/themis = 1,
 				/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/lightfall = 1,
@@ -98,12 +107,13 @@
 				/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/mac = 4,
 				/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/greasegun = 2,
 				/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/ex_drozd = 2,
+				/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/ex_ppsh = 1,
 
 				/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/bulldog = 4,
 				/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/ostwind = 1,
 				/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/pitbull = 4,
 				/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/pulse_rifle = 1,
-				/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/boltgun_sa = 10,
+				/obj/item/weapon/computer_hardware/hard_drive/portable/design/blackshield/semyonovich = 2,
 				/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/sa_kalashnikov = 4,
 				/obj/item/weapon/computer_hardware/hard_drive/portable/design/blackshield/dp = 0.4,
 
@@ -115,6 +125,8 @@
 				/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/counselor = 6,
 				/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/spiderrose = 4,
 				/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/martin = 8,
+				/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/firestorm = 3,
+				/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/lasercore = 2,
 
 				/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/nemesis = 2,
 				/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/themis = 4,
@@ -143,7 +155,8 @@
 /obj/random/lathe_disk/advanced/onestar/item_to_spawn()
 	return pickweight(list(/obj/item/weapon/computer_hardware/hard_drive/portable/design/onestar/stockparts = 3,
 						/obj/item/weapon/computer_hardware/hard_drive/portable/design/onestar/cog = 1,
-						/obj/item/weapon/computer_hardware/hard_drive/portable/design/onestar = 1))
+						/obj/item/weapon/computer_hardware/hard_drive/portable/design/onestar = 1,
+						/obj/item/weapon/computer_hardware/hard_drive/portable/design/onestar/armor = 1))
 
 /obj/random/lathe_disk/advanced/excelsior
 	name = "random any excelsior lathe disk"
@@ -159,6 +172,7 @@
 						/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/ex_vintorez = 1,
 						/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/ex_boltgun = 1,
 						/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/ex_ak = 1,
+						/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/ex_ppsh = 1,
 						/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/ex_reclaimer = 1
 						))
 
@@ -176,5 +190,6 @@
 						/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/ex_vintorez = 1,
 						/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/ex_boltgun = 1,
 						/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/ex_ak = 1,
+						/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/ex_ppsh = 1,
 						/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/ex_reclaimer = 1
 						))

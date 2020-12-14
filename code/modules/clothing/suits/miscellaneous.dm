@@ -2,7 +2,7 @@
  * Lasertag
  */
 /obj/item/clothing/suit/fluff/bluetag
-	name = "blue laser tag armour"
+	name = "blue plasma tag armour"
 	desc = "Blue Pride, Station Wide."
 	icon_state = "bluetag"
 	item_state = "bluetag"
@@ -12,7 +12,7 @@
 	siemens_coefficient = 3.0
 
 /obj/item/clothing/suit/fluff/redtag
-	name = "red laser tag armour"
+	name = "red plasma tag armour"
 	desc = "Reputed to go faster."
 	icon_state = "redtag"
 	item_state = "redtag"
@@ -22,7 +22,7 @@
 	siemens_coefficient = 3.0
 
 /obj/item/clothing/suit/fluff/greentag
-	name = "green laser tag armour"
+	name = "green plasma tag armour"
 	desc = "Started green, ended a legend."
 	icon_state = "greentag"
 	item_state = "greentag"
@@ -32,7 +32,7 @@
 	siemens_coefficient = 3.0
 
 /obj/item/clothing/suit/fluff/yellowtag
-	name = "yellow laser tag armour"
+	name = "yellow plasma tag armour"
 	desc = "The only thing yellow about you is your armor."
 	icon_state = "yellowtag"
 	item_state = "yellowtag"
@@ -239,3 +239,20 @@ obj/item/clothing/suit/fluff/kimono
 	desc = "Modesty doesn't have to mean chastity..."
 	icon_state = "church_bimbo"
 	item_state = "church_bimbo"
+
+/obj/item/clothing/suit/storage/punkvest
+	name = "punk vest"
+	desc = "Sleek grey vest with pockets in it. You feel absolutely punk wearing this sturdy leather coat."
+	icon_state = "punk_vest"
+	item_state = "punk_vest"
+	armor = list(
+		melee = 10,
+		bullet = 20,
+		energy = 10,
+		bomb = 0,
+		bio = 0,
+		rad = 0
+	)
+	body_parts_covered = UPPER_TORSO
+	cold_protection = UPPER_TORSO
+	min_cold_protection_temperature = T0C - 20

@@ -31,6 +31,7 @@
 	melee_damage_lower = 10
 	melee_damage_upper = 15
 	poison_type = "mutagen"
+	meat_type = /obj/item/weapon/reagent_containers/food/snacks/meat/spider/midwife
 
 /mob/living/carbon/superior_animal/giant_spider/nurse/recluse
 	name = "recluse spider"
@@ -176,13 +177,13 @@
 									O.forceMove(C)
 
 								for(var/mob/living/M in targetTurf)
-									if((M.stat == CONSCIOUS) || istype(M, /mob/living/carbon/superior_animal/giant_spider) || is_carrion(M))
+									if((M.stat == CONSCIOUS) || is_carrion(M))
 										continue
 									large_cocoon = 1
 
 									if (istype(M, /mob/living))
 										src.visible_message(SPAN_WARNING("\The [src] sticks a proboscis into \the [cocoon_target] and sucks a viscous substance out."))
-										fed++
+										fed += 1 //Takes 2 mobs before we can lay eggs
 
 									C = C || new(targetTurf)
 									M.forceMove(C)

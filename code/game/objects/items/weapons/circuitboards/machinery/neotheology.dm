@@ -1,4 +1,4 @@
-
+/*
 /obj/item/weapon/circuitboard/neotheology/cloner
 	build_name = "neotheology cloner"
 	build_path = /obj/machinery/neotheology/cloner
@@ -21,7 +21,7 @@
 		/obj/item/weapon/stock_parts/scanning_module = 2,
 		/obj/item/weapon/implant/core_implant/cruciform = 1
 	)
-
+*/
 
 /obj/item/weapon/circuitboard/neotheology/biocan
 	build_name = "biomass container"

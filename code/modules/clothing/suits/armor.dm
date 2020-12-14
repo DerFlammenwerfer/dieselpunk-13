@@ -131,6 +131,27 @@
 						 /obj/item/weapon/storage/toolbox)
 	flags_inv = HIDEJUMPSUIT
 
+/obj/item/clothing/suit/hooded/enginseer
+	name = "'Enginseer' artificer armor"
+	desc = "The Cult Mechanicus is famous for the distinctive red robes worn by its clergy, and for their relentless transhumanism, considered extreme even among their fellow citizens on Xianjiang. \
+	This unique armor is worn by Enginseers; Acolyte artisans, often serving as a Chamber Menial within the Orden Hospitaller, who construct, repair, and maintain all manner of weapons, equipment, and machines with all the reverence of a religious duty.\
+	It is roughly analogous to the 'Mark V' environment suits, but with"
+	icon_state = "enginseer"
+	item_flags = THICKMATERIAL | COVER_PREVENT_MANIPULATION
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	hoodtype = /obj/item/clothing/head/hood/enginseer
+	armor = list(melee = 35, bullet = 35, energy = 100, bomb = 50, bio = 100, rad = 100)
+	extra_allowed = list(/obj/item/weapon/extinguisher,
+						 /obj/item/weapon/tool,
+						 /obj/item/weapon/tool_upgrade,
+						 /obj/item/stack/cable_coil,
+						 /obj/item/device/t_scanner,
+						 /obj/item/device/scanner/gas,
+						 /obj/item/taperoll/engineering,
+						 /obj/item/weapon/storage/toolbox,
+						 /obj/item/weapon/tank)
+	siemens_coefficient = 0
+
 /obj/item/clothing/suit/armor/vest/soteriasuit
 	name = "'Mark II' enviromental protection suit"
 	desc = "For working in hazardous enviroments. While its built for most enviroments, one of those is not space. This suit is a cheap and badly made copy of the Artificer Guilds original design. \

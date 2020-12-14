@@ -36,6 +36,13 @@
 	character_name = list("Nikolai Volkov")
 
 //  D CKEYS
+//DerFlammenwerfer
+//Cult Mechanicus Members
+/datum/gear/fluff/enginseer
+	path = /obj/item/clothing/suit/hooded/enginseer
+	display_name = "Enginseer Armor"
+	ckeywhitelist = list("derflammenwerfer")
+	character_name = list("Morran Dominic")
 
 //  E CKEYS
 

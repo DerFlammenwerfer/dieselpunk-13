@@ -98,6 +98,15 @@
 	body_parts_covered = HEAD|FACE|EARS
 	flash_protection = FLASH_PROTECTION_MAJOR
 
+/obj/item/clothing/head/hood/enginseer
+	name = "'Enginseer' artificer hood"
+	desc = "The distinctive armored hood, mask, and reactive visor of a Cult Mechanicus Enginseer"
+	icon_state = "enginseer"
+	armor = list(melee = 40, bullet = 40, energy = 40, bomb = 60, bio = 100, rad = 100) //Cant have armor mods
+	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR
+	body_parts_covered = HEAD|FACE|EARS
+	flash_protection = FLASH_PROTECTION_MAJOR
+
 /obj/item/clothing/head/helmet/soteriasuit
 	name = "'Mark II' enviromental protection helmet"
 	desc = "You feel like this helmet is cheap, for some reason."

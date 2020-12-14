@@ -682,13 +682,14 @@
 	if(adj_temp > 0)
 		holder.remove_reagent("frostoil", 1 * effect_multiplier)
 	// Coffee is really bad for you with busted kidneys.
-	var/mob/living/carbon/human/H = M
-	var/obj/item/organ/internal/kidneys/K = H.internal_organs_by_name[BP_KIDNEYS]
-	if (istype(K))
-		if(K.is_bruised())
-			M.adjustToxLoss(0.1)
-		else if(K.is_broken())
-			M.adjustToxLoss(0.3)
+	if(ishuman(M))
+		var/mob/living/carbon/human/H = M
+		var/obj/item/organ/internal/kidneys/K = H.random_organ_by_process(OP_KIDNEYS)
+		if(istype(K))
+			if(K.is_bruised())
+				M.adjustToxLoss(0.1)
+			else if(K.is_broken())
+				M.adjustToxLoss(0.3)
 	M.add_chemical_effect(CE_PULSE, 1)
 
 /datum/reagent/drink/coffee/overdose(var/mob/living/carbon/M, var/alien)
@@ -2113,8 +2114,8 @@
 		M.adjustToxLoss(0.2 * effect_multiplier)
 	if(dose > 60 && ishuman(M) && prob(5))
 		var/mob/living/carbon/human/H = M
-		var/obj/item/organ/internal/heart/L = H.internal_organs_by_name[BP_HEART]
-		if (L && istype(L))
+		var/obj/item/organ/internal/heart/L = H.random_organ_by_process(OP_HEART)
+		if(L && istype(L))
 			if(dose < 120)
 				L.take_damage(1 * effect_multiplier, 0)
 			else

@@ -35,10 +35,24 @@
 	designs = list(
 		/datum/design/autolathe/gun/ten_dark,
 		/datum/design/autolathe/gun/ladon,
- 		/datum/design/autolathe/gun/naga,
-		/datum/design/autolathe/gun/omnirifle,//rifles
+		/datum/design/autolathe/gun/naga,
+		//SMGs
+		/datum/design/autolathe/gun/alemao,
+		/datum/design/autolathe/gun/greasegun,
+		//rifles
+		/datum/design/autolathe/gun/omnirifle,
 		/datum/design/autolathe/gun/standard_omnirifle,
 		/datum/design/autolathe/gun/omnicarbine,
+		/datum/design/autolathe/gun/rds_omnicarbine,
+		/datum/design/autolathe/gun/strelki,
+		/datum/design/autolathe/gun/luger,
+		//machinegun
+		/datum/design/autolathe/gun/dp,
+		//bolt gun
+		/datum/design/autolathe/gun/zatvor,
+		//STS
+		/datum/design/autolathe/gun/sts25,
+		/datum/design/autolathe/gun/sts30,
 		/datum/design/autolathe/gun/sts40,
 		/datum/design/autolathe/gun/rds_omnicarbine,
 		)
@@ -78,6 +92,94 @@
 		/datum/design/autolathe/ammo/hrifle_ammobox_practice = 0,
 		)
 
+
+	designs = list(
+		/datum/design/autolathe/gun/luger = 6,
+		/datum/design/autolathe/ammo/smg = 3,
+		/datum/design/autolathe/ammo/smg_rubber = 3,
+		/datum/design/autolathe/ammo/smg_practice = 0,
+		/datum/design/autolathe/ammo/hpistol_practice = 0,
+		/datum/design/autolathe/ammo/hpistol_rubber = 2,
+		/datum/design/autolathe/ammo/hpistol = 2,
+		/datum/design/autolathe/ammo/pistol_practice = 0,
+		/datum/design/autolathe/ammo/pistol_rubber,
+		/datum/design/autolathe/ammo/pistol,
+		)
+
+/obj/item/weapon/computer_hardware/hard_drive/portable/design/blackshield/alemao
+	disk_name = "Blackshield .35 \"O Alemao\""
+	icon_state = "blackshield"
+	license = 8
+
+	designs = list(
+		/datum/design/autolathe/gun/alemao = 3,
+		/datum/design/autolathe/ammo/pistol_practice = 0,
+		/datum/design/autolathe/ammo/pistol_rubber,
+		/datum/design/autolathe/ammo/pistol,
+		/datum/design/autolathe/ammo/pistol_lethal = 2,
+		)
+
+/obj/item/weapon/computer_hardware/hard_drive/portable/design/blackshield/strelki
+	disk_name = "Blackshield 7.5mm \"strelki\""
+	icon_state = "blackshield"
+	license = 8
+
+	designs = list(
+		/datum/design/autolathe/gun/strelki = 3,
+		/datum/design/autolathe/ammo/rifle,
+		/datum/design/autolathe/ammo/rifle_rubber,
+		/datum/design/autolathe/ammo/rifle_practice = 0,
+		/datum/design/autolathe/ammo/rifle_lethal = 2,
+		)
+
+/obj/item/weapon/computer_hardware/hard_drive/portable/design/blackshield/zatvor
+	disk_name = "Blackshield .257 bolt \"zatvor\""
+	icon_state = "blackshield"
+	license = 8
+
+	designs = list(
+		/datum/design/autolathe/gun/zatvor = 3,
+		/datum/design/autolathe/ammo/lrifle_ammobox_small = 2,
+		/datum/design/autolathe/ammo/lrifle_ammobox_small_practice = 0,
+		/datum/design/autolathe/ammo/lrifle_ammobox_small_rubber = 2,
+		/datum/design/autolathe/ammo/lrifle_ammobox_small_lethal = 3,
+		)
+
+/obj/item/weapon/computer_hardware/hard_drive/portable/design/blackshield/semyonovich
+	disk_name = "Blackshield .35 Auto \"Semyonovich\""
+	icon_state = "blackshield"
+	license = 8
+
+	designs = list(
+		/datum/design/autolathe/gun/ppv = 3,
+		/datum/design/autolathe/ammo/pistol_35_drum,
+		/datum/design/autolathe/ammo/pistol_35_drum/empty = 0,
+		/datum/design/autolathe/ammo/pistol_35_drum/rubber,
+		/datum/design/autolathe/ammo/pistol_35_drum/lethal = 2,
+		)
+
+/obj/item/weapon/computer_hardware/hard_drive/portable/design/blackshield/dp
+	disk_name = "Blackshield - \"Pulemyot Degtyaryova\" LMG"
+	icon_state = "blackshield"
+	license = 8
+
+	designs = list(
+		/datum/design/autolathe/gun/dp = 3,
+		/datum/design/autolathe/ammo/maxim = 1,
+		)
+
+/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/greasegun
+	disk_name = "Blackshield - .35 Auto \"Grease Gun\""
+	icon_state = "blackshield"
+
+	license = 8
+	designs = list(
+		/datum/design/autolathe/gun/greasegun = 3,
+		/datum/design/autolathe/ammo/smg_practice = 0,
+		/datum/design/autolathe/ammo/smg_rubber,
+		/datum/design/autolathe/ammo/smg,
+		/datum/design/autolathe/ammo/smg_lethal = 2,
+	)
 
 // Magazines and ammo
 
@@ -468,6 +570,18 @@
 	license = 8
 	designs = list(
 		/datum/design/autolathe/gun/pug = 3,
+		/datum/design/autolathe/ammo/m12beanbag, // Never add tazershells, for love of god
+		/datum/design/autolathe/ammo/m12pellet,
+		/datum/design/autolathe/ammo/m12slug,
+		)
+
+/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/sixshot
+	disk_name = "SA - 20mm Revolving Shotgun"
+	icon_state = "ironhammer"
+
+	license = 8
+	designs = list(
+		/datum/design/autolathe/gun/sixshot = 3,
 		/datum/design/autolathe/ammo/m12beanbag, // Never add tazershells, for love of god
 		/datum/design/autolathe/ammo/m12pellet,
 		/datum/design/autolathe/ammo/m12slug,

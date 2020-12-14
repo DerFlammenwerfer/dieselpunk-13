@@ -19,6 +19,7 @@
 				/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/rafale = 2,
 
 				/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/revolver = 2,
+				/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/sixshot = 1,
 
 				/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/doublebarrel = 2,
 				/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/grizzly = 3,
@@ -94,6 +95,7 @@
 				/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/wirbelwind = 4,
 				/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/texan = 4,
 				/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/mac = 4,
+				/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/greasegun = 2,
 				/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/ex_drozd = 2,
 
 				/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/bulldog = 4,
@@ -102,6 +104,7 @@
 				/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/pulse_rifle = 1,
 				/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/boltgun_sa = 10,
 				/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/sa_kalashnikov = 4,
+				/obj/item/weapon/computer_hardware/hard_drive/portable/design/blackshield/dp = 0.4,
 
 				/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/heavysniper = 1,
 				/obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/sa_pk = 1,

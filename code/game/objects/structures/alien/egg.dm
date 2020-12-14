@@ -80,6 +80,7 @@
 		progress = MAX_PROGRESS // Someone else can have a go.
 		return // What a pain.
 
+/*
 	// Create the mob, transfer over key.
 	var/mob/living/carbon/alien/larva/larva = new(get_turf(src))
 	larva.ckey = user.ckey
@@ -92,5 +93,6 @@
 	name = "hatched alien egg"
 	desc += " This one has hatched."
 	update_icon()
+*/
 
 #undef MAX_PROGRESS

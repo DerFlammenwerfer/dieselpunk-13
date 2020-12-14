@@ -130,7 +130,7 @@
 /obj/item/clothing/head/hood/enginseer
 	name = "'Enginseer' artificer hood"
 	desc = "The distinctive armored hood, mask, and reactive visor of a Cult Mechanicus Enginseer"
-	icon_state = "enginseer"
+	icon_state = "enginseer_hood"
 	armor = list(melee = 40, bullet = 40, energy = 40, bomb = 60, bio = 100, rad = 100) //Cant have armor mods
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|BLOCKHAIR
 	body_parts_covered = HEAD|FACE|EARS

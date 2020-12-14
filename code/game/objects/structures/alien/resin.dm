@@ -30,6 +30,7 @@
 	T.thermal_conductivity = initial(T.thermal_conductivity)
 	. = ..()
 
+/*
 /obj/structure/alien/resin/attack_hand(var/mob/user)
 	if (HULK in user.mutations)
 		visible_message(SPAN_DANGER("\The [user] destroys \the [name]!"))
@@ -48,3 +49,4 @@
 		health -= rand(5,10)
 	healthCheck()
 	return
+*/

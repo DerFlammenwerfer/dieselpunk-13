@@ -107,7 +107,7 @@
 		occupant.forceMove(loc)
 		occupant = null
 	else
-		if(get_progress(progress) >= CLONING_MEAT)
+		if(progress >= CLONING_MEAT)
 			new /obj/item/weapon/reagent_containers/food/snacks/meat(loc)
 
 	update_icon()
@@ -177,8 +177,7 @@
 			update_icon()
 			return
 
-		progress++
-		var/progress_percent = get_progress()
+		progress += cloning_speed
 
 		if(progress <= CLONING_DONE)
 			if(container)
@@ -188,8 +187,8 @@
 				stop()
 
 		if(occupant && ishuman(occupant))
-			occupant.setCloneLoss(CLONING_DONE-progress_percent)
-			occupant.setBrainLoss(CLONING_DONE-progress_percent)
+			occupant.setCloneLoss(CLONING_DONE-progress)
+			occupant.setBrainLoss(CLONING_DONE-progress)
 
 			occupant.adjustOxyLoss(-4)
 			occupant.Paralyse(4)
@@ -197,7 +196,7 @@
 			occupant.updatehealth()
 
 
-		if(progress_percent >= CLONING_MEAT && !occupant)
+		if(progress >= CLONING_MEAT && !occupant)
 			var/datum/core_module/cruciform/cloning/R = reader.implant.get_module(CRUCIFORM_CLONING)
 			if(!R)
 				open_anim()
@@ -258,7 +257,7 @@
 
 
 	/////////BODY
-	var/P = get_progress()
+	var/P = progress
 	if(cloning && P >= CLONING_START)
 		var/icon/IC = icon(icon, "clone_bones")
 		var/crop = 32-min(32,round(((P-CLONING_START)/(CLONING_BONES-CLONING_START))*32))

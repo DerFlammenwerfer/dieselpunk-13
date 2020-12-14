@@ -162,13 +162,6 @@ var/global/list/hair_gradients_list = list(
 	"Vertical Split" = "vsplit"
 	)
 
-var/global/list/hair_gradients_list = list(
-	"None" = "none",
-	"Fade (Up)" = "fadeup",
-	"Fade (Down)" = "fadedown",
-	"Vertical Split" = "vsplit"
-	)
-
 //////////////////////////
 /////Initial Building/////
 //////////////////////////

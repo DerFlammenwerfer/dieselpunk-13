@@ -168,8 +168,8 @@
 /obj/item/clothing/suit/hooded/enginseer
 	name = "'Enginseer' artificer armor"
 	desc = "The Cult Mechanicus is famous for the distinctive red robes worn by its clergy, and for their relentless transhumanism, considered extreme even among their fellow citizens on Xianjiang. \
-	This unique armor is worn by Enginseers; Acolyte artisans, often serving as a Chamber Menial within the Orden Hospitaller, who construct, repair, and maintain all manner of weapons, equipment, and machines with all the reverence of a religious duty.\
-	It is roughly analogous to the 'Mark V' environment suits, but with"
+	This unique armor is worn by Enginseers; Acolyte artisans, often serving as a Chamber Menial within the Orden Hospitaller, who construct, repair, and maintain all manner of weapons, equipment, and machines with all the reverence of a religious duty. \
+	It is roughly analogous to the 'Mark V' environment suits, but with insulation and faraday fibers woven into the fabric to protect the machinery it covers from electric shock and EMP effects."
 	icon_state = "enginseer"
 	item_flags = THICKMATERIAL | COVER_PREVENT_MANIPULATION
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS

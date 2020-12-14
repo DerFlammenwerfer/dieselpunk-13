@@ -83,7 +83,7 @@
 	else if(default_description)
 		set_description(new default_description)
 
-	make_bones()
+	make_base_internal_organs()
 	..(holder)
 	if(istype(holder))
 		sync_colour_to_human(owner)
@@ -110,7 +110,7 @@
 	src.icon_position = desc.icon_position
 	src.body_part = desc.body_part
 	src.additional_limb_parts = desc.additional_limb_parts
-	src.parent_organ = desc.parent_organ
+	src.parent_organ_base = desc.parent_organ_base
 	src.default_bone_type = desc.default_bone_type
 
 	src.max_damage = desc.max_damage
@@ -192,8 +192,16 @@
 
 	SSnano.update_uis(src)
 
+/obj/item/organ/external/proc/make_base_internal_organs()
+	if(is_stump(src))
+		return
+	make_bones()
+	make_nerves()
+	make_muscles()
+	make_blood_vessels()
+
 /obj/item/organ/external/proc/make_bones()
-	if(default_bone_type && !is_stump(src))
+	if(default_bone_type)
 		var/obj/item/organ/internal/bone/bone
 		if(nature < MODIFICATION_SILICON)
 			bone = new default_bone_type
@@ -202,6 +210,41 @@
 			bone = new mecha_bone
 
 		bone?.replaced(src)
+
+/obj/item/organ/external/proc/make_nerves()
+	var/obj/item/organ/internal/nerve/nerve
+	if(nature < MODIFICATION_SILICON)
+		nerve = new /obj/item/organ/internal/nerve
+	else
+		nerve = new /obj/item/organ/internal/nerve/robotic
+
+	nerve?.replaced(src)
+
+/obj/item/organ/external/proc/make_muscles()
+	var/obj/item/organ/internal/muscle/muscle
+	if(nature < MODIFICATION_SILICON)
+		muscle = new /obj/item/organ/internal/muscle
+	else
+		muscle = new /obj/item/organ/internal/muscle/robotic
+
+	muscle?.replaced(src)
+
+/obj/item/organ/external/proc/make_blood_vessels()
+	var/obj/item/organ/internal/blood_vessel/blood_vessel
+	if(nature < MODIFICATION_SILICON)	//No robotic blood vesseles
+		blood_vessel = new /obj/item/organ/internal/blood_vessel
+
+	blood_vessel?.replaced(src)
+
+/obj/item/organ/external/proc/update_limb_efficiency()
+	limb_efficiency = 0
+	limb_efficiency += owner.get_specific_organ_efficiency(OP_NERVE, organ_tag) + owner.get_specific_organ_efficiency(OP_MUSCLE, organ_tag)
+	if(BP_IS_ROBOTIC(src))
+		limb_efficiency = limb_efficiency / 2
+		return
+	limb_efficiency = (limb_efficiency + owner.get_specific_organ_efficiency(OP_BLOOD_VESSEL, organ_tag)) / 3
+
+
 
 /obj/item/organ/external/proc/update_bionics_hud()
 	switch(organ_tag)
@@ -460,13 +503,15 @@ This function completely restores a damaged organ to perfect condition.
 	else
 		..()
 
-//Handles bones untill a specific bone porcess is made.
+//Handles bones.
 /obj/item/organ/external/proc/handle_bones()
 	if(!(status & ORGAN_BROKEN))
 		perma_injury = 0
 
 	if(!is_stump())
-		if(!get_bone() && !(owner.status_flags & REBUILDING_ORGANS))
+		if(!get_bone())
+			if(owner && (owner.status_flags & REBUILDING_ORGANS))
+				return
 			for(var/obj/item/organ/external/limb in children)
 				limb.droplimb(FALSE, DROPLIMB_EDGE)
 			droplimb(FALSE, DROPLIMB_BLUNT)
@@ -782,8 +827,8 @@ Note that amputating the affected organ does in fact remove the infection from t
 
 // Checks if the limb should get fractured by now
 /obj/item/organ/external/proc/should_fracture()
-	var/obj/item/organ/internal/bone/B = get_bone()
-	return config.bones_can_break && !BP_IS_ROBOTIC(src) && brute_dam > ((min_broken_damage * ORGAN_HEALTH_MULTIPLIER) * B ? (B.organ_efficiency / 100) : 1)
+	var/bone_efficiency = owner.get_specific_organ_efficiency(OP_BONE, organ_tag)
+	return config.bones_can_break && !BP_IS_ROBOTIC(src) && (brute_dam > ((min_broken_damage * ORGAN_HEALTH_MULTIPLIER) * (bone_efficiency / 100)))
 
 // Fracture the bone in the limb
 /obj/item/organ/external/proc/fracture()

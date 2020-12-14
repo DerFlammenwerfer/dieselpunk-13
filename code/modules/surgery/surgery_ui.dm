@@ -112,6 +112,7 @@
 				)
 
 				actions_list.Add(list(reinforce_bone_action))
+
 		else
 			connect_action = list(
 				"name" = (organ.status & ORGAN_CUT_AWAY) ? "Attach" : "Separate",

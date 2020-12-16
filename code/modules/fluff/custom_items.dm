@@ -50,7 +50,7 @@
 // **************
 // Husikiro
 // **************
-/obj/item/clothing/face/mask/gas/kitsune_mask
+/obj/item/clothing/mask/gas/kitsune_mask
 	name = "Isamu's mask"
 	desc = "An iconic, specially crafted mask for a very specific kitsune"
 	icon_state ="kitsune_mask"

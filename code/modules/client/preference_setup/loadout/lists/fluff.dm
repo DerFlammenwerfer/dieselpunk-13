@@ -63,7 +63,7 @@
 //Isamu Rav
 /datum/gear/fluff/kitsune_mask
 	path = /obj/item/clothing/mask/gas/kitsune_mask
-	display_name = "Isamu's mask"
+	display_name = "kitsune mask"
 	ckeywhitelist = list("husikiro")
 	character_name = list("Isamu Rav")
 

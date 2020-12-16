@@ -256,3 +256,9 @@ obj/item/clothing/suit/fluff/kimono
 	body_parts_covered = UPPER_TORSO
 	cold_protection = UPPER_TORSO
 	min_cold_protection_temperature = T0C - 20
+
+/obj/item/clothing/suit/ivory
+	desc = "If listen closely, you can hear a religion rolling in their grave."
+	name = "revealing ivory vestments"
+	icon_state = "white_bimbo"
+	item_state = "white_bimbo"

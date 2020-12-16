@@ -40,3 +40,10 @@
 	icon = 'icons/mob/fluff_accessory.dmi'
 	icon_state = "wrb_kitsune"
 	ckeys_allowed = list("lukevale")
+
+//Husikiro kitsune things
+/datum/sprite_accessory/hair/fluff/kitsune
+	name = "long ears with hair (Isamu)"
+	icon = 'icons/mob/fluff_accessory.dmi'
+	icon_state = "hair_Isamu"
+	ckeys_allowed = list("Husikiro")

@@ -116,3 +116,7 @@
 /datum/gear/suit/church_bimbo
 	display_name = "modesty belt"
 	path = /obj/item/clothing/suit/church_bimbo
+
+/datum/gear/suit/ivory
+	display_name = "revealing ivory robes"
+	path = /obj/item/clothing/suit/ivory

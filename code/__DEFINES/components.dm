@@ -59,7 +59,7 @@
 // /datum/species signals
 
 // /obj signals
-
+#define COMSIG_OBJ_FACTION_ITEM_DESTROY "faction_item_destroy"
 // /obj/item signals
 #define COMSIG_IATTACK "item_attack"									//from /mob/ClickOn(): (/atom, /src, /params) If any reply to this returns TRUE, overrides attackby and afterattack
 #define COMSIG_ATTACKBY "attack_by"										//from /mob/ClickOn():

@@ -273,7 +273,7 @@
 	var/S = 0
 	for(var/obj/item/stack/material/I in contents)
 		S += 5
-		points += I.amount * I.price_tag * eat_eff
+		points += I.amount * I.price_tag * eat_eff * 10
 		//if(I.reagents.get_reagent_amount("nutriment") < 0.1)
 		//	points += 1
 		//else points += I.reagents.get_reagent_amount("nutriment") * 8 * eat_eff
@@ -318,7 +318,7 @@
 	update_icon()
 	updateUsrDialog() //maybe we can remove it
 	points -= cost
-	sleep(cost*0.5)
+	sleep(cost*0.5 / build_eff)
 
 	var/creating = recipe["path"]
 	var/reagent = recipe["reagent"]

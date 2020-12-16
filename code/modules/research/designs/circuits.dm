@@ -388,6 +388,16 @@
 	build_path = /obj/item/weapon/circuitboard/mindswapper
 	category = CAT_MEDI
 
+/datum/design/research/circuit/cloner
+	name = "Lazarus Chamber"
+	build_path = /obj/item/weapon/circuitboard/clonepod
+	category = CAT_MEDI
+
+/datum/design/research/circuit/soulcrypt_reader
+	name = "Soulcrypt scanner"
+	build_path = /obj/item/weapon/circuitboard/soulcrypt_reader
+	category = CAT_MEDI
+
 //Industrial Printing
 
 /datum/design/research/circuit/industrial_chems

@@ -1,12 +1,12 @@
 /obj/item/clothing/head/helmet/space/void/SCAF
 	name = "SCAF helmet"
-	desc = "A thick airtight helmet designed for planetside warfare retrofitted with seals to act like normal space suit helmet."
+	desc = "A thick airtight helmet designed for inter-ship warfare and fitted with a luminescent visor and a helmet camera. Widely regarded to be lostech, and rarely found with the suit it attaches to."
 	icon_state = "scaf"
 	item_state = "scaf"
 	armor = list(
-		melee = 60,
-		bullet = 55,
-		energy = 50,
+		melee = 35,
+		bullet = 45,
+		energy = 80,
 		bomb = 75,
 		bio = 100,
 		rad = 25
@@ -18,15 +18,17 @@
 
 /obj/item/clothing/suit/space/void/SCAF
 	name = "SCAF suit"
-	desc = "A bulky antique suit of refurbished infantry armour, retrofitted with seals and coatings to make it EVA capable but also reducing mobility."
+	desc = "If you thought the SolFed voidsuits were ancient, this relic of Sol's golden age surely puts them to shame. Designed prior to the collapse of Greyson Positronics, this pre-Unification 'Solar Command Aegis Fleet' \
+	voidsuit was designed primarily to combat laser weapons, which were ubiquitous at the time. In an age where ballistics were on the decline and melee combat was all but unheard of, this suit offers reduced protection against \
+	the former and only paltry protection against the latter. On the upside, its plastitanium carapace is exceedingly lightweight for the protection it offers and its laser dispersal is second to none."
 	icon_state = "scaf"
 	item_state = "scaf"
-	slowdown = 1.3
+	slowdown = 0.35
 	flags_inv = HIDEGLOVES|HIDEJUMPSUIT|HIDETAIL
 	armor = list(
-		melee = 60,
-		bullet = 55,
-		energy = 50,
+		melee = 35,
+		bullet = 45,
+		energy = 80,
 		bomb = 75,
 		bio = 100,
 		rad = 25
@@ -36,19 +38,38 @@
 	helmet = /obj/item/clothing/head/helmet/space/void/SCAF
 
 /obj/item/clothing/head/helmet/space/void/SCAF/blackshield
-	name = "blackshield SCAF helmet"
-	desc = "A thick airtight helmet designed for planetside warfare retrofitted with seals to act like normal space suit helmet. Features an inbuilt camera feed and helmet light."
+	name = "Black Guard SOAR helmet"
+	desc = "The spaceworthy helmet worn by the Black Guard's SOAR troopers, fitted with a powerful spotlight and a mounted camera."
 	icon_state = "scaf_mil"
 	item_state = "scaf_mil"
 	camera_networks = list(NETWORK_SECURITY)
 	light_overlay = "helmet_light_white"
+	armor = list(
+		melee = 50,
+		bullet = 75,
+		energy = 75,
+		bomb = 65,
+		bio = 100,
+		rad = 50
+	)
 
 /obj/item/clothing/suit/space/void/SCAF/blackshield
-	name = "blackshield SCAF suit"
-	desc = "A bulky antique suit of refurbished into elite infantry armour, retrofitted with seals and coatings to make it EVA capable but also reducing mobility. The blackshields answers to an all purpose mobile tank suit."
+	name = "Black Guard SOAR suit"
+	desc = "A spaceworthy marriage of pre-Unification lostech with modern Coalition armor plating, this lightweight, low drag voidsuit is worn exclusively by an elite unit of the Black Guard known as the \
+	Special Operations Aerospace Rangers. Troopers who have undergone SOAR training are considered a cut above their peers, authorized to operate in zones outside of the city while the Mechanized Infantry \
+	are only deployed in exceptional circumstances."
 	icon_state = "scaf_mil"
 	item_state = "scaf_mil"
 	helmet = /obj/item/clothing/head/helmet/space/void/SCAF/blackshield
+	slowdown = 0.35
+	armor = list(
+		melee = 50,
+		bullet = 75,
+		energy = 75,
+		bomb = 65,
+		bio = 100,
+		rad = 50
+	)
 
 //Voidsuit for traitors
 /obj/item/clothing/head/helmet/space/void/merc
@@ -57,7 +78,7 @@
 	icon_state = "syndiehelm"
 	item_state = "syndiehelm"
 	armor = list(
-		melee = 50,
+		melee = 80,
 		bullet = 40,
 		energy = 30,
 		bomb = 50,
@@ -83,7 +104,7 @@
 	desc = "An advanced suit that protects against injuries during special operations. This version is additionally reinforced against melee attacks."
 	item_state = "syndie_voidsuit"
 	armor = list(
-		melee = 50,
+		melee = 80,
 		bullet = 40,
 		energy = 30,
 		bomb = 50,
@@ -119,10 +140,10 @@
 	icon_state = "inqarmor_hood"
 	item_state = "inqarmor_hood"
 	armor = list(
-		melee = 65,
-		bullet = 65,
-		energy = 65,
-		bomb = 70,
+		melee = 75,
+		bullet = 75,
+		energy = 75,
+		bomb = 80,
 		bio = 100,
 		rad = 100
 	)
@@ -139,10 +160,10 @@
 	slowdown = 0
 	flags_inv = HIDEGLOVES|HIDEJUMPSUIT|HIDETAIL
 	armor = list(
-		melee = 65,
-		bullet = 65,
-		energy = 65,
-		bomb = 70,
+		melee = 75,
+		bullet = 75,
+		energy = 75,
+		bomb = 80,
 		bio = 100,
 		rad = 100
 	)
@@ -170,7 +191,7 @@
 
 /obj/item/clothing/suit/space/void/peking
 	name = "peking armored fatigues"
-	desc = "\"The flames blazed to the sky, death dragged its way demanding - he moved through Peking for 55 days..\" \
+	desc = "\"As the flames reached the sky, Death called for us all as he moved through Peking..\" \
 	A simple airtight armored suit used by Xian Jiang fighters. While the suit remains light weight in spite of its bulk one can feel by running their hand \
 	along the material over the arms or lower-body section that the suit has sacrificed some of its armor coverage for mobility."
 	icon_state = "peking"

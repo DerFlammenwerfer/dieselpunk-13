@@ -271,7 +271,11 @@
 	build_path = /obj/item/weapon/biogoop/muscle
 //[/IMPLANT]
 
-
+/datum/design/autolathe/soulcrypt
+	name = "Lazarus Soulcrypt"
+	build_path = /obj/item/weapon/implant/core_implant/soulcrypt
+	materials = list("steel" = 2, "gold" = 2, "plastic" = 2)
+	chemicals = list("silicon" = 10)
 
 //[/POUCHES]
 /datum/design/bioprinter/pouch/ammo

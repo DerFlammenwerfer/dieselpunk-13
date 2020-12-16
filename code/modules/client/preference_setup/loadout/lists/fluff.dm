@@ -44,6 +44,14 @@
 	ckeywhitelist = list("derflammenwerfer")
 	character_name = list("Morran Dominic")
 
+//Dopiotl
+//Coapal Nassedira
+/datum/gear/fluff/naga_bimbo
+	path = /obj/item/clothing/suit/naga_church
+	display_name = "ivory naga robe"
+	ckeywhitelist = list("Dopiotl")
+	character_name = list("Coapal Nassedira")
+
 //  E CKEYS
 
 //  F CKEYS
@@ -51,6 +59,13 @@
 //  G CKEYS
 
 //  H CKEYS
+//Husikiro
+//Isamu Rav
+/datum/gear/fluff/kitsune_mask
+	path = /obj/item/clothing/face/mask/gas/kitsune_mask
+	display_name = "Isamu's mask"
+	ckeywhitelist = list("Husikiro")
+	character_name = list("Isamu Rav")
 
 //  I CKEYS
 

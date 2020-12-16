@@ -448,55 +448,73 @@ obj/item/clothing/accessory/scarf/green
 
 /obj/item/clothing/accessory/ranks/blank
 	name = "shoulderboards (blank)"
-	desc = "Blank red shoulderboards denoting a Blackshield cadet, or, rarely, an emergency volunteer or an off-duty Blackshield Trooper given provisional duty in an emergency."
+	desc = "Blank red shoulderboards denoting a Black Guard cadet."
 	icon_state = "blank_tabs"
 	item_state = "blank_tabs"
 
+/obj/item/clothing/accessory/ranks/volunteer
+	name = "shoulderboards (Volunteer)"
+	desc = "Red and silver shoulderboards denoting an off-duty Black Guard soldier, or more rarely a volunteer militia given provisional duty during an emergency."
+	icon_state = "volunteer_tabs"
+	item_state = "volunteer_tabs"
+
 /obj/item/clothing/accessory/ranks/trooper
-	name = "shoulderboards (trooper)"
-	desc = "Red and silver shoulderboards denoting a Blackshield soldier with the rank of Trooper."
+	name = "shoulderboards (Trooper)"
+	desc = "Red and silver shoulderboards denoting a Black Guard soldier with the rank of Trooper."
+	icon_state = "trooper_tabs"
+	item_state = "trooper_tabs"
+
+/obj/item/clothing/accessory/ranks/troopleader
+	name = "shoulderboards (Pointman)"
+	desc = "Red and silver shoulderboards denoting a Black Guard soldier with the rank of Pointman."
 	icon_state = "trooper_tabs"
 	item_state = "trooper_tabs"
 
 /obj/item/clothing/accessory/ranks/corpsman
-	name = "shoulderboards (corpsman)"
-	desc = "Red and silver shoulderboards denoting a Blackshield soldier with the rank of Corpsman."
+	name = "shoulderboards (Corpsman)"
+	desc = "Red and silver shoulderboards denoting a Black Guard soldier with the rank of Corpsman."
 	icon_state = "corps_tabs"
 	item_state = "corps_tabs"
 
+/obj/item/clothing/accessory/ranks/specops
+	name = "shoulderboards (S.O.A.R.)"
+	desc = "Red and silver shoulderboards with daggers, denoting a Black Guard soldier with the rank of Ranger."
+	icon_state = "specops_tabs"
+	item_state = "specops_tabs"
+
 /obj/item/clothing/accessory/ranks/sergeant
-	name = "shoulderboards (sergeant)"
-	desc = "Red and silver shoulderboards denoting a Blackshield soldier with the rank of Sergeant."
+	name = "shoulderboards (Sergeant)"
+	desc = "Red and silver shoulderboards denoting a Black Guard soldier with the rank of Sergeant."
 	icon_state = "sergeant_tabs"
 	item_state = "sergeant_tabs"
 
 /obj/item/clothing/accessory/ranks/sergeantmajor
-	name = "shoulderboards (sergeant major)"
-	desc = "Red and silver shoulderboards denoting a Blackshield soldier with the rank of Sergeant Major."
+	name = "shoulderboards (Sergeant Major)"
+	desc = "Red and silver shoulderboards denoting a Black Guard soldier with the rank of Sergeant Major."
 	icon_state = "sergeantm_tabs"
 	item_state = "sergeantm_tabs"
 
-/obj/item/clothing/accessory/ranks/commander
-	name = "shoulderboards (commander)"
-	desc = "Red and gold shoulderboards denoting a Blackshield soldier with the rank of Commander."
-	icon_state = "commander_tabs"
-	item_state = "commander_tabs"
-
 /obj/item/clothing/accessory/ranks/major
-	name = "shoulderboards (major)"
-	desc = "Red and gold shoulderboards denoting a Blackshield soldier with the rank of Major."
+	name = "shoulderboards (Major)"
+	desc = "Red and gold shoulderboards denoting a Black Guard soldier with the rank of Major."
 	icon_state = "major_tabs"
 	item_state = "major_tabs"
 
+/obj/item/clothing/accessory/ranks/commander
+	name = "shoulderboards (Colonel)"
+	desc = "Red and gold shoulderboards denoting a Black Guard soldier with the rank of Colonel."
+	icon_state = "commander_tabs"
+	item_state = "commander_tabs"
+
 /obj/item/clothing/accessory/ranks/brigadier
-	name = "shoulderboards (brigadier)"
-	desc = "Red, gold, and silver shoulderboards denoting the Brigadier."
+	name = "shoulderboards (Brigadier)"
+	desc = "Red, gold, and silver shoulderboards denoting the Brigadier General of the Nadezhdan Black Guard."
 	icon_state = "brigadier_tabs"
 	item_state = "brigadier_tabs"
 
 /obj/item/clothing/accessory/patches/blackshield
 	name = "blackshield patch"
-	desc = "A black, blue, and silver patch made to represent the Blackshield regiment. For use on uniforms when active, or other clothing in other positions."
+	desc = "A black, blue, and silver patch made to represent the ancient Militia. Three centuries ago, this patch represented the first line of defense for a growing colony."
 	icon_state = "blackshieldpatch"
 	item_state = "blackshieldpatch"
 
@@ -668,55 +686,61 @@ obj/item/clothing/accessory/scarf/green
 			desc = initial(desc) + " Something has been [erasemethod] on the tag, and it now has \"[str]\" [writemethod] on it."
 
 /obj/item/clothing/accessory/patches/blackshield_blank
-	name = "blackshield blank patch"
-	desc = "A black, blue, and silver patch made to represent the Blackshield regiment. For use on uniforms when active, or other clothing in other positions."
+	name = "Black Guard blank patch"
+	desc = "A black and blue patch made to represent the Nadezhdan Black Guard. This one is blank, and meant for raw cadets who haven't earned their stripes"
 	icon_state = "bs_blank"
 	item_state = "bs_blank"
 
 /obj/item/clothing/accessory/patches/blackshield_volunteer
-	name = "blackshield volunteer patch"
-	desc = "A black, blue, and silver patch made to represent the Blackshield regiment. For use on uniforms when active, or other clothing in other positions."
+	name = "Black Guard Volunteer patch"
+	desc = "A black, blue, and silver patch made to represent the Nadezhdan Black Guard. This one is meant for off-duty Troopers, or other volunteers who are participating in the city's defense."
 	icon_state = "bs_volunteer"
 	item_state = "bs_volunteer"
 
 /obj/item/clothing/accessory/patches/blackshield_trooper
-	name = "blackshield trooper patch"
-	desc = "A black, blue, and silver patch made to represent the Blackshield regiment. For use on uniforms when active, or other clothing in other positions."
+	name = "Black Guard Trooper patch"
+	desc = "A black, blue, and gold patch made to represent the Nadezhdan Black Guard. This one features a single gold chevron, indicating an Infantry Trooper who has completed their training."
 	icon_state = "bs_trooper"
 	item_state = "bs_trooper"
 
 /obj/item/clothing/accessory/patches/blackshield_corpsman
-	name = "blackshield corpsman patch"
-	desc = "A black, blue, and silver patch made to represent the Blackshield regiment. For use on uniforms when active, or other clothing in other positions."
+	name = "Black Guard Corpsman patch"
+	desc = "A black, blue, and gold patch made to represent the Nadezhdan Black Guard. This one features two chevrons and the Crozius Medicae of the Nadezhda Medical Service, indicating the wearer is a Corpsman."
+	icon_state = "bs_corpsman"
+	item_state = "bs_corpsman"
+
+/obj/item/clothing/accessory/patches/blackshield_specops
+	name = "Black Guard SOAR patch"
+	desc = "A black, blue, and gold patch made to represent the Nadezhdan Black Guard. For use on uniforms when active, or other clothing in other positions."
 	icon_state = "bs_corpsman"
 	item_state = "bs_corpsman"
 
 /obj/item/clothing/accessory/patches/blackshield_sergeant
-	name = "blackshield sergeant patch"
-	desc = "A black, blue, and silver patch made to represent the Blackshield regiment. For use on uniforms when active, or other clothing in other positions."
+	name = "Black Guard Sergeant patch"
+	desc = "A black, blue, and gold patch made to represent the Nadezhdan Black Guard. This one bears three golden chevrons, indicating the wearer is a Sergeant."
 	icon_state = "bs_sergeant"
 	item_state = "bs_sergeant"
 
-/obj/item/clothing/accessory/patches/blackshield_sergeant
-	name = "blackshield sergeant major patch"
-	desc = "A black, blue, and silver patch made to represent the Blackshield regiment. For use on uniforms when active, or other clothing in other positions."
+/obj/item/clothing/accessory/patches/blackshield_sergeant_major
+	name = "Black Guard Sergeant Major patch"
+	desc = "A black, blue, and gold patch made to represent the Nadezhdan Black Guard. This one bears the additional regalia of a Sergeant Major"
 	icon_state = "bs_sergeantm"
 	item_state = "bs_sergeantm"
 
-/obj/item/clothing/accessory/patches/blackshield_commander
-	name = "blackshield commander patch"
-	desc = "A black, blue, and silver patch made to represent the Blackshield regiment. For use on uniforms when active, or other clothing in other positions."
-	icon_state = "bs_commander"
-	item_state = "bs_commander"
-
 /obj/item/clothing/accessory/patches/blackshield_major
 	name = "blackshield major patch"
-	desc = "A black, blue, and silver patch made to represent the Blackshield regiment. For use on uniforms when active, or other clothing in other positions."
+	desc = "A black, blue, and gold patch made to represent the Nadezhdan Black Guard. For use on uniforms when active, or other clothing in other positions."
 	icon_state = "bs_major"
 	item_state = "bs_major"
 
+/obj/item/clothing/accessory/patches/blackshield_commander
+	name = "Black Guard Colonel patch"
+	desc = "A black, blue, and gold patch made to represent the Nadezhdan Black Guard. For use on uniforms when active, or other clothing in other positions."
+	icon_state = "bs_commander"
+	item_state = "bs_commander"
+
 /obj/item/clothing/accessory/patches/blackshield_brigadier
 	name = "blackshield brigadier patch"
-	desc = "A black, blue, and silver patch made to represent the Blackshield regiment. For use on uniforms when active, or other clothing in other positions."
+	desc = "A black, blue, and gold patch made to represent the Nadezhdan Black Guard. For use on uniforms when active, or other clothing in other positions."
 	icon_state = "bs_brigadier"
 	item_state = "bs_brigadier"

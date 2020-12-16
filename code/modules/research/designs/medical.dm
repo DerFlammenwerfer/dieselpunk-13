@@ -173,3 +173,7 @@
 	build_type = PROTOLATHE | MECHFAB
 	build_path = /obj/item/device/mmi/radio_enabled
 	category = "Medical"
+
+/datum/design/research/item/soulcrypt
+	name = "Soulcrypt"
+	build_path = /obj/item/weapon/implant/core_implant/soulcrypt

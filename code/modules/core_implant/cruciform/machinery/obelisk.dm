@@ -62,13 +62,13 @@
 			else if(istype(A, /mob/living/carbon/superior_animal))
 				var/mob/living/carbon/superior_animal/animal = A
 				if(animal.stat != DEAD) //got roach, spider, maybe bear
-					animal.take_overall_damage(0, 0, damage)
+					animal.adjustHalLoss(damage)
 					if(!--to_fire)
 						return
 			else if(istype(A, /mob/living/simple_animal/hostile))
 				var/mob/living/simple_animal/hostile/animal = A
 				if(animal.stat != DEAD) //got bear or something
-					animal.take_overall_damage(0, 0, damage)
+					animal.adjustHalLoss(damage)
 					if(!--to_fire)
 						return
 			else if(istype(A, /obj/effect/plant))

@@ -324,7 +324,11 @@
 	required_tech_levels = list()
 	cost = 4000
 
-	unlocks_designs = list(	/datum/design/research/circuit/mindswapper)
+	unlocks_designs = list(	/datum/design/research/circuit/mindswapper,
+							/datum/design/research/item/soulcrypt,
+							/datum/design/research/circuit/cloner,
+							/datum/design/research/circuit/soulcrypt_reader
+							)
 
 /datum/technology/rig_medical_stuff
 	name = "RIG Medical Addaptation"

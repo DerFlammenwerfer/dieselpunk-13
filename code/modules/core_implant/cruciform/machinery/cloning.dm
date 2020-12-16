@@ -9,8 +9,8 @@
 #define ANIM_CLOSE -1
 
 /obj/machinery/neotheology/cloner
-	name = "Strange pod"
-	desc = "This pod seems entirely alien and smells disgustingly of old biomass left to rot."
+	name = "Revenant Chamber"
+	desc = "Pods such as this were developed on the cusp of the Shattered Cross Crusade from recovered Jackal flash-cloning tech. Nowadays, they are maintained by the Orden Hospitaller."
 	icon = 'icons/obj/neotheology_pod.dmi'
 	icon_state = "preview"
 	density = TRUE
@@ -28,15 +28,43 @@
 
 	var/progress = 0
 
-	var/cloning_speed  = 1	//Try to avoid use of non integer values
+	var/cloning_speed  = 2	//Try to avoid use of non integer values
 
-	var/biomass_consumption = 6
+	var/biomass_consumption = 3
 
 	var/image/anim0 = null
 	var/image/anim1 = null
 
 	var/power_cost = 250
+	var/bin_eff = 1
+	var/man_eff = 1
+	var/cap_eff = 1
 
+/obj/machinery/neotheology/cloner/medical
+	name = "Lazarus Chamber"
+	desc = "This version of the Absolutist cloning technology was developed alongside the Soulcrypt some decades after the Shattered Cross through cooperation between the Orden Hospitaller and the Nadezhda Medical service,\
+	in order to proliferate an alternative to cruciforms as a means of reconstructing bodies that have been otherwise completely destroyed and without the need for a Chaplain to be present. An unfortunate downside to this is that\
+	while these pods can be rebuilt and activated by anyone and are backwards-compatible with cruciform readers, they are only half as efficient as the original Revenant pods with standard-grade parts."
+	cloning_speed  = 1
+	biomass_consumption = 6
+	power_cost = 500
+	circuit = /obj/item/weapon/circuitboard/clonepod
+
+/obj/machinery/neotheology/cloner/medical/RefreshParts()
+	var/man_rating = 0
+	var/bin_rating = 0
+	var/cap_rating = 0
+
+	for(var/obj/item/weapon/stock_parts/P in component_parts)
+		if(istype(P, /obj/item/weapon/stock_parts/matter_bin))
+			bin_rating += P.rating - 4
+		if(istype(P, /obj/item/weapon/stock_parts/manipulator))
+			man_rating += P.rating - 6
+		if(istype(P, /obj/item/weapon/stock_parts/capacitor))
+			cap_rating += P.rating - 2
+	man_eff = man_rating
+	bin_eff = bin_rating
+	cap_eff = cap_rating
 
 /obj/machinery/neotheology/cloner/New()
 	..()
@@ -164,6 +192,20 @@
 	occupant.updatehealth()
 	stop()
 
+/obj/machinery/neotheology/cloner/medical/attack_hand(mob/user)
+	src.add_fingerprint(user)
+	reader = find_reader()
+	if(!reader)
+		visible_message("[src]'s control panel flashes \"NO READER\" light.")
+		return
+	if(!reader.implant)
+		visible_message("[src]'s control panel flashes \"NO IMPLANT\" light.")
+		return
+	if(cloning)
+		visible_message("[src]'s control panel flashes \"OCCUPIED\" light.")
+		return
+	start()
+
 ///////////////
 
 /obj/machinery/neotheology/cloner/Process()
@@ -177,11 +219,11 @@
 			update_icon()
 			return
 
-		progress += cloning_speed
+		progress += cloning_speed * bin_eff
 
 		if(progress <= CLONING_DONE)
 			if(container)
-				if(!container.reagents.remove_reagent("biomatter", biomass_consumption))
+				if(!container.reagents.remove_reagent("biomatter", biomass_consumption / man_eff))
 					stop()
 			else
 				stop()
@@ -197,22 +239,33 @@
 
 
 		if(progress >= CLONING_MEAT && !occupant)
-			var/datum/core_module/cruciform/cloning/R = reader.implant.get_module(CRUCIFORM_CLONING)
-			if(!R)
+			var/datum/core_module/cruciform/cloning/C = reader.implant.get_module(CRUCIFORM_CLONING)
+			var/obj/item/weapon/implant/core_implant/soulcrypt/R = reader.implant
+			if(!R && !C)
 				open_anim()
 				stop()
 				update_icon()
 				return
-
-			occupant = new/mob/living/carbon/human(src)
-			occupant.dna = R.dna.Clone()
-			//occupant.stats = R.mind.stats.Clone()
-			occupant.set_species()
-			occupant.real_name = R.dna.real_name
-			occupant.age = R.age
-			occupant.UpdateAppearance()
-			occupant.sync_organ_dna()
-			occupant.flavor_text = R.flavor
+			if(R)
+				occupant = new/mob/living/carbon/human(src)
+				occupant.dna = R.host_dna.Clone()
+				occupant.set_species()
+				occupant.real_name = R.host_dna.real_name
+				occupant.age = R.host_age
+				occupant.UpdateAppearance()
+				occupant.sync_organ_dna()
+				occupant.flavor_text = R.host_flavor_text
+				R.host_stats.copyTo(occupant.stats)
+			else
+				occupant = new/mob/living/carbon/human(src)
+				occupant.dna = C.dna.Clone()
+				occupant.set_species()
+				occupant.real_name = C.dna.real_name
+				occupant.age = C.age
+				occupant.UpdateAppearance()
+				occupant.sync_organ_dna()
+				occupant.flavor_text = C.flavor
+				C.stats.copyTo(occupant.stats)
 
 		if(progress == CLONING_BODY*cloning_speed )
 			var/datum/effect/effect/system/spark_spread/s = new
@@ -228,7 +281,7 @@
 
 		update_icon()
 
-	use_power(power_cost)
+	use_power(power_cost / cap_eff)
 
 
 /obj/machinery/neotheology/cloner/update_icon()
@@ -405,15 +458,20 @@
 /////////////////////
 
 /obj/machinery/neotheology/reader
-	name = "strange scanner"
+	name = "Cruciform scanner"
 	desc = "It thrums and seems to be scanning anyone who gets near it judging from the small beeps."
 	icon_state = "reader_off"
 	density = TRUE
 	anchored = TRUE
 
-	var/obj/item/weapon/implant/core_implant/cruciform/implant
+	var/obj/item/weapon/implant/core_implant/implant
 	var/reading = FALSE
 
+/obj/machinery/neotheology/reader/medical
+	name = "Soulcrypt scanner"
+	desc = "Despite the name, it is capable of reading both Soulcrypts and Cruciforms"
+	icon = 'icons/obj/soulcrypt_machinery.dmi'
+	circuit = /obj/item/weapon/circuitboard/soulcrypt_reader
 
 /obj/machinery/neotheology/reader/attackby(obj/item/I, mob/user as mob)
 	if(istype(I, /obj/item/weapon/implant/core_implant/cruciform))
@@ -421,6 +479,18 @@
 		user.drop_item()
 		C.forceMove(src)
 		implant = C
+		visible_message("[I] slides smoothly into the slot.")
+
+	src.add_fingerprint(user)
+	update_icon()
+
+/obj/machinery/neotheology/reader/medical/attackby(obj/item/I, mob/user as mob)
+	if(istype(I, /obj/item/weapon/implant/core_implant))
+		var/obj/item/weapon/implant/core_implant/CI = I
+		user.drop_item()
+		CI.forceMove(src)
+		implant = CI
+		visible_message("[I] slides smoothly into the slot.")
 
 	src.add_fingerprint(user)
 	update_icon()

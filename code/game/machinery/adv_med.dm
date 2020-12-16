@@ -149,6 +149,7 @@
 		/obj/item/weapon/implant/death_alarm,
 		/obj/item/weapon/implant/tracking,
 		/obj/item/weapon/implant/core_implant/cruciform,
+		/obj/item/weapon/implant/core_implant/soulcrypt,
 		/obj/item/weapon/implant/excelsior
 	)
 	var/delete

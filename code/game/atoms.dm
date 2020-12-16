@@ -43,9 +43,8 @@
 	var/health    = 99999 // RPG boss unless  otherwise defined
 	var/maxHealth = 99999
 
-	// And a status
-	var/stat = 0
 
+	var/stat
 /atom/proc/update_icon()
 	return
 

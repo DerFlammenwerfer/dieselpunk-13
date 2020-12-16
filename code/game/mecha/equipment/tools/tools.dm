@@ -80,7 +80,7 @@
 			if(M.stat>1) return
 			if(chassis.occupant.a_intent == I_HURT)
 				M.take_overall_damage(dam_force)
-				M.adjustOxyLoss(round(dam_force/2))
+				M.adjustToxLoss(round(dam_force/2))
 				M.updatehealth()
 				occupant_message(SPAN_WARNING("You squeeze [target] with [src.name]. Something cracks."))
 				chassis.visible_message(SPAN_WARNING("[chassis] squeezes [target]."))

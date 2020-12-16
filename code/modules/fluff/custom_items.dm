@@ -37,3 +37,20 @@
 	icon = 'icons/obj/fluff stuffs/fluff_item_obj.dmi'
 	icon_override = 'icons/obj/fluff stuffs/fluff_item_mob.dmi'
 	icon_state = "stell_collar"
+
+// **************
+// Dopiotl
+// **************
+
+/obj/item/clothing/suit/naga_church
+	name = "revealing ivory robe"
+	desc = "Popular among some of the female members of the Orden Hospitaller. This one is custom tailored for a naga to wear."
+	icon_state = "naga_bimbo"
+
+// **************
+// Husikiro
+// **************
+/obj/item/clothing/face/mask/gas/kitsune_mask
+	name = "Isamu's mask"
+	desc = "An iconic, specially crafted mask for a very specific kitsune"
+	icon_state ="kitsune_mask"

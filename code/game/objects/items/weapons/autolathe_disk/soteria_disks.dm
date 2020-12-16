@@ -33,6 +33,30 @@
 /obj/item/weapon/computer_hardware/hard_drive/portable/design/medical/cmo
 	disk_name = "Soteria Medical Factory"
 	license = -1 //Same disk, but for the CBO exclusively with endless uses.
+	designs = list(
+		/datum/design/autolathe/gun/syringe_gun = 4,
+		/datum/design/autolathe/misc/penflashlight,
+		/datum/design/autolathe/tool/scalpel,
+		/datum/design/autolathe/tool/circularsaw,
+		/datum/design/autolathe/tool/surgicaldrill,
+		/datum/design/autolathe/tool/retractor,
+		/datum/design/autolathe/tool/cautery,
+		/datum/design/autolathe/tool/hemostat,
+		/datum/design/autolathe/tool/bonesetter,
+		/datum/design/autolathe/container/syringe,
+		/datum/design/autolathe/container/syringe/large = 2,
+		/datum/design/autolathe/container/vial,
+		/datum/design/autolathe/container/beaker,
+		/datum/design/autolathe/container/beaker_large,
+		/datum/design/autolathe/container/pill_bottle,
+		/datum/design/autolathe/container/spray,
+		/datum/design/autolathe/device/implanter,
+		/datum/design/autolathe/container/syringegun_ammo,
+		/datum/design/autolathe/misc/bodybag,
+		/datum/design/research/item/medical/autopsy_scanner,
+		/datum/design/research/item/medical/roller_bed,
+		/datum/design/autolathe/soulcrypt
+	)
 
 /obj/item/weapon/computer_hardware/hard_drive/portable/design/surgery
 	disk_name = "Back Alley Organs"

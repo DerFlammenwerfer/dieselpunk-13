@@ -410,3 +410,10 @@
 	icon_state = "avali_ear"
 	colored_layers = 1
 	blend = ICON_MULTIPLY
+
+/datum/sprite_accessory/ears/longdog
+	name = "Long Dog Ears"
+	desc = ""
+	icon_state = "dog_long_ears"
+	colored_layers = 1
+	blend = ICON_MULTIPLY

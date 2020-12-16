@@ -204,8 +204,8 @@
 	tank = /obj/item/weapon/tank/jetpack/oxygen
 
 /obj/item/clothing/head/helmet/space/void/odst
-	name = "Sol Federation voidsuit helmet"
-	desc = "A helmet designed for military EVA operations, though not direct combat has a small light."
+	name = "ancient Sol Federation voidhelm"
+	desc = "A helmet designed for military EVA operations more than three centuries ago. Has a small light."
 
 	action_button_name = "Toggle Headlamp"
 	brightness_on = 3 //luminosity when on
@@ -230,8 +230,8 @@
 	light_overlay = "helmet_light_ihs"
 
 /obj/item/clothing/suit/space/void/odst
-	name = "Sol Federation voidsuit"
-	desc = "Do you wanna be a hero in the sky? High adventure, higher pay, join the Space Marines today."
+	name = "ancient Sol Federation voidsuit"
+	desc = "Over 300 years ago, this was the standard issue space suit of the Solar Marine Corps. They have long since been phased out in favor of powered RIG armor."
 	icon_state = "odst"
 	item_state = "odst"
 	slowdown = 1
@@ -248,23 +248,27 @@
 
 
 /obj/item/clothing/head/helmet/space/void/odst/mil
-	name = "blackshield voidsuit helmet"
+	name = "ancient militia voidhelm"
+	desc = "Hundreds of years later, the Militia stripes are still shining strong."
 	icon_state = "odst_mil"
 	item_state = "odst_mil"
 
 /obj/item/clothing/suit/space/void/security/odst/mil
-	name = "blackshield voidsuit"
+	name = "ancient militia voidsuit"
+	desc = "Back before the Black Guard was standardized, this suit was worn by militia troopers operating in the vacuum of space. Like much of the militia's equipment of that time, this suit used to belong to the Solar military."
 	icon_state = "odst_mil"
 	item_state = "odst_mil"
 	helmet = /obj/item/clothing/head/helmet/space/void/odst/mil
 
 /obj/item/clothing/head/helmet/space/void/odst/corps
-	name = "blackshield corpsman voidsuit helmet"
+	name = "ancient corpsman voidhelm"
+	desc = "Hundreds of years later, the Militia stripes are still shining strong."
 	icon_state = "odst_mil"
 	item_state = "odst_mil"
 
 /obj/item/clothing/suit/space/void/odst/corps
-	name = "blackshield corpsman voidsuit"
+	name = "ancient corpsman voidsuit"
+	desc = "Back before the Black Guard was standardized, this suit was worn by militia corpsmen operating in the vacuum of space. Like much of the militia's equipment of that time, this suit used to belong to the Solar military."
 	icon_state = "odst_corps"
 	item_state = "odst_corps"
 	helmet = /obj/item/clothing/head/helmet/space/void/odst/corps
@@ -376,9 +380,9 @@
 		)
 
 	armor = list(
-		melee = 60,
+		melee = 70,
 		bullet = 70,
-		energy = 60,
+		energy = 70,
 		bomb = 80,
 		bio = 100,
 		rad = 100
@@ -397,15 +401,15 @@
 	desc = "Designed by the Kriosan Kaiserreich, this armor features multiple layers of padding beneath durasteel plating. It costs a king's ransom to replace."
 	item_state = "assaultsuit"
 	armor = list(
-		melee = 60,
+		melee = 70,
 		bullet = 70,
-		energy = 60,
+		energy = 70,
 		bomb = 80,
 		bio = 100,
 		rad = 100
 	)
 	siemens_coefficient = 0.4
-	slowdown = 0.6
+	slowdown = 0.75
 	helmet = /obj/item/clothing/head/space/void/assault
 
 //Science
@@ -504,7 +508,7 @@
 		melee = 60,
 		bullet = 60,
 		energy = 60,
-		bomb = 80,
+		bomb = 60,
 		bio = 100,
 		rad = 100
 	)
@@ -518,7 +522,7 @@
 		melee = 60,
 		bullet = 60,
 		energy = 60,
-		bomb = 80,
+		bomb = 60,
 		bio = 100,
 		rad = 100
 	)

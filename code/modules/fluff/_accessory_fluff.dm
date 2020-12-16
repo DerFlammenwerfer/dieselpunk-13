@@ -46,4 +46,4 @@
 	name = "long ears with hair (Isamu)"
 	icon = 'icons/mob/fluff_accessory.dmi'
 	icon_state = "hair_Isamu"
-	ckeys_allowed = list("Husikiro")
+	ckeys_allowed = list("husikiro")

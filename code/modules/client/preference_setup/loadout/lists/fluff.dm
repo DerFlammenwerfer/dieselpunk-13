@@ -49,7 +49,7 @@
 /datum/gear/fluff/naga_bimbo
 	path = /obj/item/clothing/suit/naga_church
 	display_name = "ivory naga robe"
-	ckeywhitelist = list("Dopiotl")
+	ckeywhitelist = list("dopiotl")
 	character_name = list("Coapal Nassedira")
 
 //  E CKEYS
@@ -64,7 +64,7 @@
 /datum/gear/fluff/kitsune_mask
 	path = /obj/item/clothing/face/mask/gas/kitsune_mask
 	display_name = "Isamu's mask"
-	ckeywhitelist = list("Husikiro")
+	ckeywhitelist = list("husikiro")
 	character_name = list("Isamu Rav")
 
 //  I CKEYS

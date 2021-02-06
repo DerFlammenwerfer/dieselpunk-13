@@ -115,7 +115,7 @@
 
 
 /datum/job/supsec
-	title = "Chief Warrant Officer"
+	title = "Warrant Officer"
 	flag = SUPSEC
 	department = DEPARTMENT_SECURITY
 	department_flag = SECURITY
@@ -146,7 +146,7 @@
 	software_on_spawn = list(/datum/computer_file/program/digitalwarrant,
 							 /datum/computer_file/program/camera_monitor)
 
-	description = "The Chief Warrant Officer is the right hand of the Provost Marshal and the defacto controller of the armory and armory shop. <br>\
+	description = "The Warrant Officer is the right hand of the Provost Marshal and the defacto controller of the armory and armory shop. <br>\
 	Your role is mainly a desk job - with duties rarely taking you outside of the city or even the armory.<br>\
 	You will often be asked to sell weaponry and armory to citizens, maintaining the stock of the equipment and tracking who has what.<br>\
 	You will also be often asked to watch or process prisoners. Perform regular checkups on anyone locked in the brig - breakouts are intolerable.<br>\
@@ -158,7 +158,7 @@
 	Perform training drills and other exercises to bring the Provosts up to standard."
 
 /obj/landmark/join/start/supsec
-	name = "Chief Warrant Officer"
+	name = "Warrant Officer"
 	icon_state = "player-blue"
 	join_tag = /datum/job/supsec
 

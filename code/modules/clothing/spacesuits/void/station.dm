@@ -8,8 +8,8 @@
 	brightness_on = 4 //luminosity when on
 	light_overlay = "hardhat_light"
 
-	icon_state = "technohelmet_void"
-	item_state = "technohelmet_void"
+	icon_state = "technohelmet"
+	item_state = "technohelmet"
 	light_overlay = "technohelmet_light"
 	item_state_slots = list(
 		slot_l_hand_str = "eng_helm",
@@ -35,9 +35,9 @@
 
 	var/mob/M = usr
 	var/list/options = list()
-	options["generic"] = "technohelmet_void"
-	options["visor"] = "technohelmet_void_visor"
-	options["googles"] = "technohelmet_void_googles"
+	options["generic"] = "technohelmet"
+	options["visor"] = "technohelmet"
+	options["googles"] = "technohelmet"
 
 	var/choice = input(M,"What kind of eyeglass node do you want to look through?","Adjust visor") as null|anything in options
 
@@ -52,8 +52,8 @@
 /obj/item/clothing/suit/space/void/engineering
 	name = "engineering voidsuit"
 	desc = "A special suit that protects against hazardous, low pressure environments. Has radiation shielding."
-	icon_state = "technosuit_void"
-	item_state = "technosuit_void"
+	icon_state = "technosuit"
+	item_state = "technosuit"
 	armor = list(
 		melee = 35,
 		bullet = 30,

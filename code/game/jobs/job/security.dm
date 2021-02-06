@@ -314,7 +314,7 @@
 
 
 /datum/job/trooper
-	title = "Blackguard Trooper"
+	title = "Black Guard Trooper"
 	flag = TROOPER
 	department = DEPARTMENT_SECURITY
 	department_flag = SECURITY
@@ -343,7 +343,7 @@
 	software_on_spawn = list(/datum/computer_file/program/digitalwarrant,
 							 /datum/computer_file/program/camera_monitor)
 
-	description = "The Trooper forms the base of the Blackguard, the frontline against pirates, terrorists, and xenos.<br>\
+	description = "The Trooper forms the base of the Black Guard, the frontline against pirates, terrorists, and xenos.<br>\
 	You are a professional soldier in service to the Commonwealth. Employ your talents to bring an end to threats and conflict situations.<br>\
 	Tactics and teamwork are vital. You are paid to follow orders, not to think. Remember your focus on external threats - leave otherwise to Provosts.<br>\
 	When there are no standing orders, your ongoing task is to patrol and be on the lookout for threats or problems. Help the Provosts if explicitly asked. <br>\
@@ -356,7 +356,7 @@
 		Obey the law. You are not above it."
 
 /obj/landmark/join/start/trooper
-	name = "Blackguard Trooper"
+	name = "Black Guard Trooper"
 	icon_state = "player-blue"
 	join_tag = /datum/job/trooper
 

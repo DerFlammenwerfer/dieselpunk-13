@@ -1,75 +1,75 @@
 /datum/gear/factionsecurity
 	display_name = "winter coat, security"
 	path = /obj/item/clothing/suit/hooded/wintercoat/security
-	allowed_roles = list("Blackshield Commander","Warrant Officer","Supply Specialist","Sergeant","Ranger","Corpsman","Blackshield Trooper","Master-at-Arms")
+	allowed_roles = list("Infantry Commander","Provost Marshal","Warrant Officer","Sergeant Major","Corpsman","Blackguard Trooper","Master-at-Arms")
 	slot = slot_wear_suit
 	sort_category = "Faction: Security"
 
 /datum/gear/factionsecurity/beretcommander
 	display_name = "beret, security head"
 	path = /obj/item/clothing/head/rank/commander/beret
-	allowed_roles = list("Blackshield Commander","Warrant Officer")
+	allowed_roles = list("Infantry Commander","Provost Marshal")
 	slot = slot_head
 	sort_category = "Faction: Security"
 
 /datum/gear/factionsecurity/beretironhammer
 	display_name = "beret, security"
 	path = /obj/item/clothing/head/rank/ironhammer
-	allowed_roles = list("Blackshield Commander","Warrant Officer","Supply Specialist","Sergeant","Ranger","Corpsman","Blackshield Trooper","Master-at-Arms")
+	allowed_roles = list("Infantry Commander","Provost Marshal","Warrant Officer","Sergeant Major","Corpsman","Blackguard Trooper","Master-at-Arms")
 	slot = slot_head
 	sort_category = "Faction: Security"
 
 /datum/gear/factionsecurity/beretwarden
-	display_name = "beret, supply specialist"
+	display_name = "beret, Warrant Officer"
 	path = /obj/item/clothing/head/rank/warden/beret
-	allowed_roles = list("Supply Specialist","Sergeant")
+	allowed_roles = list("Warrant Officer","Sergeant Major")
 	slot = slot_head
 	sort_category = "Faction: Security"
 
 /datum/gear/factionsecurity/cloak
-	display_name = "cloak, warrant officer"
+	display_name = "cloak, Provost Marshal"
 	path = /obj/item/clothing/suit/hooded/cloak/job/ihc
-	allowed_roles = list("Warrant Officer")
+	allowed_roles = list("Provost Marshal")
 	slot = slot_wear_suit
 	sort_category = "Faction: Security"
 
 /datum/gear/factionsecurity/cloakironhammer
 	display_name = "cloak, security"
 	path = /obj/item/clothing/suit/hooded/cloak/job/ironhammer
-	allowed_roles = list("Militia Commander","Warrant Officer","Supply Specialist","Sergeant","Ranger","Corpsman","Blackshield Trooper","Master-at-Arms")
+	allowed_roles = list("Infantry Commander","Provost Marshal","Warrant Officer","Sergeant Major","Corpsman","Blackguard Trooper","Master-at-Arms")
 	slot = slot_wear_suit
 	sort_category = "Faction: Security"
 
 /datum/gear/factionsecurity/capfield
 	display_name = "cap, field"
 	path = /obj/item/clothing/head/soft/sec2soft
-	allowed_roles = list("Blackshield Commander","Warrant Officer","Supply Specialist","Sergeant","Ranger","Corpsman","Blackshield Trooper","Master-at-Arms")
+	allowed_roles = list("Infantry Commander","Provost Marshal","Warrant Officer","Sergeant Major","Corpsman","Blackguard Trooper","Master-at-Arms")
 	sort_category = "Faction: Security"
 
 /datum/gear/factionsecurity/cappatrolblack
 	display_name = "cap, patrol black"
 	path = /obj/item/clothing/head/seccorp
-	allowed_roles = list("Blackshield Commander","Warrant Officer","Supply Specialist","Sergeant","Ranger","Corpsman","Blackshield Trooper","Master-at-Arms")
+	allowed_roles = list("Infantry Commander","Provost Marshal","Warrant Officer","Sergeant Major","Corpsman","Blackguard Trooper","Master-at-Arms")
 	slot = slot_head
 	sort_category = "Faction: Security"
 
 /datum/gear/factionsecurity/cappatrolblue
 	display_name = "cap, patrol blue"
 	path = /obj/item/clothing/head/seccap
-	allowed_roles = list("Blackshield Commander","Warrant Officer","Supply Specialist","Sergeant","Ranger","Corpsman","Blackshield Trooper","Master-at-Arms")
+	allowed_roles = list("Infantry Commander","Provost Marshal","Warrant Officer","Sergeant Major","Corpsman","Blackguard Trooper","Master-at-Arms")
 	slot = slot_head
 	sort_category = "Faction: Security"
 
 /datum/gear/factionsecurity/capsarge
-	display_name = "cap, supply specialist"
+	display_name = "cap, Warrant Officer"
 	path = /obj/item/clothing/head/soft/sarge2soft
-	allowed_roles = list("Supply Specialist", "Sergeant")
+	allowed_roles = list("Warrant Officer", "Sergeant Major")
 	sort_category = "Faction: Security"
 
 /datum/gear/factionSecurity/gorka_ih
 	display_name = "gorka jacket, security"
 	path = /obj/item/clothing/suit/gorka/toggle/gorka_ih
-	allowed_roles = list("Blackshield Commander","Warrant Officer","Supply Specialist","Sergeant","Ranger","Corpsman","Blackshield Trooper","Master-at-Arms")
+	allowed_roles = list("Infantry Commander","Provost Marshal","Warrant Officer","Sergeant Major","Corpsman","Blackguard Trooper","Master-at-Arms")
 	slot = slot_wear_suit
 	sort_category = "Faction: Security"
 
@@ -90,14 +90,14 @@
 /datum/gear/factionsecurity/gorkasecurity
 	display_name = "gorka jumpsuit, security"
 	path = /obj/item/clothing/under/rank/security/gorka_ih
-	allowed_roles = list("Blackshield Commander","Warrant Officer","Supply Specialist","Sergeant","Ranger","Corpsman","Blackshield Trooper","Master-at-Arms")
+	allowed_roles = list("Infantry Commander","Provost Marshal","Warrant Officer","Sergeant Major","Corpsman","Blackguard Trooper","Master-at-Arms")
 	slot = slot_w_uniform
 	sort_category = "Faction: Security"
 
 /datum/gear/factionsecurity/gorkasecuritypants
 	display_name = "gorka pants, security"
 	path = /obj/item/clothing/under/rank/security/gorkapantsih
-	allowed_roles = list("Blackshield Commander","Warrant Officer","Supply Specialist","Sergeant","Ranger","Corpsman","Blackshield Trooper","Master-at-Arms")
+	allowed_roles = list("Infantry Commander","Provost Marshal","Warrant Officer","Sergeant Major","Corpsman","Blackguard Trooper","Master-at-Arms")
 	slot = slot_w_uniform
 	sort_category = "Faction: Security"
 
@@ -118,7 +118,7 @@
 /datum/gear/factionsecurity/gorka_pants
 	display_name = "gorka security pants"
 	path = /obj/item/clothing/under/rank/security/gorkapantsih
-	allowed_roles = list("Blackshield Commander","Warrant Officer","Supply Specialist","Sergeant","Ranger","Corpsman","Blackshield Trooper","Master-at-Arms")
+	allowed_roles = list("Infantry Commander","Provost Marshal","Warrant Officer","Sergeant Major","Corpsman","Blackguard Trooper","Master-at-Arms")
 	slot = slot_w_uniform
 	sort_category = "Faction: Security"
 
@@ -132,14 +132,14 @@
 /datum/gear/factionsecurity/inspector
 	display_name = "uniform, patrol"
 	path = /obj/item/clothing/under/rank/inspector/uniform
-	allowed_roles = list("Blackshield Commander","Warrant Officer","Supply Specialist","Sergeant","Ranger","Corpsman","Blackshield Trooper","Master-at-Arms")
+	allowed_roles = list("Infantry Commander","Provost Marshal","Warrant Officer","Sergeant Major","Corpsman","Blackguard Trooper","Master-at-Arms")
 	slot = slot_w_uniform
 	sort_category = "Faction: Security"
 
 /datum/gear/factionsecurity/jumpskirtcommander
 	display_name = "jumpskirt, commander"
 	path = /obj/item/clothing/under/rank/ih_commander/skirt
-	allowed_roles = list("Warrant Officer")
+	allowed_roles = list("Provost Marshal")
 	slot = slot_w_uniform
 	sort_category = "Faction: Security"
 
@@ -153,14 +153,14 @@
 /datum/gear/factionsecurity/jumpskirtoperative
 	display_name = "jumpskirt, operative"
 	path = /obj/item/clothing/under/rank/security/skirt
-	allowed_roles = list("Supply Specialist","Sergeant","Ranger","Corpsman","Blackshield Trooper","Master-at-Arms")
+	allowed_roles = list("Warrant Officer","Sergeant Major","Corpsman","Blackguard Trooper","Master-at-Arms")
 	slot = slot_w_uniform
 	sort_category = "Faction: Security"
 
 /datum/gear/factionsecurity/jumpskirtwarden
-	display_name = "jumpskirt, supply specialist"
+	display_name = "jumpskirt, Warrant Officer"
 	path = /obj/item/clothing/under/rank/warden/skirt
-	allowed_roles = list("Supply Specialist")
+	allowed_roles = list("Warrant Officer")
 	slot = slot_w_uniform
 	sort_category = "Faction: Security"
 
@@ -174,7 +174,7 @@
 /datum/gear/factionsecurity/fatigueselection
 	display_name = "fatigue selection"
 	path = /obj/item/clothing/under/rank/fatigues/
-	allowed_roles = list("Blackshield Commander","Warrant Officer","Supply Specialist","Sergeant","Ranger","Corpsman","Blackshield Trooper","Master-at-Arms")
+	allowed_roles = list("Infantry Commander","Provost Marshal","Warrant Officer","Sergeant Major","Corpsman","Blackguard Trooper","Master-at-Arms")
 	slot = slot_w_uniform
 	flags = GEAR_HAS_TYPE_SELECTION
 	sort_category = "Faction: Security"
@@ -182,7 +182,7 @@
 /datum/gear/factionsecurity/fatiguecoverselection
 	display_name = "fatigue cover selection"
 	path = /obj/item/clothing/head/rank/fatigue/
-	allowed_roles = list("Blackshield Commander","Warrant Officer","Supply Specialist","Sergeant","Ranger","Corpsman","Blackshield Trooper","Master-at-Arms")
+	allowed_roles = list("Infantry Commander","Provost Marshal","Warrant Officer","Sergeant Major","Corpsman","Blackguard Trooper","Master-at-Arms")
 	slot = slot_head
 	flags = GEAR_HAS_TYPE_SELECTION
 	sort_category = "Faction: Security"
@@ -190,21 +190,21 @@
 /datum/gear/factionsecurity/snowsuitsecurity
 	display_name = "snowsuit, security"
 	path = /obj/item/clothing/suit/storage/snowsuit/security
-	allowed_roles = list("Blackshield Commander","Warrant Officer","Supply Specialist","Sergeant","Ranger","Corpsman","Blackshield Trooper","Master-at-Arms")
+	allowed_roles = list("Infantry Commander","Provost Marshal","Warrant Officer","Sergeant Major","Corpsman","Blackguard Trooper","Master-at-Arms")
 	slot = slot_wear_suit
 	sort_category = "Faction: Security"
 
 /datum/gear/factionsecurity/winterbootssecurity
 	display_name = "winter boots, security"
 	path = /obj/item/clothing/shoes/winter/security
-	allowed_roles = list("Blackshield Commander","Warrant Officer","Supply Specialist","Sergeant","Ranger","Corpsman","Blackshield Trooper","Master-at-Arms")
+	allowed_roles = list("Infantry Commander","Provost Marshal","Warrant Officer","Sergeant Major","Corpsman","Blackguard Trooper","Master-at-Arms")
 	slot = slot_shoes
 	sort_category = "Faction: Security"
 
 /datum/gear/factionsecurity/ihcgreatcoat
 	display_name= "greatcoat, commander"
 	path = /obj/item/clothing/suit/greatcoat/ihc
-	allowed_roles = list("Warrant Officer")
+	allowed_roles = list("Infantry Commander","Provost Marshal")
 	slot = slot_wear_suit
 	flags = GEAR_HAS_TYPE_SELECTION
 	sort_category = "Faction: Security"
@@ -212,20 +212,20 @@
 /datum/gear/factionsecurity/ihcgreatcoatblue
 	display_name= "blue greatcoat, commander"
 	path = /obj/item/clothing/suit/greatcoat/ihc_blue
-	allowed_roles = list("Warrant Officer")
+	allowed_roles = list("Infantry Commander","Provost Marshal")
 	slot = slot_wear_suit
 	sort_category = "Faction: Security"
 
 /datum/gear/factionsecurity/ihcgreatcoatblue_cloak
 	display_name= "blue cloaked greatcoat, commander"
 	path = /obj/item/clothing/suit/greatcoat/ihc/ihc_coat_cloak
-	allowed_roles = list("Warrant Officer")
+	allowed_roles = list("Infantry Commander","Provost Marshal")
 	slot = slot_wear_suit
 	sort_category = "Faction: Security"
 
 /datum/gear/factionsecurity/ihccap
 	display_name= "cap, commander"
 	path = /obj/item/clothing/head/rank/commander/cap
-	allowed_roles = list("Warrant Officer")
+	allowed_roles = list("Infantry Commander")
 	slot = slot_head
 	sort_category = "Faction: Security"

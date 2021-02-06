@@ -391,7 +391,7 @@
 	light_overlay = "helmet_light_dual"
 
 /obj/item/clothing/head/space/void/assault/New()
-	icon_state = "assaulthelm-[pick("b","w","p","o","g","r")]"
+	icon_state = "assaulthelm"
 	item_state = icon_state
 	..()
 

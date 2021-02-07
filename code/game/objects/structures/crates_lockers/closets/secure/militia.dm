@@ -8,7 +8,7 @@
 		new /obj/item/ammo_magazine/heavy_rifle_408/lethal(src)
 	else
 		new /obj/item/ammo_magazine/heavy_rifle_408/hv(src)
-	new /obj/item/clothing/accessory/ranks/commander(src)
+	new /obj/item/clothing/accessory/ranks/major(src)
 	new /obj/item/weapon/storage/box/commanderuniform(src)
 	new /obj/item/weapon/storage/box/blankranks(src)
 	new /obj/item/ammo_magazine/heavy_rifle_408/lethal(src)
@@ -39,7 +39,7 @@
 	new /obj/item/clothing/suit/greatcoat/ihc/bmc_cloaked(src)
 	new /obj/item/weapon/storage/pouch/baton_holster(src)
 	new /obj/item/weapon/storage/firstaid/ifak(src)
-	new /obj/item/clothing/accessory/patches/blackshield_commander(src)
+	new /obj/item/clothing/accessory/patches/blackshield_major(src)
 	if(prob(50))
 		new /obj/item/weapon/storage/backpack/security(src)
 	else

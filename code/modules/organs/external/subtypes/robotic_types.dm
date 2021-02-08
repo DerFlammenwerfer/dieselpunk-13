@@ -53,6 +53,12 @@
 	desc = "Custom tooled and held together by hope and duct tape."
 	force_icon = 'icons/mob/human_races/cyberlimbs/advanced_ghetto.dmi'
 	model = "ghetto"
+	
+/obj/item/organ/external/robotic/veymed
+	name = "Vey-Med"
+	desc = "An expensive prosthetic covered with synthskin."
+	force_icon = 'icons/mob/human_races/cyberlimbs/veymed.dmi'
+	model = "veymed"
 
 //In game prostheses
 /obj/item/organ/external/robotic/moebius

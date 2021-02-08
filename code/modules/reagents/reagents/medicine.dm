@@ -525,7 +525,7 @@ datum/reagent/medicine/respirodaxon/affect_blood(var/mob/living/carbon/M, var/al
 	taste_description = "bitterness"
 	reagent_state = LIQUID
 	color = "#C1C1C1"
-	metabolism = REM * 0.1
+	metabolism = REM * 0.05
 	overdose = REAGENTS_OVERDOSE
 	scannable = 1
 

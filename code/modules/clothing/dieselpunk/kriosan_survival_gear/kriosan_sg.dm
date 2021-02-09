@@ -30,8 +30,8 @@
 
 /obj/item/clothing/mask/gas/ksg_gasmask
 	name = "Uberleben gasmask"
-	icon_state = "kmask"
-	item_state = "kmask"
+	icon_state = "germangasmask"
+	item_state = "germangasmask"
 
 /obj/item/clothing/head/ksg_helmet
 	name = "Uberleben Helmet"

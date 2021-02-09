@@ -964,3 +964,20 @@ obj/item/weapon/computer_hardware/hard_drive/portable/design/guns/lenar
 		/datum/design/autolathe/ammo/c10x24,
 		/datum/design/autolathe/ammo/box_10x24 = 2,
 	)
+	
+//SPEARGUNS
+
+/obj/item/weapon/computer_hardware/hard_drive/portable/design/spearguns
+	disk_name = "Naramad Assault Pack"
+	icon_state = "black"
+	license = 12
+	designs = list(
+		/datum/design/autolathe/gun/speargun = 2,
+		/datum/design/autolathe/gun/protospeargun = 6,
+		/datum/design/autolathe/gun/speargunb = 2,
+		/datum/design/autolathe/gun/speargunc = 2,
+		/datum/design/autolathe/ammo/shotgun,
+		/datum/design/autolathe/ammo/shotgun_pellet,
+		/datum/design/autolathe/ammo/shotgun_beanbag,
+		/datum/design/autolathe/ammo/antim = 2,
+	)

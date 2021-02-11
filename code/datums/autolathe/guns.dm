@@ -308,22 +308,6 @@
 /datum/design/autolathe/gun/dp
 	name= "SA BR . 7.5 \"DP\""
 	build_path = /obj/item/weapon/gun/projectile/automatic/dp
-	
-/datum/design/autolathe/gun/speargun
-	name= "Naramad Shotgun Lance"
-	build_path = /obj/item/weapon/gun/projectile/speargun
-	
-/datum/design/autolathe/gun/protospeargun
-	name= "\"Rain's Fury\" Prototype Naramad Rifle-Lance"
-	build_path = /obj/item/weapon/gun/projectile/speargun/protospeargun
-	
-/datum/design/autolathe/gun/speargunb
-	name= "\"Cleaver\" Naramad Shotgun-Lance"
-	build_path = /obj/item/weapon/gun/projectile/speargun/speargunb
-	
-/datum/design/autolathe/gun/speargunc
-	name= "Naramad Shotgun Lance"
-	build_path = /obj/item/weapon/gun/projectile/speargun/speargunc
 
 //L A U N C H E R S
 

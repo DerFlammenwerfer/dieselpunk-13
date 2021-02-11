@@ -99,7 +99,7 @@
 	one_hand_penalty = 20
 	init_firemodes = list(
 		SEMI_AUTO_NODELAY,
-		BURST_3_ROUND
+		BURST_2_ROUND
 		)
 
 /obj/item/weapon/gun/projectile/automatic/omnirifle/fancy

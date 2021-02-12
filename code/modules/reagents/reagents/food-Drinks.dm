@@ -1954,6 +1954,19 @@
 	glass_name = "Irish coffee"
 	glass_desc = "Coffee and alcohol. More fun than a Mimosa to drink in the morning."
 	glass_center_of_mass = list("x"=15, "y"=10)
+	
+/datum/reagent/ethanol/coffee/cassspecial
+	name = "Cassandra Special"
+	id = "cassspecial"
+	description = "Coffee, whiskey, cream, and large amounts of salt. It's as pleasant as its namesake."
+	taste_description = "a salty abomination."
+	color = "#664300"
+	strength = 30
+
+	glass_icon_state = "irishcoffeeglass"
+	glass_name = "Cassandra Special"
+	glass_desc = "Coffee, whiskey, cream, and large amounts of salt. It's as pleasant as its namesake."
+	glass_center_of_mass = list("x"=15, "y"=10)
 
 /datum/reagent/ethanol/irish_cream
 	name = "Irish Cream"

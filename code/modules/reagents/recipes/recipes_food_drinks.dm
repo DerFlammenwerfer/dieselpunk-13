@@ -378,6 +378,11 @@
 	required_reagents = list("irishcream" = 1, "coffee" = 1)
 	result_amount = 2
 
+/datum/chemical_reaction/cassspecial
+	result = "cassspecial"
+	required_reagents = list("irishcoffee" = 1, "salt" = 1)
+	result_amount = 2
+
 /datum/chemical_reaction/b52
 	result = "b52"
 	required_reagents = list("irishcream" = 1, "kahlua" = 1, "cognac" = 1)

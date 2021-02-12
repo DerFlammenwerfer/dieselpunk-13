@@ -691,6 +691,22 @@
 		STAT_MEC = 3,
 		STAT_COG = 3
 	)
+	
+/datum/category_item/setup_option/background/homeworld/amareth
+	name = "Amareth"
+	desc = "Amareth is the seat of power for the Nadezhda Commonwealth and has become a melting pot of species from across the known galaxy. The mix of cultures and species \
+	has lended itself to a diverse philosophy in how the colony is run and how it has developed. Inspiration from Sol and humanity remains dominant however. The planet itself varies \
+	in its threat level. The planet is overall dangerous, with large fauna such as renders as well as giant spiders and roaches. But from this danger, the average resident has carved \
+	out civilization. Citizens of Amareth are usually fairly hardy, and had to be brought up with multiple skills to help prosper on the planet."
+
+	stat_modifiers = list(
+		STAT_ROB = 2,
+		STAT_TGH = 2,
+		STAT_VIG = 2,
+		STAT_BIO = 2,
+		STAT_MEC = 2,
+		STAT_COG = 2
+	)
 
 /datum/category_item/setup_option/background/homeworld/onkarth
 	name = "Onkarth"

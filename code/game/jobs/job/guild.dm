@@ -156,6 +156,7 @@ Avoid the deeper tunnels unless otherwise instructed, however - this domain is h
 	//alt_titles = list("Custodian","Sanitation Technician")
 	access = list(access_janitor, access_maint_tunnels, access_morgue, access_crematorium, access_mailsorting, access_cargo, access_gunfactory)
 	wage = WAGE_PROFESSIONAL
+	department_account_access = TRUE
 	outfit_type = /decl/hierarchy/outfit/job/cargo/cargo_tech
 
 	stat_modifiers = list(

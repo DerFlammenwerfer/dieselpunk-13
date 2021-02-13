@@ -7,7 +7,7 @@
 	faction = MAP_FACTION
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Nadezhda Council"
+	supervisors = "the Resource Officer"
 	difficulty = "Hard."
 	selection_color = "#97b0be"
 	req_admin_notify = 1
@@ -150,7 +150,7 @@
 	spawn_positions = 4
 	supervisors = "the Foreman"
 	difficulty = "Easy."
-	selection_color = "#c3b9a6"
+	selection_color = "#a7bbc6"
 	wage = WAGE_LABOUR_HAZARD //The miners union is stubborn
 
 	outfit_type = /decl/hierarchy/outfit/job/cargo/mining

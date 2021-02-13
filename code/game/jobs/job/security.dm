@@ -1,6 +1,6 @@
 //Police Jobs
 /datum/job/swo
-	title = "Provost Marshal"
+	title = "Lieutenant"
 	flag = SWO
 	head_position = 1
 	department = DEPARTMENT_SECURITY
@@ -40,13 +40,13 @@
 							 /datum/computer_file/program/camera_monitor,
 							 /datum/computer_file/program/reports)
 
-	description = "The Provost Marshal serves as the head officer of the local company of Provosts.<br>\
+	description = "The Lieutenant serves as the shift's lead officer for the Nadezgha Metropolitan Police.<br>\
 	Contracted to protect and serve the city, your internal police force is dedicated to the fight against criminal elements.<br>\
 	Your main objective is to keep everyone safe by maintining order, and upholding laws of all manner within the city.<br>\
-	The Infantry Commander is your ally and you should work closely with them - they provide the muscle and guns to defend the city."
+	The Black Guard is your ally and you should work with them as they provide the muscle and guns to defend the city."
 
 	duties = "Coordinate officers around the city, assigning them to tasks and distress calls as needed.<br>\
-		Work with the Infantry Commander to allocate funds to supply your teams with whatever armor, supplies, weapons, munitions, or tools they need.<br>\
+		Work with the Black Guard Commander to allocate funds to supply your teams with whatever armor, supplies, weapons, munitions, or tools they need.<br>\
 		Keep the peace around the city and ensure each officer knows their roles and carries them out precisely.<br>\
 		Oversee performance of the officers under your command and punish any that are insubordinate or incompetent.<br>\
 		Advise the council on threats to city security and advise them towards choices that will uphold the public trust."
@@ -58,14 +58,14 @@
 
 
 /datum/job/supsec
-	title = "Warrant Officer"
+	title = "Desk Sergeant"
 	flag = SUPSEC
 	department = DEPARTMENT_SECURITY
 	department_flag = SECURITY
 	faction = MAP_FACTION
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Provost Marshal"
+	supervisors = "the Lieutenant"
 	difficulty = "Hard."
 	selection_color = "#a7bbc6"
 	department_account_access = TRUE
@@ -89,32 +89,32 @@
 	software_on_spawn = list(/datum/computer_file/program/digitalwarrant,
 							 /datum/computer_file/program/camera_monitor)
 
-	description = "The Warrant Officer is the right hand of the Provost Marshal and the defacto controller of the armory and armory shop. <br>\
+	description = "The Desk Sergeant is the right hand of the Lieutenant and the defacto controller of the armory and armory shop. <br>\
 	Your role is mainly a desk job - with duties rarely taking you outside of the city or even the armory.<br>\
 	You will often be asked to sell weaponry and armory to citizens, maintaining the stock of the equipment and tracking who has what.<br>\
 	You will also be often asked to watch or process prisoners. Perform regular checkups on anyone locked in the brig - breakouts are intolerable.<br>\
-	In quieter times, you serve as the onsite weapons instructor. Take the initiative to offer a variety of training drills, especially to junior operatives.<br>\
-	Remember that any Provost Marshal duties may be delegated to you if they wish and internal tasks will fall to you at times."
+	In quieter times, you serve as the onsite weapons instructor. Take the initiative to offer a variety of training drills, especially to junior officers.<br>\
+	Remember that any duties of the Lieutenant may be delegated to you if they wish and internal tasks will fall to you at times."
 
 	duties = "Manage a good balance of armory stock, and dispense responsibly with a paper trail and fair price.<br>\
 	Monitor prisoners in the brig to ensure their health and safety.<br>\
-	Perform training drills and other exercises to bring the Provosts up to standard."
+	Perform training drills and other exercises to bring the officers up to standard."
 
 /obj/landmark/join/start/supsec
-	name = "Warrant Officer"
+	name = "Desk Sergeant"
 	icon_state = "player-blue"
 	join_tag = /datum/job/supsec
 
 /*
 /datum/job/inspector
-	title = "Ranger"
+	title = "Detective"
 	flag = INSPECTOR
 	department = DEPARTMENT_SECURITY
 	department_flag = SECURITY
 	faction = MAP_FACTION
 	total_positions = 2
 	spawn_positions = 2
-	supervisors = "the Warrant Officer"
+	supervisors = "the Lieutenant"
 	difficulty = "Hard."
 	selection_color = "#a7bbc6"
 	wage = WAGE_PROFESSIONAL
@@ -140,11 +140,12 @@
 							 /datum/computer_file/program/audio,
 							 /datum/computer_file/program/camera_monitor)
 
-	description = "The Ranger is the city detective and field agent, taking on cases and suspects that aren't always what they seem.<br>\
-	Your job is to interrogate suspects, gather witness statements,  harvest evidence and reach a conclusion about the nature and culprit of a crime.<br>\
+	description = "The Detective is both the city detective and field agent, taking on cases and suspects that aren't always what they seem.<br>\
+	Your job is to interrogate suspects, gather witness statements, harvest evidence and reach a conclusion about the nature and culprit of a crime.<br>\
 	You are a higher ranking position than officers and operatives and can determine if charges are valid and may release individuals for lack of evidence. <br>\
 	However, you cannot give orders outside those pertaining to charges and arrests. The warrant officer still outranks you - bring all conflicts to them.<br>\
-	When there are no outstanding cases, look for them. Mingle with civilians, interact and converse, sniff out leads about potential criminal activity."
+	When there are no outstanding cases, look for them. Mingle with civilians, interact and converse, sniff out leads about potential criminal activity.<br>\
+	Your job may also involve investigating crimes committed by the Black Guard, though minor crimes should be handled internally in their regiment."
 
 	duties = "Interview suspects and witnesses after a crime. Record important details of their statements, and look for inconsistencies.<br>\
 		Gather evidence and bring it back for processing.<br>\
@@ -152,20 +153,20 @@
 		Interact with civilians and be on the lookout for criminal activity."
 
 /obj/landmark/join/start/inspector
-	name = "Ranger"
+	name = "Detective"
 	icon_state = "player-blue"
 	join_tag = /datum/job/inspector
 */
 
 /datum/job/officer
-	title = "Master-at-Arms"
+	title = "Police Officer"
 	flag = OFFICER
 	department = DEPARTMENT_SECURITY
 	department_flag = SECURITY
 	faction = MAP_FACTION
 	total_positions = 4
 	spawn_positions = 4
-	supervisors = "the Chief Warrant Officer"
+	supervisors = "the Lieutenant"
 	difficulty = "Hard."
 	//alt_titles = list("Marshal Junior Operative")
 	selection_color = "#a7bbc6"
@@ -188,11 +189,12 @@
 	software_on_spawn = list(/datum/computer_file/program/digitalwarrant,
 							 /datum/computer_file/program/camera_monitor)
 
-	description = "The Master-at-Arms forms the brunt of the Provosts, internally enforcing law and keeping the peace.<br>\
+	description = "The police officer forms the rank and file of the department, internally enforcing law and keeping the peace.<br>\
 	You are expected to be a problem solver who can descalate situations, reach peaceful agreements, and maintain public trust.<br>\
-	Keep your weapons holstered unless the situation demands otherwise - exercise good judgment and follow Black Guard orders.<br>\
+	Keep your weapons holstered unless the situation demands otherwise, exercise good judgment, and follow superior's orders.<br>\
 	When there are no standing orders, your ongoing task is to patrol the city and be on the lookout for threats or problems. <br>\
-	Check in at departments and watch the main gate. You have access to most places to help with your duties  - do not abuse this."
+	Check in at departments and get to know the people. You have access to most places to help with your duties  - do not abuse this.<br>\
+	The Black Guard has no authority over the police department, and so any orders in normal conditions need not be followed."
 
 	duties = "Patrol the city, provide a security presence, and look for trouble.<br>\
 		Deal with internal threats to the city such as criminals, saboteurs, and anything that endangers citizens.<br>\
@@ -201,14 +203,14 @@
 		Obey the law. You are not above it."
 
 /obj/landmark/join/start/officer
-	name = "Master-at-Arms"
+	name = "Police Officer"
 	icon_state = "player-blue"
 	join_tag = /datum/job/officer
 
 
 //Military Jobs
 /datum/job/smc
-	title = "Infantry Commander"
+	title = "Black Guard Commander"
 	flag = SMC
 	head_position = 1
 	department = DEPARTMENT_SECURITY
@@ -260,7 +262,7 @@
 		Advise the council on threats to city security and advise them towards choices that will minimise exposure to threats."
 
 /obj/landmark/join/start/smc
-	name = "Infantry Commander"
+	name = "Black Guard Commander"
 	icon_state = "player-blue-officer"
 	join_tag = /datum/job/smc
 
@@ -273,7 +275,7 @@
 	faction = MAP_FACTION
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Infantry Commander"
+	supervisors = "the Black Guard Commander"
 	difficulty = "Hard."
 	selection_color = "#a7bbc6"
 	wage = WAGE_LABOUR_HAZARD
@@ -296,16 +298,16 @@
 	software_on_spawn = list(/datum/computer_file/program/digitalwarrant,
 							 /datum/computer_file/program/camera_monitor)
 
-	description = "The Sergeant Major is the second-in-command of the Mechanized Infantry and the defacto commanding officer if the Infantry Commander isn't around or injured. <br>\
+	description = "The Sergeant Major is the second-in-command of the Mechanized Infantry and the defacto commanding officer if the Black Guard Commander isn't around or injured. <br>\
 	Your role is mainly keeping order among the troopers and corpsman and ensuring they do not act like a pack of thugs.<br>\
 	You will often be maintaining discipline and order within the ranks and fulfilling orders from the Commander.<br>\
 	You will also the secondary squad leader during conflicts, often times leading troopers independent of the Commander, but usually under his explicit orders.<br>\
-	In quieter times, you serve as a form of enlisted advisor and drill instructor. Take the initiative to offer a variety of training drills, especially to junior operatives and report behavior that should have a member of security removed from their post.<br>\
+	In quieter times, you serve as a form of an enlisted advisor and drill instructor. Take the initiative to offer a variety of training drills, especially to junior operatives and report behavior that should have a member of security removed from their post.<br>\
 	Remember that any Commander duties may be delegated to you if they wish, and will automatically be given if they are not present."
 
-	duties = "Manage good ethics among security, including the Infantry and Provosts with a record of everything responsibly and recorded.<br>\
+	duties = "Manage good ethics among the Black Guard with a record of everything responsibly and recorded.<br>\
 	Give training and instruction to troopers. Run drills and ensure they are prepared for firing lines, kill zones, communication, and breach tactics.<br>\
-	Follow the orders of the Commander and in his absence keep security in line."
+	Follow the orders of the Commander and in their absence keep security in line."
 
 /obj/landmark/join/start/serg
 	name = "Sergeant Major"
@@ -321,7 +323,7 @@
 	faction = MAP_FACTION
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the Blackshield Commander"
+	supervisors = "the Black Guard Commander"
 	difficulty = "Hard."
 	selection_color = "#a7bbc6"
 	wage = WAGE_PROFESSIONAL
@@ -348,7 +350,7 @@
 							 /datum/computer_file/program/chem_catalog,
 							 /datum/computer_file/program/camera_monitor)
 
-	description = "The Corpsman is a highly trained medical specialist within the Blackshield - a mixture of combatant and doctor.<br>\
+	description = "The Corpsman is a highly trained medical specialist within the Black Guard; a mixture of combatant and doctor.<br>\
 	Your first duty is that of a field medic. Serve on the backlines of any combat situations, treating the wounded and evacuating the critical.<br>\
 	Your second duty is to treat any prisoners and suspects in custody. Wounds from escape and suicide attempts will test your surgical skills.<br>\
 	Your third duty, when faced with strange crimes, is to serve as a scientific analyst - scanning traces and conducting autopsies.<br>\
@@ -372,7 +374,7 @@
 	faction = MAP_FACTION
 	total_positions = 3
 	spawn_positions = 3
-	supervisors = "the Infantry Commander"
+	supervisors = "the Black Guard Commander"
 	difficulty = "Hard."
 	//alt_titles = list("Blackshield Junior Trooper")
 	selection_color = "#a7bbc6"
@@ -396,8 +398,8 @@
 
 	description = "The Trooper forms the base of the Black Guard, the frontline against pirates, terrorists, and xenos.<br>\
 	You are a professional soldier in service to the Commonwealth. Employ your talents to bring an end to threats and conflict situations.<br>\
-	Tactics and teamwork are vital. You are paid to follow orders, not to think. Remember your focus on external threats - leave otherwise to Provosts.<br>\
-	When there are no standing orders, your ongoing task is to patrol and be on the lookout for threats or problems. Help the Provosts if explicitly asked. <br>\
+	Tactics and teamwork are vital. You are paid to follow orders, not to think. Remember your focus on external threats. Leave crimes to the police.<br>\
+	When there are no standing orders, your ongoing task is to patrol and be on the lookout for threats or problems. Help the police if explicitly asked. <br>\
 	Watch the main gate and perimeter. You have access to most places to help with your duties - do not abuse this."
 
 	duties = "Patrol the city, provide a security presence, and look for trouble.<br>\

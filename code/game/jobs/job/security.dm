@@ -1,61 +1,4 @@
-/datum/job/smc
-	title = "Infantry Commander"
-	flag = SMC
-	head_position = 1
-	department = DEPARTMENT_SECURITY
-	department_flag = SECURITY | COMMAND
-	faction = MAP_FACTION
-	total_positions = 1
-	spawn_positions = 1
-	supervisors = "the High Council"
-	difficulty = "Very Hard."
-	selection_color = "#97b0be"
-	req_admin_notify = 1
-	wage = WAGE_COMMAND
-	ideal_character_age = 40
-	minimum_character_age = 30
-	department_account_access = TRUE
-
-	outfit_type = /decl/hierarchy/outfit/job/security/smc
-
-	access = list(
-		access_security, access_eva, access_sec_doors, access_brig, access_armory, access_medspec,
-		access_forensics_lockers, access_morgue, access_maint_tunnels, access_all_personal_lockers,
-		access_moebius, access_engine, access_mining, access_construction, access_mailsorting,
-		access_heads, access_hos, access_RC_announce, access_keycard_auth, access_gateway,
-		access_external_airlocks, access_research_equipment, access_prospector, access_medical, access_kitchen, access_military
-	)
-
-	stat_modifiers = list(
-		STAT_ROB = 30,
-		STAT_TGH = 40,
-		STAT_VIG = 40,
-	)
-
-	perks = list(/datum/perk/ass_of_concrete)
-
-	software_on_spawn = list(/datum/computer_file/program/comm,
-							 /datum/computer_file/program/digitalwarrant,
-							 /datum/computer_file/program/camera_monitor,
-							 /datum/computer_file/program/reports)
-
-	description = "The Infantry Commander serves as the commander of the Mechanized Infantry company.<br>\
-	Contracted to protect and serve the Nadezhda Commonwealth, your comapny serves as a voluntary first (and hopefully last) line of defense.<br>\
-	Your goal is to keep everyone living in the city as safe as possible and to eliminate any threats to the Commonwealth.<br>\
-	The Provost Marshal is your ally and you should work closely with them, they handle the upholding of the law."
-
-	duties = "Coordinate operatives in the field, assigning them to threats and distress calls as needed.<br>\
-		Work with the Provost Marshal to allocate funds to supply your teams with whatever munitions or equipment they need.<br>\
-		Plan assaults on entrenched threats, ensure each soldier knows their roles and carries them out precisely.<br>\
-		Oversee performance of the soldiers under your command and punish any that are insubordinate or incompetent.<br>\
-		Advise the council on threats to city security and advise them towards choices that will minimise exposure to threats."
-
-/obj/landmark/join/start/smc
-	name = "Infantry Commander"
-	icon_state = "player-blue-officer"
-	join_tag = /datum/job/smc
-
-
+//Police Jobs
 /datum/job/swo
 	title = "Provost Marshal"
 	flag = SWO
@@ -162,54 +105,6 @@
 	icon_state = "player-blue"
 	join_tag = /datum/job/supsec
 
-
-/datum/job/serg
-	title = "Sergeant Major"
-	flag = SERG
-	department = DEPARTMENT_SECURITY
-	department_flag = SECURITY
-	faction = MAP_FACTION
-	total_positions = 1
-	spawn_positions = 1
-	supervisors = "the Infantry Commander"
-	difficulty = "Hard."
-	selection_color = "#a7bbc6"
-	wage = WAGE_LABOUR_HAZARD
-	minimum_character_age = 25
-
-	outfit_type = /decl/hierarchy/outfit/job/security/serg
-
-	access = list(
-		access_security, access_moebius, access_medspec, access_engine, access_mailsorting,
-		access_eva, access_sec_doors, access_brig, access_armory, access_maint_tunnels, access_morgue,
-		access_external_airlocks, access_research_equipment, access_prospector, access_kitchen, access_military
-	)
-
-	stat_modifiers = list(
-		STAT_ROB = 25,
-		STAT_TGH = 25,
-		STAT_VIG = 25,
-	)
-
-	software_on_spawn = list(/datum/computer_file/program/digitalwarrant,
-							 /datum/computer_file/program/camera_monitor)
-
-	description = "The Sergeant Major is the second-in-command of the Mechanized Infantry and the defacto commanding officer if the Infantry Commander isn't around or injured. <br>\
-	Your role is mainly keeping order among the troopers and corpsman and ensuring they do not act like a pack of thugs.<br>\
-	You will often be maintaining discipline and order within the ranks and fulfilling orders from the Commander.<br>\
-	You will also the secondary squad leader during conflicts, often times leading troopers independent of the Commander, but usually under his explicit orders.<br>\
-	In quieter times, you serve as a form of enlisted advisor and drill instructor. Take the initiative to offer a variety of training drills, especially to junior operatives and report behavior that should have a member of security removed from their post.<br>\
-	Remember that any Commander duties may be delegated to you if they wish, and will automatically be given if they are not present."
-
-	duties = "Manage good ethics among security, including the Infantry and Provosts with a record of everything responsibly and recorded.<br>\
-	Give training and instruction to troopers. Run drills and ensure they are prepared for firing lines, kill zones, communication, and breach tactics.<br>\
-	Follow the orders of the Commander and in his absence keep security in line."
-
-/obj/landmark/join/start/serg
-	name = "Sergeant Major"
-	icon_state = "player-blue"
-	join_tag = /datum/job/serg
-
 /*
 /datum/job/inspector
 	title = "Ranger"
@@ -261,6 +156,162 @@
 	icon_state = "player-blue"
 	join_tag = /datum/job/inspector
 */
+
+/datum/job/officer
+	title = "Master-at-Arms"
+	flag = OFFICER
+	department = DEPARTMENT_SECURITY
+	department_flag = SECURITY
+	faction = MAP_FACTION
+	total_positions = 4
+	spawn_positions = 4
+	supervisors = "the Chief Warrant Officer"
+	difficulty = "Hard."
+	//alt_titles = list("Marshal Junior Operative")
+	selection_color = "#a7bbc6"
+	wage = WAGE_LABOUR_HAZARD
+
+	outfit_type = /decl/hierarchy/outfit/job/security/ihoper
+
+	access = list(
+		access_security, access_moebius, access_engine, access_mailsorting,access_eva,
+		access_sec_doors, access_brig, access_maint_tunnels, access_morgue, access_external_airlocks, access_prospector, access_kitchen, access_forensics_lockers
+	)
+
+	stat_modifiers = list(
+		STAT_ROB = 25,
+		STAT_TGH = 25,
+		STAT_VIG = 20,
+		STAT_BIO = 15
+	)
+
+	software_on_spawn = list(/datum/computer_file/program/digitalwarrant,
+							 /datum/computer_file/program/camera_monitor)
+
+	description = "The Master-at-Arms forms the brunt of the Provosts, internally enforcing law and keeping the peace.<br>\
+	You are expected to be a problem solver who can descalate situations, reach peaceful agreements, and maintain public trust.<br>\
+	Keep your weapons holstered unless the situation demands otherwise - exercise good judgment and follow Black Guard orders.<br>\
+	When there are no standing orders, your ongoing task is to patrol the city and be on the lookout for threats or problems. <br>\
+	Check in at departments and watch the main gate. You have access to most places to help with your duties  - do not abuse this."
+
+	duties = "Patrol the city, provide a security presence, and look for trouble.<br>\
+		Deal with internal threats to the city such as criminals, saboteurs, and anything that endangers citizens.<br>\
+		Ensure that people follow the law and SoP to maintain order.<br>\
+		Follow orders from the chain of command.<br>\
+		Obey the law. You are not above it."
+
+/obj/landmark/join/start/officer
+	name = "Master-at-Arms"
+	icon_state = "player-blue"
+	join_tag = /datum/job/officer
+
+
+//Military Jobs
+/datum/job/smc
+	title = "Infantry Commander"
+	flag = SMC
+	head_position = 1
+	department = DEPARTMENT_SECURITY
+	department_flag = SECURITY | COMMAND
+	faction = MAP_FACTION
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the High Council"
+	difficulty = "Very Hard."
+	selection_color = "#97b0be"
+	req_admin_notify = 1
+	wage = WAGE_COMMAND
+	ideal_character_age = 40
+	minimum_character_age = 30
+	department_account_access = TRUE
+
+	outfit_type = /decl/hierarchy/outfit/job/security/smc
+
+	access = list(
+		access_security, access_eva, access_sec_doors, access_brig, access_armory, access_medspec,
+		access_forensics_lockers, access_morgue, access_maint_tunnels, access_all_personal_lockers,
+		access_moebius, access_engine, access_mining, access_construction, access_mailsorting,
+		access_heads, access_hos, access_RC_announce, access_keycard_auth, access_gateway,
+		access_external_airlocks, access_research_equipment, access_prospector, access_medical, access_kitchen, access_military
+	)
+
+	stat_modifiers = list(
+		STAT_ROB = 30,
+		STAT_TGH = 40,
+		STAT_VIG = 40,
+	)
+
+	perks = list(/datum/perk/ass_of_concrete)
+
+	software_on_spawn = list(/datum/computer_file/program/comm,
+							 /datum/computer_file/program/digitalwarrant,
+							 /datum/computer_file/program/camera_monitor,
+							 /datum/computer_file/program/reports)
+
+	description = "The Infantry Commander serves as the commander of the Mechanized Infantry company.<br>\
+	Contracted to protect and serve the Nadezhda Commonwealth, your comapny serves as a voluntary first (and hopefully last) line of defense.<br>\
+	Your goal is to keep everyone living in the city as safe as possible and to eliminate any threats to the Commonwealth.<br>\
+	The Provost Marshal is your ally and you should work closely with them, they handle the upholding of the law."
+
+	duties = "Coordinate operatives in the field, assigning them to threats and distress calls as needed.<br>\
+		Work with the Provost Marshal to allocate funds to supply your teams with whatever munitions or equipment they need.<br>\
+		Plan assaults on entrenched threats, ensure each soldier knows their roles and carries them out precisely.<br>\
+		Oversee performance of the soldiers under your command and punish any that are insubordinate or incompetent.<br>\
+		Advise the council on threats to city security and advise them towards choices that will minimise exposure to threats."
+
+/obj/landmark/join/start/smc
+	name = "Infantry Commander"
+	icon_state = "player-blue-officer"
+	join_tag = /datum/job/smc
+
+
+/datum/job/serg
+	title = "Sergeant Major"
+	flag = SERG
+	department = DEPARTMENT_SECURITY
+	department_flag = SECURITY
+	faction = MAP_FACTION
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the Infantry Commander"
+	difficulty = "Hard."
+	selection_color = "#a7bbc6"
+	wage = WAGE_LABOUR_HAZARD
+	minimum_character_age = 25
+
+	outfit_type = /decl/hierarchy/outfit/job/security/serg
+
+	access = list(
+		access_security, access_moebius, access_medspec, access_engine, access_mailsorting,
+		access_eva, access_sec_doors, access_brig, access_armory, access_maint_tunnels, access_morgue,
+		access_external_airlocks, access_research_equipment, access_prospector, access_kitchen, access_military
+	)
+
+	stat_modifiers = list(
+		STAT_ROB = 25,
+		STAT_TGH = 25,
+		STAT_VIG = 25,
+	)
+
+	software_on_spawn = list(/datum/computer_file/program/digitalwarrant,
+							 /datum/computer_file/program/camera_monitor)
+
+	description = "The Sergeant Major is the second-in-command of the Mechanized Infantry and the defacto commanding officer if the Infantry Commander isn't around or injured. <br>\
+	Your role is mainly keeping order among the troopers and corpsman and ensuring they do not act like a pack of thugs.<br>\
+	You will often be maintaining discipline and order within the ranks and fulfilling orders from the Commander.<br>\
+	You will also the secondary squad leader during conflicts, often times leading troopers independent of the Commander, but usually under his explicit orders.<br>\
+	In quieter times, you serve as a form of enlisted advisor and drill instructor. Take the initiative to offer a variety of training drills, especially to junior operatives and report behavior that should have a member of security removed from their post.<br>\
+	Remember that any Commander duties may be delegated to you if they wish, and will automatically be given if they are not present."
+
+	duties = "Manage good ethics among security, including the Infantry and Provosts with a record of everything responsibly and recorded.<br>\
+	Give training and instruction to troopers. Run drills and ensure they are prepared for firing lines, kill zones, communication, and breach tactics.<br>\
+	Follow the orders of the Commander and in his absence keep security in line."
+
+/obj/landmark/join/start/serg
+	name = "Sergeant Major"
+	icon_state = "player-blue"
+	join_tag = /datum/job/serg
+
 
 /datum/job/medspec
 	title = "Corpsman"
@@ -359,53 +410,3 @@
 	name = "Black Guard Trooper"
 	icon_state = "player-blue"
 	join_tag = /datum/job/trooper
-
-
-/datum/job/officer
-	title = "Master-at-Arms"
-	flag = OFFICER
-	department = DEPARTMENT_SECURITY
-	department_flag = SECURITY
-	faction = MAP_FACTION
-	total_positions = 4
-	spawn_positions = 4
-	supervisors = "the Chief Warrant Officer"
-	difficulty = "Hard."
-	//alt_titles = list("Marshal Junior Operative")
-	selection_color = "#a7bbc6"
-	wage = WAGE_LABOUR_HAZARD
-
-	outfit_type = /decl/hierarchy/outfit/job/security/ihoper
-
-	access = list(
-		access_security, access_moebius, access_engine, access_mailsorting,access_eva,
-		access_sec_doors, access_brig, access_maint_tunnels, access_morgue, access_external_airlocks, access_prospector, access_kitchen, access_forensics_lockers
-	)
-
-	stat_modifiers = list(
-		STAT_ROB = 25,
-		STAT_TGH = 25,
-		STAT_VIG = 20,
-		STAT_BIO = 15
-	)
-
-	software_on_spawn = list(/datum/computer_file/program/digitalwarrant,
-							 /datum/computer_file/program/camera_monitor)
-
-	description = "The Master-at-Arms forms the brunt of the Provosts, internally enforcing law and keeping the peace.<br>\
-	You are expected to be a problem solver who can descalate situations, reach peaceful agreements, and maintain public trust.<br>\
-	Keep your weapons holstered unless the situation demands otherwise - exercise good judgment and follow Black Guard orders.<br>\
-	When there are no standing orders, your ongoing task is to patrol the city and be on the lookout for threats or problems. <br>\
-	Check in at departments and watch the main gate. You have access to most places to help with your duties  - do not abuse this."
-
-	duties = "Patrol the city, provide a security presence, and look for trouble.<br>\
-		Deal with internal threats to the city such as criminals, saboteurs, and anything that endangers citizens.<br>\
-		Ensure that people follow the law and SoP to maintain order.<br>\
-		Follow orders from the chain of command.<br>\
-		Obey the law. You are not above it."
-
-/obj/landmark/join/start/officer
-	name = "Master-at-Arms"
-	icon_state = "player-blue"
-	join_tag = /datum/job/officer
-

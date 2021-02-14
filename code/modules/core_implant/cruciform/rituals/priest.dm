@@ -212,12 +212,12 @@
 */
 
 
-/datum/ritual/cruciform/priest/reactivation
+/datum/ritual/cruciform/priest/reconsecration
 	name = "Reconsecration"
 	phrase = "Vetus moritur et onus hoc levaverit"
 	desc = "The ritual needed for reactivation of a cruciform that has been unwillingly separated from the body. The process requires an altar and the cruciform in question to be reattached."
 
-/datum/ritual/cruciform/priest/reactivation/perform(mob/living/carbon/human/user, obj/item/weapon/implant/core_implant/C)
+/datum/ritual/cruciform/priest/reconsecration/perform(mob/living/carbon/human/user, obj/item/weapon/implant/core_implant/C)
 	var/obj/item/weapon/implant/core_implant/cruciform/CI = get_implant_from_victim(user, /obj/item/weapon/implant/core_implant/cruciform, FALSE)
 
 	if(!CI)

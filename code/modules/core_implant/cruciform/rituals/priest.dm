@@ -211,38 +211,6 @@
 	phrase = "Et ne inducas nos in tentationem, sed libera nos a malo"
 */
 
-
-/datum/ritual/cruciform/priest/reconsecration
-	name = "Reconsecration"
-	phrase = "Vetus moritur et onus hoc levaverit"
-	desc = "The ritual needed for reactivation of a cruciform that has been unwillingly separated from the body. The process requires an altar and the cruciform in question to be reattached."
-
-/datum/ritual/cruciform/priest/reconsecration/perform(mob/living/carbon/human/user, obj/item/weapon/implant/core_implant/C)
-	var/obj/item/weapon/implant/core_implant/cruciform/CI = get_implant_from_victim(user, /obj/item/weapon/implant/core_implant/cruciform, FALSE)
-
-	if(!CI)
-		fail("There is no cruciform on this one.", user, C)
-		return FALSE
-
-	if(!CI.wearer)
-		fail("Cruciform is not installed.", user, C)
-		return FALSE
-
-	if(CI.active)
-		fail("This cruciform is already consecrated.", user, C)
-		return FALSE
-
-	if (CI.wearer.stat == DEAD)
-		fail("The cruciform cannot be bound to a corpse.", user, C)
-		return FALSE
-
-	log_and_message_admins("successfully reconsecrated [CI.wearer]")
-	to_chat(CI.wearer, "<span class='info'>Your cruciform vibrates and warms up.</span>")
-
-	CI.activate()
-
-	return TRUE
-
 /datum/ritual/cruciform/priest/install
 	name = "Commitment"
 	phrase = "Unde ipse Dominus dabit vobis signum."

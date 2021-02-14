@@ -198,6 +198,7 @@
 	designs = list(
 		//pistol mags
 		/datum/design/autolathe/ammo/pistol_rubber,
+		/datum/design/autolathe/ammo/hpistol_rubber,
 		/datum/design/autolathe/ammo/magnum_rubber,
 		/datum/design/autolathe/ammo/kurtz_rubber,
 		//speed loaders
@@ -225,6 +226,8 @@
 		//pistol mags
 		/datum/design/autolathe/ammo/pistol,
 		/datum/design/autolathe/ammo/pistol_lethal,
+		/datum/design/autolathe/ammo/hpistol,
+		/datum/design/autolathe/ammo/hpistol_lethal,
 		/datum/design/autolathe/ammo/magnum,
 		/datum/design/autolathe/ammo/magnum_lethal,
 		/datum/design/autolathe/ammo/kurtz_lethal,

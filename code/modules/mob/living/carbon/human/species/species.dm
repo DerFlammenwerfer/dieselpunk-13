@@ -397,3 +397,5 @@
 		H.add_language(LANGUAGE_CHTMANT)
 	if(H.species.reagent_tag == IS_OPIFEX)
 		H.add_language(LANGUAGE_OPIFEXEE)
+	if(H.species.default_form == FORM_KRIOSAN)
+		H.add_language(LANGUAGE_GERMAN)

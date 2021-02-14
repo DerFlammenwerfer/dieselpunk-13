@@ -544,34 +544,38 @@
 			fail("You decide not to obtain a cruciform at this time.", user, C)
 			return FALSE
 
-/datum/ritual/cruciform/priest/reactivation
+/datum/ritual/cruciform/priest/reconsecration
 	name = "Reconsecration"
-	phrase = "Vetus moritur et onus hoc levaverit"
-	desc = "The ritual needed for the reactivation and repair of a cruciform that has been unwillingly separated from the body or destroyed by the bearer's death. The process requires an altar and the cruciform in question to be attached."
+	phrase = "Vetus moritur et onus hoc levaverit."
+	desc = "The ritual needed for the reactivation and repair of a cruciform that has been unwillingly separated from the body or destroyed by the bearer's death. The process requires an altar and the cruciform in question to be removed from its host."
+	success_message = "Cruciform successfully repaired."
 	power = 50
 
-/datum/ritual/cruciform/priest/reactivation/perform(mob/living/carbon/human/user, obj/item/weapon/implant/core_implant/C)
-	var/obj/item/weapon/implant/core_implant/cruciform/CI = get_implant_from_victim(user, /obj/item/weapon/implant/core_implant/cruciform, FALSE)
+/datum/ritual/cruciform/priest/reconsecration/perform(mob/living/carbon/human/user, obj/item/weapon/implant/core_implant/C)
+	var/list/L = get_front(user)
+	var/obj/item/weapon/implant/core_implant/cruciform/CI = locate(/obj/item/weapon/implant/core_implant/cruciform) in L
+
+	var/obj/machinery/optable/altar/RA = locate(/obj/machinery/optable/altar) in L
 
 	if(!CI)
-		fail("There is no cruciform on this one.", user, C)
+		fail("Cruciform not found.", user, C)
 		return FALSE
 
-	if(!CI.wearer)
-		fail("Cruciform is not installed.", user, C)
+	if (!RA)
+		fail("The Cruciform must rest upon an altar.", user, C)
 		return FALSE
 
 	if(CI.active)
-		fail("This cruciform is already consecrated.", user, C)
+		fail("Cannot repair an active cruciform.", user, C)
 		return FALSE
 
-	if (CI.wearer.stat == DEAD)
-		fail("The cruciform cannot be bound to a corpse.", user, C)
+	if(CI.activated)
+		fail("Cruciform does not require repairs.", user, C)
 		return FALSE
 
-	log_and_message_admins("successfully reconsecrated [CI.wearer]")
-	to_chat(CI.wearer, "<span class='info'>Your cruciform vibrates and warms up.</span>")
+	if(CI.wearer)
+		fail("Remove the cruciform from the body before attempting to repair it.", user, C)
+		return FALSE
 
-	CI.activate()
-
+	CI.deactivate()
 	return TRUE

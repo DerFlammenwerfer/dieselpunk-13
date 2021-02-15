@@ -40,7 +40,7 @@
 							 /datum/computer_file/program/camera_monitor,
 							 /datum/computer_file/program/reports)
 
-	description = "The Lieutenant serves as the shift's lead officer for the Nadezgha Metropolitan Police.<br>\
+	description = "The Lieutenant serves as the shift's lead officer for the Nadezhda Metropolitan Police.<br>\
 	Contracted to protect and serve the city, your internal police force is dedicated to the fight against criminal elements.<br>\
 	Your main objective is to keep everyone safe by maintining order, and upholding laws of all manner within the city.<br>\
 	The Black Guard is your ally and you should work with them as they provide the muscle and guns to defend the city."

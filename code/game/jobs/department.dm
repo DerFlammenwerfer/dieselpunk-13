@@ -70,13 +70,13 @@
 **************/
 //These departments are paid out of ship funding
 /datum/department/ironhammer
-	name = "Nadezhda Black Guard"
+	name = "Black Guard and City Police"
 	id = DEPARTMENT_SECURITY
 	funding_type = FUNDING_EXTERNAL
 	account_initial_balance = 5000
 
 /datum/department/technomancers
-	name = "Artificier's Guild"
+	name = "Artificer's Guild"
 	id = DEPARTMENT_ENGINEERING
 	funding_type = FUNDING_EXTERNAL
 

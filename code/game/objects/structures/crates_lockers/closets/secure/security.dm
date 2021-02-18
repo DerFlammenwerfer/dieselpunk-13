@@ -44,7 +44,7 @@
 	new /obj/item/weapon/storage/pouch/pistol_holster(src)
 
 /obj/structure/closet/secure_closet/reinforced/hos
-	name = "warrant officer's locker"
+	name = "Lieutenant's locker"
 	req_access = list(access_hos)
 	icon_state = "hos"
 
@@ -85,7 +85,7 @@
 
 
 /obj/structure/closet/secure_closet/warden
-	name = "supply specialist's locker"
+	name = "desk sergeant's locker"
 	req_access = list(access_armory)
 	icon_state = "warden"
 
@@ -127,7 +127,7 @@
 		new /obj/item/clothing/head/helmet/marshal_full(src)
 
 /obj/structure/closet/secure_closet/personal/security
-	name = "master-at-arms' locker"
+	name = "police officer's locker"
 	req_access = list(access_hos)
 	access_occupy = list(access_brig)
 	icon_state = "sec"
@@ -208,7 +208,7 @@
 	new /obj/item/weapon/storage/briefcase/crimekit(src)
 
 /obj/structure/closet/secure_closet/detective
-	name = "ranger's locker"
+	name = "detective's locker"
 	req_access = list(access_forensics_lockers)
 	icon_state = "cabinetdetective"
 

@@ -395,6 +395,44 @@
 /obj/item/ammo_magazine/rifle_75_linked_box/empty
 	matter = list(MATERIAL_STEEL = 2)
 	initial_ammo = 0
+	
+///AK Magazines///
+/obj/item/ammo_magazine/rifle_75ak
+	name = "AK rifle magazine"
+	desc = "A 30 round magazine marked for 7.5mm Rifle."
+	icon_state = "ak"
+	mag_type = MAGAZINE
+	mag_well = MAG_WELL_RIFLE
+	caliber = "rifle"
+	caliber = CAL_RIFLE
+	matter = list(MATERIAL_STEEL = 7)
+	ammo_type = /obj/item/ammo_casing/rifle_75
+	max_ammo = 30
+	multiple_sprites = 1
+
+/obj/item/ammo_magazine/rifle_75ak/empty
+	icon_state = "ak"
+	initial_ammo = 0
+
+/obj/item/ammo_magazine/rifle_75ak/practice
+	name = "AK magazine (practice)"
+	icon_state = "ak_p"
+	ammo_type = /obj/item/ammo_casing/rifle_75/practice
+
+/obj/item/ammo_magazine/rifle_75ak/highvelocity
+	name = "AK magazine (high-velocity)"
+	icon_state = "ak_hv"
+	ammo_type = /obj/item/ammo_casing/rifle_75/hv
+
+/obj/item/ammo_magazine/rifle_75ak/rubber
+	name = "AK magazine (rubber)"
+	icon_state = "ak_r"
+	ammo_type = /obj/item/ammo_casing/rifle_75/rubber
+
+/obj/item/ammo_magazine/rifle_75ak/lethal
+	name = "AK magazine (hollow-point)"
+	icon_state = "ak_l"
+	ammo_type = /obj/item/ammo_casing/rifle_75/lethal
 
 ///easiest to make it a child
 /obj/item/ammo_magazine/rifle_75_linked_box/light_rifle_257

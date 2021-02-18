@@ -1,5 +1,5 @@
 /obj/structure/closet/secure_closet/reinforced/commander
-	name = "blackshield commander's locker"
+	name = "Black Guard commander's locker"
 	req_access = list(access_hos)
 	icon_state = "mc"
 
@@ -46,7 +46,7 @@
 		new /obj/item/weapon/storage/backpack/militia(src)
 
 /obj/structure/closet/secure_closet/armorer
-	name = "sergeant's locker"
+	name = "sergeant major's locker"
 	req_access = list(access_armory)
 	icon_state = "armorer"
 
@@ -97,7 +97,7 @@
 	new /obj/item/weapon/storage/firstaid/ifak(src)
 
 /obj/structure/closet/secure_closet/personal/trooper
-	name = "blackshield trooper's locker"
+	name = "Black Guard trooper's locker"
 	req_access = list(access_hos)
 	access_occupy = list(access_brig)
 	icon_state = "trooper"
@@ -166,7 +166,7 @@
 	new /obj/item/weapon/grenade/smokebomb(src)
 
 /obj/structure/closet/secure_closet/personal/corpsman
-	name = "blackshield medical corpsman locker"
+	name = "Black Guard corpsman locker"
 	req_access = list(access_medspec)
 	icon_state = "corpsman"
 
@@ -217,7 +217,7 @@
 	new /obj/item/clothing/accessory/patches/blackshield_corpsman(src)
 
 /obj/structure/closet/secure_closet/militia/armor
-	name = "blackshield armor locker"
+	name = "Black Guard armor locker"
 	req_access = list(access_brig)
 	icon_state = "trooper"
 

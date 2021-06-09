@@ -4,6 +4,9 @@
 
 Корабль, который должен умирать.
 
+## Branch Description
+The Far Future Release branch encompasses all code changes to my own, seperate server that would not be considered immediately compatible with Sojourn. For updates that are specifically created for upstream compatability with Sojourn, see the upstream-updates branch.
+
 ## CONTRIBUTING
 
 Please see [CONTRIBUTING.md](CONTRIBUTING.md)

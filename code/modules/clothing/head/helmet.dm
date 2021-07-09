@@ -138,6 +138,8 @@
 	options["combat helmet"] = "hunter_helmet"
 	options["stalker hood"] = "hunter_helmet_stalker"
 	options["visored helmet"] = "hunter_helmet_visor"
+	options["!TEST! horned helmet"] = "hunter_helmet_bone_horned"
+	options["!TEST! bone helmet"] = "hunter_helmet_bone"
 
 	var/choice = input(M,"What kind of style do you want?","Adjust Style") as null|anything in options
 

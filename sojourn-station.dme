@@ -846,6 +846,7 @@
 #include "code\game\objects\items\gene_vial.dm"
 #include "code\game\objects\items\glassjar.dm"
 #include "code\game\objects\items\latexballoon.dm"
+#include "code\game\objects\items\misc_crafting.dm"
 #include "code\game\objects\items\oddities.dm"
 #include "code\game\objects\items\oddities_faction.dm"
 #include "code\game\objects\items\paintkit.dm"

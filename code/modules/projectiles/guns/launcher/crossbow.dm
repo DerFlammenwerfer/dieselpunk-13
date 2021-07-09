@@ -190,11 +190,11 @@
 
 /obj/item/weapon/gun/launcher/crossbow/update_icon()
 	if(tension > 1)
-		icon_state = "crossbow-drawn"
+		icon_state = "[initial(icon_state)]-drawn" //Ta-da, now it works for this item path's children.
 	else if(bolt)
-		icon_state = "crossbow-nocked"
+		icon_state = "[initial(icon_state)]-nocked"
 	else
-		icon_state = "crossbow"
+		icon_state = "[initial(icon_state)]"
 
 
 // Crossbow construction.
@@ -384,13 +384,20 @@
 /obj/item/weapon/gun/launcher/crossbow/longbow
 	name = "longbow"
 	desc = "Typically made of yew wood and with a bowstaff as long as a man is tall, a longbow is characterized by a rather short draw length and the rather high draw weight from which it derives its power."
+	icon = 'icons/obj/guns/launcher/longbow.dmi'
+	icon_state = "longbow"
+	item_state = "longbow"
 	max_tension = 3
 	draw_time = 10 // Full draw in three seconds
 	twohanded = FALSE // This is so that you can hold a handful of arrows in one hand and still fire it
+	slot_flags = SLOT_LANYARD //And this is so it can be put on your lanyard despite not being twohanded in the code
 
 /obj/item/weapon/gun/launcher/crossbow/longbow/recursive
 	name = "recursive bow"
 	desc = "No more than half the length of a longbow and more often than not made out of a composite of sinew, wood, and bone, a recursive bow is characterized by the double curve of its limbs, compact size, and much longer draw length."
+	icon = 'icons/obj/guns/launcher/recursive.dmi'
+	icon_state = "recursive"
+	item_state = "recursive"
 	max_tension = 5
 	draw_time = 5 // Full draw in 2.5 seconds
 
@@ -450,14 +457,15 @@
 		if(tension >= max_tension)
 			tension = max_tension
 			to_chat(user, "[src]'s bowstaff groans as the string is pulled back as far as it can go!")
+			sleep(10 SECONDS)
+			if(tension >= 1) // Bows aren't meant to be permanently drawn back
+				user.visible_message("[user] relaxes the tension on [src]'s string.","You relax the tension on [src]'s string.")
+				tension = 0
+				update_icon()
 			return
 
 		user.visible_message("[usr] draws back the string of [src]!",SPAN_NOTICE("You continue drawing back the string of [src]!"))
-		sleep(10 SECONDS)
-		if(tension >= 1) // Bows aren't meant to be permanently drawn back
-			user.visible_message("[user] relaxes the tension on [src]'s string.","You relax the tension on [src]'s string.")
-			tension = 0
-			update_icon()
+
 
 /obj/item/weapon/gun/launcher/crossbow/longbow/attack_self(mob/living/user as mob)
 	if(tension)
@@ -468,28 +476,32 @@
 		draw(user)
 
 /obj/item/weapon/gun/launcher/crossbow/longbow/attack_hand(mob/user)
-	if(tension)
+	if((src in user))
+		if(tension)
+			if(bolt)
+				user.visible_message("[user] relaxes the tension on [src]'s string and removes [bolt].","You relax the tension on [src]'s string and remove [bolt].")
+				bolt.loc = get_turf(src)
+				var/obj/item/stack/arrows/A = bolt
+				bolt = null
+				A.removed(user)
+				update_icon()
+			else
+				user.visible_message("[user] relaxes the tension on [src]'s string.","You relax the tension on [src]'s string.")
+			tension = 0
+			update_icon()
+			return
 		if(bolt)
-			user.visible_message("[user] relaxes the tension on [src]'s string and removes [bolt].","You relax the tension on [src]'s string and remove [bolt].")
+			user.visible_message("[user] removes the [bolt] from [src]'s string.","You remove the [bolt] from [src]'s string.")
 			bolt.loc = get_turf(src)
 			var/obj/item/stack/arrows/A = bolt
 			bolt = null
 			A.removed(user)
+			update_icon()
+			return
 		else
-			user.visible_message("[user] relaxes the tension on [src]'s string.","You relax the tension on [src]'s string.")
-		tension = 0
-		update_icon()
-		return
-	if(bolt)
-		user.visible_message("[user] removes the [bolt] from [src]'s string.","You remove the [bolt] from [src]'s string.")
-		bolt.loc = get_turf(src)
-		var/obj/item/stack/arrows/A = bolt
-		bolt = null
-		A.removed(user)
-		return
-	else
-		to_chat(user, SPAN_WARNING("There's no arrow nocked, and the string isn't drawn back."))
-	return
+			to_chat(user, SPAN_WARNING("There's no arrow nocked, and the string isn't drawn back."))
+			return ..()
+	else return ..()
 
 /obj/item/stack/arrows/removed(mob/user)
 	force = initial(force)

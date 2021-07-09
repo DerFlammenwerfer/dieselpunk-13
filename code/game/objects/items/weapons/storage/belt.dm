@@ -360,7 +360,48 @@
 
 /obj/item/weapon/storage/belt/quiver
 	name = "quiver"
+	icon_state = "quiver"
+	item_state = "quiver"
 	storage_slots = 6
 	can_hold = list(
 		/obj/item/stack/arrows
 		)
+	var/sliding_behavior = FALSE
+
+/obj/item/weapon/storage/belt/quiver/verb/toggle_slide()
+	set name = "Toggle Slide"
+	set desc = "Toggle the behavior of last item in [src] \"sliding\" into your hand."
+	set category = "Object"
+
+	sliding_behavior = !sliding_behavior
+	to_chat(usr, SPAN_NOTICE("Items will now [sliding_behavior ? "" : "not"] slide out of [src]"))
+
+/obj/item/weapon/storage/belt/quiver/attack_hand(mob/living/carbon/human/user)
+	if(contents.len && (src in user))
+		var/obj/item/I = contents[contents.len]
+		if(sliding_behavior)
+			if(istype(I))
+				hide_from(user)
+				var/turf/T = get_turf(user)
+				remove_from_storage(I, T)
+				user.put_in_hands(I)
+				add_fingerprint(user)
+				return
+		else if(istype(I, /obj/item/stack/arrows))
+			var/obj/item/stack/arrows/source = I
+			var/obj/item/stack/arrows/drawn = source.split(1)
+			user.put_in_hands(drawn)
+			src.add_fingerprint(user)
+			drawn.add_fingerprint(user)
+			update_icon()
+			return
+	else return ..()
+
+/obj/item/weapon/storage/belt/quiver/update_icon()
+	if(!contents.len)
+		icon_state = initial(icon_state)
+		item_state = initial(item_state)
+	else
+		icon_state = "[initial(icon_state)]_occupied"
+		item_state = "[initial(item_state)]_occupied"
+	update_wear_icon()
